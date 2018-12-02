@@ -44,6 +44,7 @@ i
 	padding:10px;
 	margin-left:50px;
 	margin-top:10px;
+	transition: 0.3s;
 }
 .signup:hover
 {
