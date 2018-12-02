@@ -1,9 +1,55 @@
-#right_footer
-{
-    border:1px solid black;
-	width:100px;
-	height:100px;
+footer{
+	border-top:2px solid grey;
+	padding:15px;
+}
+a{
+	text-decoration: none;
+	color:black;
 }
 
+.right_footer
+{
+    padding:10px;
+	FLOAT:RIGHT;
+
+}
+.icons_footer
+{
+	display:inline;
+	padding-right:90px;
+}
+.footer_links
+{
+	padding-left:50px;
+	display:inline;
+
+}
+i
+{
+	padding: 10px;
+}
+.footer_link
+{
+	padding:10px;
+	color:black;
+}
+.footer_link:hover{
+	color: grey;
+}
+.signup{
+	display:inline-block;
+	border-radius: 12px;
+	background:black;
+	color:white;
+	padding:10px;
+	margin-left:50px;
+	margin-top:10px;
+}
+.signup:hover
+{
+	background:white;
+	color:black;
+	border:1px solid black;
+}
 
 

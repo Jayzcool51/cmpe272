@@ -5,10 +5,26 @@
 		<link rel="stylesheet" type="text/css" href="../Resources/css/footer.css">
 	</head>
     <body>
+    jadqjkbnx
         <footer>
-            <div id="right_footer">
-				<i class="fa fa-facebook-official" aria-hidden="true"></i>
-				jn
+            <div class="signup">
+                SIGN UP FOR NEWSLETTERS
+            </div>
+            <div class="right_footer">
+                <div class="icons_footer">
+                    <a href="#"><i class="fab fa-facebook-square fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-square fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-youtube-square fa-lg"></i></a>
+                </div>
+                <div class="footer_links">
+                    <a class="footer_link" href="#">Contact</a>
+                    <a class="footer_link" href="#">About Us </a>
+                    <a class="footer_link" href="#">Return Policy</a>
+                    <a class="footer_link" href="#">Cancellations and Returns</a>
+                    <a class="footer_link" href="#">FAQ</a>
+                </div>
 			</div>
         </footer>
     </body>
