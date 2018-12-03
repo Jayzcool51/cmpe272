@@ -8,6 +8,9 @@
 </head>
 <body>
 <div class="container">
+    <div class="logo">
+        Company Name
+    </div>
     <div class="navbar">
         <div class="nav">Home</div>
         <div class="nav">Products</div>
@@ -19,19 +22,35 @@
         <video class="video" autoplay loop muted>
             <source src="../Resources/Videos/Cafe.mp4" type="video/mp4" >
         </video>
-        <div class="web-image">
-
-        </div>
         <div class="video-layer"></div>
+        <div class="web-image">
+            <video class="web-video1" autoplay loop muted>
+                <source src="../Resources/Videos/mayankvideo.mp4" type="video/mp4" >
+            </video>
+            <video class="web-video2" autoplay loop muted>
+                <source src="../Resources/Videos/mohit.mp4" type="video/mp4" >
+            </video>
+        </div>
+        <div class="web-sec">
+            <div class="web-sec-primary-head">
+                Feeling Hungry??
+            </div>
+            <div class="web-sec-secondary-head">
+                Order some delicious food <br/> from Ping Pong Cafe
+            </div>
+            <div class="web-sec-tertiary-head">
+                www.mayankdhingra.com
+            </div>
+        </div>
         <div class="hero-section-head">
             <div class="hero-section-primary-head">
                 NAM<img class="namasteicon" src="../Resources/images/namaste.png"/>STE
             </div>
             <div class="hero-section-secondary-head">
-                Because it's shop o'clock somewhere
+                Shop because it's shop o'clock somewhere
             </div>
             <div class="hero-section-search">
-                <input class="search-box" placeholder="Search" type="text">
+                <input class="search-box" placeholder="Search Product" type="text">
                 <span class="search-button">
                     <i class="fa fa-microphone" id="microphone" aria-hidden="true"></i>
                 </span>
@@ -52,7 +71,7 @@
             </div>
         </div>
         <div class="hero-back-container">
-            <div class="hero-back" id="hero-back1"></div>
+            <a href="http://www.mayankdhingra.com"><div class="hero-back" id="hero-back1"></div></a>
             <div class="hero-back" id="hero-back2"></div>
             <div class="hero-back" id="hero-back3"></div>
             <div class="hero-back" id="hero-back4"></div>
