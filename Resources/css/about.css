@@ -1,0 +1,60 @@
+.hero-section{
+    position:relative;
+}
+
+.Profiles{
+    position:absolute;
+    left:50%;
+    transform:translate(-50%,0);
+    display:inline-block;
+    width:1200px;
+}
+.profile{
+    position:relative;
+    display:inline-block;
+    opacity:0.8;
+    width:270px;
+    height:300px;
+    background-image: url("../images/wall2.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin:60px;
+    margin-bottom:0px;
+
+}
+.Name{
+    position:absolute;
+    font-size:200%;
+    text-align: center;
+    top:40%;
+    color:White;
+    width:100%;
+    opacity:0.9;
+    transition:0.7s;
+}
+
+.web_name{
+    position:absolute;
+    font-size: 150%;
+    color: floralwhite;
+    width:100%;
+    opacity:0.9;
+    left:40%;
+    top:60%;
+    display:none;
+    transition:0.5s;
+
+}
+
+.profile:hover .Name{
+    top:20%;
+}
+
+.profile:hover .web_name{
+    top:50%;
+    transition:0.5s;
+    display:inline-block;
+}
+.web_name:hover{
+
+}

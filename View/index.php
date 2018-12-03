@@ -6,15 +6,29 @@
     </head>
     <body>
         <div class="container">
+            <header>
+                <div class="header_title">
+                    Marketplace
+                </div>
+                <div class="header_right">
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                </div>
+            </header>
             <div class="hero-section">
                 <div class="hero-back-container">
-                    <div class="hero-back" id="hero-back1"></div>
-                    <div class="hero-back" id="hero-back2"></div>
-                    <div class="hero-back" id="hero-back3"></div>
-                    <div class="hero-back" id="hero-back4"></div>
-                    <div class="hero-back" id="hero-back5"></div>
-                    <div class="hero-back" id="hero-back6"></div>
+
                 </div>
+            </div>
+            <div class="websites-all">
+                <div class="website"></div>
+                <div class="website"></div>
+                <div class="website"></div>
+                <div class="website"></div>
+                <div class="website"></div>
+                <div class="website"></div>
             </div>
         </div>
     </body>
