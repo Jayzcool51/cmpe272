@@ -18,7 +18,7 @@ $(".hero-back").hover(function () {
         filter: "grayscale(0)"
     });
     $(".navbar").fadeOut();
-},function () {;
+},function () {
     $(this).clearQueue();
     $(".hero-back").css({
         width:"16.65%"
