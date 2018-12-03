@@ -6,6 +6,13 @@
     </head>
     <body>
         <div class="container">
+            <div class="navbar">
+                <div>Home</div>
+                <div>Products</div>
+                <div></div>
+                <div>About Us</div>
+                <div>Contact</div>
+            </div>
             <div class="hero-section">
                 <div class="hero-back-container">
                     <div class="hero-back" id="hero-back1"></div>
