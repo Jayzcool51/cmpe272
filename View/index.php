@@ -6,6 +6,7 @@
     </head>
     <body>
         <div class="container">
+<<<<<<< HEAD
             <header>
                 <div class="header_title">
                     Marketplace
@@ -17,6 +18,15 @@
                     <a></a>
                 </div>
             </header>
+=======
+            <div class="navbar">
+                <div>Home</div>
+                <div>Products</div>
+                <div></div>
+                <div>About Us</div>
+                <div>Contact</div>
+            </div>
+>>>>>>> Mohitbranch
             <div class="hero-section">
                 <div class="hero-back-container">
 

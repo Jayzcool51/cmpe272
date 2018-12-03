@@ -1,3 +1,289 @@
+<<<<<<< HEAD
 .header_right{
 
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 22px;
+    font-family: sans-serif;
+    color:white;
+}
+
+.clearfix:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+* li {
+    list-style: none;
+}
+
+* a {
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    padding:0;
+    margin: 0;
+}
+.hero-section{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-back-container{
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 200px;
+}
+
+.hero-back-container:hover .hero-back{
+    width: 12.5%;
+}
+
+.hero-back{
+    width: 15.6%;
+    float: left;
+    height: 90%;
+    margin-top: 1%;
+    margin-left: 1%;
+    transition: 0.5s height, 0.5s width, 0.5s transform, 2s filter;
+    cursor:url('../images/cursor.png'), pointer;
+    filter: grayscale(96%);
+}
+
+.hero-back:hover{
+    height: 200%;
+    width: 30%!important;
+    transform: translateY(-60%);
+    transition: 0.5s height, 0.5s width, 0.5s transform, 2s filter;
+    z-index: 1000;
+    filter: grayscale(0);
+}
+
+
+#hero-back1{
+    background: url("../images/Cafe.png");
+    background-position: center;
+    background-size: cover;
+
+}
+
+#hero-back2{
+    background: url("../images/Bus.png");
+    background-position: center;
+    background-size: cover;
+}
+#hero-back3{
+    background: url("../images/Server.png");
+    background-position: center;
+    background-size: cover;
+}
+#hero-back4{
+    background: url("../images/mohinisg.png");
+    background-position: center;
+    background-size: cover;
+}
+#hero-back5{
+    background: url("../images/Cafe.png");
+    background-position: center;
+    background-size: cover;
+}
+#hero-back6{
+    background: url("../images/Cafe.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.video-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+}
+
+.video{
+    z-index: -1;
+}
+
+.web-image{
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: none;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    font-family: 'Roboto', sans-serif;
+    margin: 55px 35px;
+}
+
+
+.nav{
+    float: left;
+    margin-right: 23px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.1s transform;
+}
+
+.nav:hover{
+    color: #d7d7d7;
+    transform: scale(1.1);
+    transition: 0.1s transform;
+}
+
+.hero-section-head{
+    z-index: 1001;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    height: 200px;
+    width: 50%;
+}
+
+.hero-section-primary-head{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 55px;
+    font-family: 'Cinzel', sans-serif;
+    font-weight: 600;
+}
+
+.namasteicon{
+    width: 55px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-section-secondary-head{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.hero-section-search{
+    margin-top: 40px;
+    height: 45px;
+}
+
+.search-box{
+    display: inline-block;
+    width: 85%;
+    margin-left: 5%;
+    padding: 0 20px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    border: 1px solid white;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-right: 0;
+    float: left;
+    height: 100%;
+    z-index: -1;
+}
+
+.search-button{
+    width: 10%;
+    background-color: white;
+    color: #5d5d5d;
+    margin-left: 0;
+    display: inline-block;
+    float: left;
+    line-height: 40px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: right;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.hero-section-audio{
+    display: none;
+    margin-top: 20px;
+}
+
+#microphone{
+    font-size: 20px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: 0.3s transform, 0.3s color;
+}
+
+#microphone:hover{
+    transform: scale(1.5);
+    transition: 0.3s transform, 0.3s color;
+    color: #323232;
+}
+
+
+div#wave {
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 3px;
+    background: white;
+    animation: wave 1.7s linear infinite;
+}
+
+.dot:nth-child(2) {
+    animation-delay: -1.4s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: -1s;
+}
+
+.dot:nth-child(4) {
+    animation-delay: -0.7s;
+}
+
+@keyframes wave {
+    0%, 60%, 100% {
+        transform: initial;
+    }
+
+    30% {
+        transform: translateY(-15px);
+    }
+>>>>>>> Mohitbranch
 }

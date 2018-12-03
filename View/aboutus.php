@@ -3,6 +3,7 @@
     <title>Marketplace</title>
     <!--<link rel="stylesheet" href="../Resources/css/main.css"> -->
     <link rel="stylesheet" href="../Resources/css/about.css">
+    <link rel="stylesheet" href="../Resources/css/animate.css">
 </head>
 <body>
 <div class="container">
