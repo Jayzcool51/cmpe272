@@ -86,7 +86,10 @@ body {
 
 .most-searched-section{
     width: 100%;
-    padding: 35px;
+    padding: 0 35px;
+}
+
+#searchsection1{
     padding-top: 200px;
 }
 
@@ -142,7 +145,6 @@ body {
     position: relative;
     height: auto;
     padding-bottom: 20px;
-    background-color: red;
 }
 
 .most-searched-box{
@@ -208,13 +210,76 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
+    display: none;
 }
 
-.test{
-    height: 300px;
+.product-desc-section{
+    height: 0;
     width: 96%;
     margin-left: 1%;
-    border: 1px solid white;
-    margin-top: 250px;
+    margin-top: 270px;
     overflow: hidden;
+}
+
+.block{
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1212312;
+    display: none;
+}
+
+.products-section{
+    height: 480px;
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 40px;
+    margin-bottom: 120px;
+}
+
+.product-left{
+    width: 52%;
+    margin-right: 3%;
+    float: left;
+    border: 1px solid #c1c1c1;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/coffee.jpg");
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+    line-height: 480px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+.product-right{
+    width: 42%;
+    margin-left: 3%;
+    float: left;
+    height: 440px;
+
+}
+
+.product-right-content{
+    height: 50%;
+    border: 1px solid #c1c1c1;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/sandwich.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 220px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.product-right-content:first-of-type{
+    height: 50%;
+    border: 1px solid #c1c1c1;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/burger.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
 }

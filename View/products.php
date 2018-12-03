@@ -19,7 +19,7 @@
         <div class="nav">About Us</div>
         <div class="nav">Contact</div>
     </div>
-    <div class="most-searched-section">
+    <div class="most-searched-section" id="searchsection1">
         <div class="most-searched-head">
             Most Viewed Items
         </div>
@@ -28,6 +28,8 @@
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
         </div>
         <div class="most-searched-box-container">
+            <div class="block">
+            </div>
             <div class="most-searched-box clearfix">
                 <div class="most-search-product-box">
                     <div class="product-layer">
@@ -43,6 +45,9 @@
                     <div class="product-layer">
                     </div>
                     <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
                         <img src="../Resources/images/cafe_bottom.jpg">
                     </div>
                 </div>
@@ -50,6 +55,9 @@
                     <div class="product-layer">
                     </div>
                     <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
                         <img src="../Resources/images/cafe_bottom.jpg">
                     </div>
                 </div>
@@ -57,6 +65,9 @@
                     <div class="product-layer">
                     </div>
                     <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
                         <img src="../Resources/images/cafe_bottom.jpg">
                     </div>
                 </div>
@@ -64,6 +75,9 @@
                     <div class="product-layer">
                     </div>
                     <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
                         <img src="../Resources/images/cafe_bottom.jpg">
                     </div>
                 </div>
@@ -71,6 +85,9 @@
                     <div class="product-layer">
                     </div>
                     <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
                         <img src="../Resources/images/cafe_bottom.jpg">
                     </div>
                 </div>
@@ -78,6 +95,9 @@
                     <div class="product-layer">
                     </div>
                     <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
                         <img src="../Resources/images/cafe_bottom.jpg">
                     </div>
                 </div>
@@ -85,13 +105,625 @@
                     <div class="product-layer">
                     </div>
                     <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
                         <img src="../Resources/images/cafe_bottom.jpg">
                     </div>
                 </div>
             </div>
-            <div class="test"></div>
+            <div class="product-desc-section"></div>
         </div>
     </div>
+    <div class="products-section clearfix">
+        <div class="product-left">
+            Coffee and Shakes
+        </div>
+        <div class="product-right">
+            <div class="product-right-content">
+                Burger
+            </div>
+            <div class="product-right-content">
+                Sandwich
+            </div>
+        </div>
+    </div>
+    <div class="most-searched-section">
+        <div class="most-searched-head">
+            Most Viewed Items
+        </div>
+        <div class="left-icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="right-icon">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+        <div class="most-searched-box-container">
+            <div class="block">
+            </div>
+            <div class="most-searched-box clearfix">
+                <div class="most-search-product-box">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="product-desc-section"></div>
+        </div>
+
+    </div>
+    <div class="most-searched-section">
+        <div class="most-searched-head">
+            Most Viewed Items
+        </div>
+        <div class="left-icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="right-icon">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+        <div class="most-searched-box-container">
+            <div class="block">
+            </div>
+            <div class="most-searched-box clearfix">
+                <div class="most-search-product-box">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="product-desc-section"></div>
+        </div>
+
+    </div>
+    <div class="most-searched-section">
+        <div class="most-searched-head">
+            Most Viewed Items
+        </div>
+        <div class="left-icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="right-icon">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+        <div class="most-searched-box-container">
+            <div class="block">
+            </div>
+            <div class="most-searched-box clearfix">
+                <div class="most-search-product-box">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="product-desc-section"></div>
+        </div>
+
+    </div>
+    <div class="products-section clearfix">
+        <div class="product-left">
+            Coffee and Shakes
+        </div>
+        <div class="product-right">
+            <div class="product-right-content">
+                Burger
+            </div>
+            <div class="product-right-content">
+                Sandwich
+            </div>
+        </div>
+    </div>
+    <div class="most-searched-section">
+        <div class="most-searched-head">
+            Most Viewed Items
+        </div>
+        <div class="left-icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="right-icon">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+        <div class="most-searched-box-container">
+            <div class="block">
+            </div>
+            <div class="most-searched-box clearfix">
+                <div class="most-search-product-box">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="product-desc-section"></div>
+        </div>
+
+    </div>
+    <div class="most-searched-section">
+        <div class="most-searched-head">
+            Most Viewed Items
+        </div>
+        <div class="left-icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="right-icon">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+        <div class="most-searched-box-container">
+            <div class="block">
+            </div>
+            <div class="most-searched-box clearfix">
+                <div class="most-search-product-box">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="product-desc-section"></div>
+        </div>
+
+    </div>
+    <div class="most-searched-section">
+        <div class="most-searched-head">
+            Most Viewed Items
+        </div>
+        <div class="left-icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="right-icon">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+        <div class="most-searched-box-container">
+            <div class="block">
+            </div>
+            <div class="most-searched-box clearfix">
+                <div class="most-search-product-box">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+                <div class="most-search-product-box clearfix">
+                    <div class="product-layer">
+                    </div>
+                    <div class="most-seacrh-product-image">
+                        <div class="product-info">
+
+                        </div>
+                        <img src="../Resources/images/cafe_bottom.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="product-desc-section"></div>
+        </div>
+
+    </div>
+</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="../Resources/js/products.js"></script>
