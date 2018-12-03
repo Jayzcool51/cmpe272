@@ -44,6 +44,12 @@
                     <span class="dot"></span>
                 </div>
             </div>
+            <div class="other-website">
+                <div class="other-website-head">
+                    Our Websites
+                </div>
+                <div class="other-website-line"></div>
+            </div>
         </div>
         <div class="hero-back-container">
             <div class="hero-back" id="hero-back1"></div>

@@ -43,31 +43,28 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 200px;
+    height: 150px;
 }
 
-.hero-back-container:hover .hero-back{
-    width: 12.5%;
-}
+
 
 .hero-back{
-    width: 15.6%;
+    width: 16.65%;
     float: left;
-    height: 90%;
-    margin-top: 1%;
-    margin-left: 1%;
+    height: 100%;
+    padding-top: 10px;
     transition: 0.5s height, 0.5s width, 0.5s transform, 2s filter;
     cursor:url('../images/cursor.png'), pointer;
     filter: grayscale(96%);
 }
 
 .hero-back:hover{
-    height: 200%;
-    width: 30%!important;
-    transform: translateY(-60%);
+    /*height: 200%;*/
+    /*width: 30%!important;*/
+    /*transform: translateY(-60%);*/
     transition: 0.5s height, 0.5s width, 0.5s transform, 2s filter;
-    z-index: 1000;
-    filter: grayscale(0);
+    /*z-index: 1000;*/
+    /*filter: grayscale(0);*/
 }
 
 
@@ -281,4 +278,25 @@ div#wave {
     30% {
         transform: translateY(-15px);
     }
+}
+
+.other-website{
+    margin-top: 135px;
+}
+
+.other-website-head{
+    text-align: center;
+    margin-top: 55px;
+    font-family: 'Railway', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.other-website-line{
+    width: 1px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: white;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
