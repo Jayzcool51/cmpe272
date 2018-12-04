@@ -6,19 +6,6 @@
     </head>
     <body>
         <div class="container">
-<<<<<<< HEAD
-            <header>
-                <div class="header_title">
-                    Marketplace
-                </div>
-                <div class="header_right">
-                    <a></a>
-                    <a></a>
-                    <a></a>
-                    <a></a>
-                </div>
-            </header>
-=======
             <div class="navbar">
                 <div>Home</div>
                 <div>Products</div>
@@ -26,10 +13,15 @@
                 <div>About Us</div>
                 <div>Contact</div>
             </div>
->>>>>>> Mohitbranch
             <div class="hero-section">
                 <div class="hero-back-container">
 
+                    <div class="hero-back" id="hero-back1"></div>
+                    <div class="hero-back" id="hero-back2"></div>
+                    <div class="hero-back" id="hero-back3"></div>
+                    <div class="hero-back" id="hero-back4"></div>
+                    <div class="hero-back" id="hero-back5"></div>
+                    <div class="hero-back" id="hero-back6"></div>
                 </div>
             </div>
             <div class="websites-all">
