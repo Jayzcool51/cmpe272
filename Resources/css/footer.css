@@ -1,10 +1,15 @@
 footer{
 	border-top:2px solid grey;
 	padding:15px;
+	margin:0px 15px;
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 a{
 	text-decoration: none;
-	color:black;
+	color:white;
 }
 
 .right_footer
@@ -31,7 +36,7 @@ i
 .footer_link
 {
 	padding:10px;
-	color:black;
+	color:white;
 }
 .footer_link:hover{
 	color: grey;
@@ -40,7 +45,8 @@ i
 	display:inline-block;
 	border-radius: 12px;
 	background:black;
-	color:white;
+	color:black;
+	background-color: white;
 	padding:10px;
 	margin-left:50px;
 	margin-top:10px;
@@ -48,8 +54,8 @@ i
 }
 .signup:hover
 {
-	background:white;
-	color:black;
+	background:black;
+	color:white;
 	border:1px solid black;
 }
 

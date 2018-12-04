@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-.header_right{
 
-=======
 * {
     margin: 0;
     padding: 0;
@@ -285,5 +282,4 @@ div#wave {
     30% {
         transform: translateY(-15px);
     }
->>>>>>> Mohitbranch
 }
