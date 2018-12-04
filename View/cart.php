@@ -9,6 +9,9 @@
 <body>
 <div class="container">
     <div class="container-image"></div>
+    <div class="logo">
+        Company Name
+    </div>
     <div class="navbar">
         <div class="nav">Home</div>
         <div class="nav">Products</div>
@@ -19,7 +22,7 @@
     <div class="hero-section">
         <div class="products clearfix">
             <div class="all_products clearfix">
-            <div class="product-head">
+            <div class="product-head clearfix">
                 <span class="left-product-head">My Shopping Bag (2 Items)</span>
                 <span class="right-product-head">$200</span>
             </div>

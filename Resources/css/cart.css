@@ -49,6 +49,20 @@ body {
     position: relative;
 }
 
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    font-family: 'Roboto', sans-serif;
+    margin: 45px 35px;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 600;
+    font-size: 25px;
+    color: #e74c3c
+}
 
 .navbar{
     position: absolute;
@@ -79,7 +93,7 @@ body {
     z-index: 100;
     margin:120px 15%;
     margin-bottom: 70px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .all_products{
     float:left;
@@ -91,9 +105,9 @@ body {
 .product-head{
     word-spacing: 2px;
     font-family: 'Raleway',sans-serif;
-    margin-bottom: 5px;
     font-size: 18px;
     font-weight: 600;
+    padding-bottom: 10px;
 }
 
 .right-product-head{
@@ -102,12 +116,16 @@ body {
 }
 
 .product{
-    border:1px solid grey;
+    border-bottom:1px solid grey;
     padding: 10px;
     width:90%;
     margin:23px 0;
-
 }
+
+.product:last-of-type{
+    border:0;
+}
+
 .product_img{
     float:left;
     height:140px;
@@ -183,7 +201,7 @@ body {
     height: 400px;
     top: 150px;
     padding:10px;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 .total{
     color:black;
