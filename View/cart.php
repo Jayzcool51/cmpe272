@@ -19,20 +19,32 @@
     <div class="hero-section">
         <div class="products clearfix">
             <div class="all_products clearfix">
+            <div class="product-head">
+                <span class="left-product-head">My Shopping Bag (2 Items)</span>
+                <span class="right-product-head">$200</span>
+            </div>
             <div class="product clearfix" >
-                <div class="product_img"></div>
+                <div class="product_img">
+                    <img src="../Resources/images/shirt.jpg"/>
+                </div>
                 <div class="product_desc_box">
                     <div class="prod_name">
                         Carlton London Women Rose Gold
                     </div>
                     <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" ></div>
-
+                    <div class="remove-section">
+                        <div class="remove-btn">
+                            Remove
+                        </div>
+                    </div>
                 </div>
-                <div class="product_price">Price</div>
+                <div class="product_price">$15</div>
 
             </div>
             <div class="product clearfix">
-                <div class="product_img"></div>
+                <div class="product_img">
+                    <img src="../Resources/images/shirt.jpg"/>
+                </div>
                 <div class="product_desc_box">
                     <div class="prod_name">
                         Carlton London Women Rose Gold
@@ -40,11 +52,13 @@
                     <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" ></div>
 
                 </div>
-                <div class="product_price">Price</div>
+                <div class="product_price">$15</div>
 
             </div>
             <div class="product clearfix">
-                <div class="product_img"></div>
+                <div class="product_img">
+                    <img src="../Resources/images/shirt.jpg"/>
+                </div>
                 <div class="product_desc_box">
                     <div class="prod_name">
                         Carlton London Women Rose Gold
@@ -52,35 +66,35 @@
                     <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" ></div>
 
                 </div>
-                <div class="product_price">Price</div>
+                <div class="product_price">$15</div>
 
             </div>
             </div>
             <div class="total_amount_box clearfix">
                 <div class="total">
-                    <div id="price_det"><b>PRICE DETAILS</b></div>
+                    <div id="price_det"><b>Price Details</b></div>
                     <div>
-                        <div class="price_info_value"> bag tot</div>
+                        <div class="price_info_value">$200</div>
                         <div class="price_info">Bag Total</div>
                     </div>
                     <div>
-                        <div class="price_info_value">bag dis</div>
+                        <div class="price_info_value">-$20</div>
                         <div class="price_info">Bag Discount</div>
                     </div>
                     <div>
-                        <div class="price_info_value">wst tax</div>
+                        <div class="price_info_value">$10</div>
                         <div class="price_info">Estimated Tax</div>
                     </div>
                     <div>
-                        <div class="price_info_value">dis cha</div>
+                        <div class="price_info_value">$10</div>
                         <div class="price_info">Delivery charges</div>
 
                     </div>
                 </div>
 
                 <div class="total_amt_block">
-                    <div class="total_amt_value">1200</div>
-                    <div class="total_amt">Total amount</div>
+                    <div class="total_amt_value">$200</div>
+                    <div class="total_amt">Total Amount</div>
                 </div>
                     <div class="checkout_box"><b>PLACE ORDER</b></div>
             </div>
