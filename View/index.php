@@ -15,6 +15,7 @@
             </div>
             <div class="hero-section">
                 <div class="hero-back-container">
+
                     <div class="hero-back" id="hero-back1"></div>
                     <div class="hero-back" id="hero-back2"></div>
                     <div class="hero-back" id="hero-back3"></div>
