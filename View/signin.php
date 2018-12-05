@@ -26,7 +26,6 @@
                                 </div>
                                 <div class="camera_box">
                                     <video autoplay="true" id="videoElement">
-
                                     </video>
                                 </div>
                                 <div>
@@ -47,7 +46,6 @@
     </body>
     <script>
         var video = document.querySelector("#videoElement");
-
         if (navigator.mediaDevices.getUserMedia) {
             navigator.mediaDevices.getUserMedia({video: true})
                 .then(function(stream) {

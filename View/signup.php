@@ -9,7 +9,7 @@
     <body>
         <div class="container clearfix">
             <div class="slideshow">
-                <img src="../Resources/images/signup_sideimg1.PNG"/>
+                <div class="company_name">Company Name</div>
             </div>
             <article class="wrapper">
                 <div class="signin_nav clearfix">
@@ -18,49 +18,54 @@
                         <li class="signin_button">Sign In</li>
                     </ul>
                 </div>
-                <div class="form-wrapper">
-                    <div class="form-box">
-                        <h1 class="primary-heading">Company Name</h1>
-                        <div class="_gap">
-                            <form action="{{route('user.signup')}}" method="post">
-                                <h2 class="secondary-heading">Fast Food Restraunt</h2>
-                                <span class="btn-container">
-                                                    <a href="{{route('auth/facebook')}}" class="btn-form">Log in with Facebook</a>
-                                                </span>
-                                <div class="styling">
-                                    <div class="line-style"></div>
-                                    <div class="middle-style">OR</div>
-                                    <div class="line-style"></div>
-                                </div>
-                                <div class="form-basic">
-                                    <input type="text" name="email" placeholder="Email">
-                                </div>
-                                <div class="form-basic">
-                                    <input type="text" name="name" placeholder="Full Name">
-                                </div>
-                                <div class="form-basic">
-                                    <input type="password" name="password" placeholder="Password">
-                                </div>
-                                <div class="form-basic">
-                                    <input type="password" name="password_confirmation" placeholder="Confirm Password">
-                                </div>
-                                <div>
-                                                    <span class="btn-container">
-                                                        <button type="submit" class="btn-form signup_button">Sign up</button>
+
+                    <div class="form-wrapper">
+                        <div class="form-box">
+                            <h1 class="primary-heading">Sign up</h1>
+                            <div class="_gap">
+                                <form action="{{route('user.signup')}}" method="post">
+<!--                                    <h2 class="secondary-heading">Fast Food Restraunt</h2>-->
+                                    <div class="form_left">
+                                    <div class="form-basic">
+                                        <input type="text" name="name" placeholder="Name">
+                                    </div>
+                                    <div class="form-basic">
+                                        <input type="text" name="phone" placeholder="Phone">
+                                    </div>
+                                    </div>
+                                    <div class="camera_box"><video width="200px" height="150px" autoplay="true" id="videoElement">
+
+                                        </video></div>
+
+                                    <div>
+                                                        <span class="btn-container">
+                                                            <a href="{{route('auth/facebook')}}" class="btn-form">Sign up</a>
+                                                        </span>
+                                        <span class="btn-container">
+                                                        <a href="{{route('auth/facebook')}}" class="btn-form">Sign up with Facebook</a>
                                                     </span>
-                                </div>
-                                <input type="hidden" name="_token" value="{{Session::token()}}"/>
-                                <p class="small-copy">By signing up, you agree to our <a href="#">Terms</a> &amp; <a href="#">Privacy Policy</a></p>
-                            </form>
+                                    </div>
+                                    <input type="hidden" name="_token" value="{{Session::token()}}"/>
+                                    <p class="small-copy">By signing up, you agree to our <a href="#">Terms</a> &amp; <a href="#">Privacy Policy</a></p>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="img_cap_box">
-                    <div class="camera_box"></div>
-                    <div class="capture_box">Capture</div>
-                </div>
 
             </article>
         </div>
     </body>
+    <script>
+        var video = document.querySelector("#videoElement");
+
+        if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({video: true})
+                .then(function(stream) {
+                    video.srcObject = stream;
+                })
+                .catch(function(err0r) {
+                    console.log("Something went wrong!");
+                });
+        }
+    </script>
 </html>
