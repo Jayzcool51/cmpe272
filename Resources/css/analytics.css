@@ -72,5 +72,54 @@ body {
 }
 
 #contain{
-    margin-top: 180px;
+    margin-top: 120px;
+    padding: 60px 10%;
+    background-color: rgba(250, 250, 250, 0.36);
+
+}
+
+.top-section{
+    width: 100%;
+    border: 1px solid rgba(238, 238, 238, 0.84);
+    height: 400px;
+    padding: 40px;
+    background-color: white;
+}
+
+#line-chart{
+    height: 50%;
+    width: 100%;
+}
+
+h4{
+    color: #747474;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.bottom-section{
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+}
+
+.left-section{
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+    border: 1px solid rgba(238, 238, 238, 0.84);
+    height: 400px;
+    padding: 40px;
+    background-color: white;
+}
+
+.right-section{
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+    border: 1px solid rgba(238, 238, 238, 0.84);
+    height: 400px;
+    padding: 40px;
+    background-color: white;
 }
