@@ -30,6 +30,15 @@
             <div class="hero-section">
                 <div class="hero-back-container">
 
+<<<<<<< HEAD
+=======
+                    <div class="hero-back" id="hero-back1"></div>
+                    <div class="hero-back" id="hero-back2"></div>
+                    <div class="hero-back" id="hero-back3"></div>
+                    <div class="hero-back" id="hero-back4"></div>
+                    <div class="hero-back" id="hero-back5"></div>
+                    <div class="hero-back" id="hero-back6"></div>
+>>>>>>> Mohitbranch
                 </div>
             </div>
             <div class="websites-all">
