@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+<style>
+body {
+  background-color: lightblue;
+}
+</style>
+<body>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">YOUR SPENDING ANALYTICS BASED ON YOUR SHOPPING HISTORY</h3>
+  <p>Spend Analysis is the process of collecting, cleansing, classifying and analyzing expenditure data with the purpose of improving efficiency, and monitoring controls and compliance.
+  We understands the traditional roadblocks to spend management and how important it is to gain insight into operational ineffectiveness in order to improve your sourcing success.
+It helps gain visibility and dive deep into spend data, track procurement performance metrics, supply base, and provides actionable insights to identify opportunities for consolidation of spend.
+We give you an insgight into your monthly spendings, the products you purchase most, the website you purchase from most in this marketplace.</p>
+</div>
+
+<div id="contain">
+    <div id="canvas-holder" style="float:left;">
+        <canvas id="bar-chart" width="400" height="450">
+    </canvas></div>
+    <div id="canvas-holder-keymsg" style="float:left;">
+        <canvas id="doughnut-chart" width="500" height="450">
+    </canvas></div>
+    <div id="canvas-holder-keymsg" style="float:right;">
+        <canvas id="bar-chart-horizontal" width="500" height="450">
+    </canvas></div>
+</div>
+
+
+<script>
+new Chart(document.getElementById("bar-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["Jaunary", "February", "March", "April", "May", "June"],
+      datasets: [
+        {
+          label: "Spending (Dollar)",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850", "#FFB6C1"],
+          data: [2478,5267,734,784,433, 500]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Monthly spending($) in the marketplace'
+      }
+      // animation: {
+      //       onProgress: function(animation) {
+      //           progress.value = animation.animationObject.currentStep / animation.animationObject.numSteps;
+      //       }
+      //   }
+    }
+});
+</script>
+
+<canvas id="doughnut-chart" width="100" height="40"></canvas>
+  <script>
+  new Chart(document.getElementById("doughnut-chart"), {
+    type: 'doughnut',
+    data: {
+      labels: ["T Shirts", "Shakes", "Washing Machine", "Desktop", "Sports Cars", "Linux EC2", "Gaming Laptops", "Burgers"],
+      datasets: [
+        {
+          label: "Population (millions)",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#FFB6C1", "#00FF00"],
+          data: [500,1000,100,100,200, 500, 500, 1000]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Products purchased in the marketplace'
+      }
+    }
+});
+  </script>
+
+      <script>
+      new Chart(document.getElementById("bar-chart-horizontal"), {
+          type: 'horizontalBar',
+          data: {
+            labels: ["iamprabha.com", "www.mayankdhingra.com", "www.mohitgahlot.com", "www.dhruwill.com", "jayzcool.com", "mohinishdaswani.space"],
+            datasets: [
+              {
+                label: "Products",
+                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                data: [1000,2000,200,500,500,100]
+              }
+            ]
+          },
+          options: {
+            legend: { display: false },
+            title: {
+              display: true,
+              text: 'Products purchased from individual website in the marketplace'
+            }
+          }
+      });
+      </script>
+
+</body>
+
+</html
