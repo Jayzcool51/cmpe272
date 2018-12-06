@@ -19,27 +19,19 @@
             </div>
             <div id="contain">
                 <div class="top-section">
-                    <h4>Your Monthy Budget</h4>
+                    <h4>Your Monthly Expenses</h4>
                     <canvas id="line-chart" height="300px"></canvas>
                 </div>
                 <div class="bottom-section clearfix">
                     <div class="left-section">
-                        <h4>Purchase Category</h4>
+                        <h4>Money Spent Website Wise</h4>
                         <canvas id="bar-chart" height="240px"></canvas>
                     </div>
                     <div class="right-section">
-                        <h4>Purchase Category</h4>
-                        <canvas id="bar-chart" height="240px"></canvas>
+                        <h4>Money Spent Product Wise</h4>
+                        <canvas id="pie-chart" height="200px"></canvas>
                     </div>
                 </div>
-<!--                <div id="canvas-holder" style="float:left;">-->
-<!--                    </div>-->
-<!--                <div id="canvas-holder-keymsg" style="float:left;">-->
-<!--                    <canvas id="doughnut-chart" width="500" height="450">-->
-<!--                </canvas></div>-->
-<!--                <div id="canvas-holder-keymsg" style="float:right;">-->
-<!--                    <canvas id="bar-chart-horizontal" width="500" height="450">-->
-<!--                </canvas></div>-->
             </div>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
