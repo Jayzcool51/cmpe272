@@ -27,11 +27,11 @@
         <div class="right-icon">
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
         </div>
-        <div class="most-searched-box-container">
+        <div class="most-searched-box-container" data-click=false>
             <div class="block">
             </div>
-            <div class="most-searched-box clearfix">
-                <div class="most-search-product-box">
+            <div class="most-searched-box clearfix" >
+                <div class="most-search-product-box" data-hover=false>
                     <div class="product-layer">
                     </div>
                     <div class="most-seacrh-product-image">
