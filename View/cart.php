@@ -28,7 +28,7 @@
             </div>
             <div class="product clearfix" >
                 <div class="product_img">
-                    <img src="../Resources/images/shirt.jpg"/>
+                    <img src="../Resources/images/Products/shirt.jpg"/>
                 </div>
                 <div class="product_desc_box">
                     <div class="prod_name">
@@ -46,7 +46,7 @@
             </div>
             <div class="product clearfix" >
                 <div class="product_img">
-                    <img src="../Resources/images/shirt.jpg"/>
+                    <img src="../Resources/images/Products/shirt.jpg"/>
                 </div>
                 <div class="product_desc_box">
                     <div class="prod_name">
@@ -64,7 +64,7 @@
             </div>
             <div class="product clearfix" >
                     <div class="product_img">
-                        <img src="../Resources/images/shirt.jpg"/>
+                        <img src="../Resources/images/Products/shirt.jpg"/>
                     </div>
                     <div class="product_desc_box">
                         <div class="prod_name">
