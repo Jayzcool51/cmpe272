@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 22px;
+    font-family: sans-serif;
+    color:black;
+}
+
+.clearfix:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+* li {
+    list-style: none;
+}
+
+* a {
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    padding:0;
+    margin: 0;
+}
+.main_left{
+    width:35%;
+    border:1px solid black;
+    float:left;
+    height:100vh;
+}
+.main_right{
+    width:65%;
+    border:1px solid red;
+    float:left;
+    height:100vh;
+}
+ul{
+    float:right;
+    list-style: none;
+    width: 40%;
+    font-size:17px;
+    color:grey;
+
+}
+li{
+    display: inline-block;
+    width: 60%;
+    float: left;
+}
+.signin_nav{
+    color:black;
+    width:100%;
+    padding:3%;
+    padding-right:3%;
+    border:1px solid blue;
+
+}
+#signin_text{
+    padding:7px;
+}
+.signin_button{
+    border:1px solid black;
+    width:34%;
+    padding:6px 13px;
+    text-align:center;
+    border-radius:15px;
+    float:right;
+
+}
+.signin_button:hover{
+    background-color: #e74c3c;
+    color:white;
+    border: 1px solid #e74c3c;
+}
+.form_wrapper{
+    width:60%;
+    margin:50px auto;
+
+}
+#primary_heading{
+    font-family: 'Roboto', sans-serif;
+    font-size: 140%;
+    padding:10px 0;
+    color: #404040;
+    font-weight: 500;
+    margin-bottom:20px;
+}
+.form_box{
+   padding:0 30px;
+    margin:1% auto;
+
+}
+.input_div{
+    padding:5px;
+}
+.tnc{
+    padding:3px;
+}
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    margin:5px auto;
+    padding: 0 12px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 75%;
+    outline: none;
+    transition: 0.4s linear;
+    border: 1px solid #999;
+    border-radius:5px;
+}
+.image_box{
+    width:70%;
+    height:300px;
+    border:1px solid red;
+    margin:10px auto;
+
+}
+.btn-container{
+    width:100%;
+    padding:5px;
+}
+.btn{
+    width: 100%;
+    background-color: #e74c3c;
+    color:white;
+    padding: 0 12px;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    font-weight: 500;
+    outline: none;
+    transition: 0.4s ease;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    display:block;
+    text-decoration: none !important;
+    text-align: center;
+}
+.btn:hover{
+    background-color: #e74c3c;
+    color: white;
+    border:1px solid #e74c3c;
+}
+.tnc{
+    margin: 20px 50px;
+    text-align: center;
+    font-size: 90%;
+}
+.tnc a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.4s linear;
+    border-bottom: 1px solid rgba(0,0,0,0);
+    padding-bottom: 3px;
+}
+
+.tnc a:hover {
+    border-bottom: 1px solid;
+}

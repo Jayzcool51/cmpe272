@@ -26,24 +26,20 @@
                                 <form action="{{route('user.signup')}}" method="post">
 <!--                                    <h2 class="secondary-heading">Fast Food Restraunt</h2>-->
                                     <div class="form_left">
-                                    <div class="form-basic">
-                                        <input type="text" name="name" placeholder="Name">
+                                        <div class="form-basic">
+                                            <input type="text" name="name" placeholder="Name">
+                                        </div>
+                                        <div class="form-basic">
+                                            <input type="text" name="phone" placeholder="Phone">
+                                        </div>
                                     </div>
-                                    <div class="form-basic">
-                                        <input type="text" name="phone" placeholder="Phone">
-                                    </div>
-                                    </div>
-                                    <div class="camera_box"><video width="200px" height="150px" autoplay="true" id="videoElement">
 
-                                        </video></div>
-
-                                    <div>
-                                                        <span class="btn-container">
-                                                            <a href="{{route('auth/facebook')}}" class="btn-form">Sign up</a>
-                                                        </span>
                                         <span class="btn-container">
-                                                        <a href="{{route('auth/facebook')}}" class="btn-form">Sign up with Facebook</a>
-                                                    </span>
+                                            <a href="{{route('auth/facebook')}}" class="btn-form">Sign up</a>
+                                        </span>
+                                        <span class="btn-container">
+                                            <a href="{{route('auth/facebook')}}" class="btn-form">Sign up with Facebook</a>
+                                        </span>
                                     </div>
                                     <input type="hidden" name="_token" value="{{Session::token()}}"/>
                                     <p class="small-copy">By signing up, you agree to our <a href="#">Terms</a> &amp; <a href="#">Privacy Policy</a></p>
