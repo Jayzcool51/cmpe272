@@ -22,47 +22,30 @@
     <div class="hero-section">
         <div class="products clearfix">
             <div class="all_products clearfix">
-            <div class="product-head clearfix">
-                <span class="left-product-head">My Shopping Bag (2 Items)</span>
-                <span class="right-product-head">$200</span>
-            </div>
-            <div class="product clearfix" >
-                <div class="product_img">
-                    <img src="../Resources/images/Products/shirt.jpg"/>
+                <div class="product-head clearfix">
+                    <span class="left-product-head">My Shopping Bag (2 Items)</span>
+                    <span class="right-product-head">$200</span>
                 </div>
-                <div class="product_desc_box">
-                    <div class="prod_name">
-                        Carlton London Women Rose Gold
+                <div class="product clearfix" >
+                    <div class="product_img">
+                        <img src="../Resources/images/Products/shirt.jpg"/>
                     </div>
-                    <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" ></div>
-                    <div class="remove-section">
-                        <div class="remove-btn">
-                            Remove
+                    <div class="product_desc_box">
+                        <div class="prod_name">
+                            Carlton London Women Rose Gold
+                        </div>
+                        <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" >
+                        </div>
+                        <div class="remove-section">
+                            <div class="remove-btn">
+                                Remove
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product_price">$15</div>
+                    <div class="product_price">$15</div>
 
-            </div>
-            <div class="product clearfix" >
-                <div class="product_img">
-                    <img src="../Resources/images/Products/shirt.jpg"/>
                 </div>
-                <div class="product_desc_box">
-                    <div class="prod_name">
-                        Carlton London Women Rose Gold
-                    </div>
-                    <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" ></div>
-                    <div class="remove-section">
-                        <div class="remove-btn">
-                            Remove
-                        </div>
-                    </div>
-                </div>
-                <div class="product_price">$15</div>
-
-            </div>
-            <div class="product clearfix" >
+                <div class="product clearfix" >
                     <div class="product_img">
                         <img src="../Resources/images/Products/shirt.jpg"/>
                     </div>
@@ -78,6 +61,24 @@
                         </div>
                     </div>
                     <div class="product_price">$15</div>
+
+                </div>
+                <div class="product clearfix" >
+                        <div class="product_img">
+                            <img src="../Resources/images/Products/shirt.jpg"/>
+                        </div>
+                        <div class="product_desc_box">
+                            <div class="prod_name">
+                                Carlton London Women Rose Gold
+                            </div>
+                            <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" ></div>
+                            <div class="remove-section">
+                                <div class="remove-btn">
+                                    Remove
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_price">$15</div>
 
                 </div>
             </div>
