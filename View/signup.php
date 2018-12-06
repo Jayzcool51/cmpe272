@@ -21,7 +21,7 @@
 
                     <div class="form-wrapper">
                         <div class="form-box">
-                            <h1 class="primary-heading">Sign up</h1>
+                            <h1 class="primary-heading">Sign Up</h1>
                             <div class="_gap">
                                 <form action="{{route('user.signup')}}" method="post">
 <!--                                    <h2 class="secondary-heading">Fast Food Restraunt</h2>-->
