@@ -103,7 +103,6 @@ li{
 .form-wrapper {
     width: 60%;
     margin: 10px auto;
-    border:1px solid blue;
 }
 
 .form-box {
@@ -112,7 +111,7 @@ li{
     background-color: #fff;
     padding:0;
     margin-bottom: 10px;
-    border:1px solid palevioletred;
+
 }
 
 .gap {
@@ -142,7 +141,7 @@ li{
 
 .form-basic {
     margin: 0 40px 6px;
-    border:1px solid yellow;
+
 
 }
 
@@ -238,4 +237,14 @@ input:focus {
 .middle-style {
     color:black;
     margin: 0px 3%;
+}
+.image_box{
+    width:60%;
+    margin:10px auto;
+    height:268px;
+    border:1px solid black;
+}
+#videoElement{
+
+    width:100%;
 }

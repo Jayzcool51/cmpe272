@@ -33,6 +33,9 @@
                                             <input type="text" name="phone" placeholder="Phone">
                                         </div>
                                     </div>
+                                    <div class="image_box">
+                                        <video autoplay="true" id="videoElement">
+                                    </div>
 
                                         <span class="btn-container">
                                             <a href="{{route('auth/facebook')}}" class="btn-form">Sign up</a>
