@@ -11,29 +11,23 @@
             <article class="wrapper main-wrapper">
                 <div class="form-wrapper">
                     <div class="form-box">
-                        <h1 class="primary-heading">Company Name</h1>
                         <div class="gap"></div>
                         <div class="_gap">
-                            <form action="{{route('user.signin')}}" method="post">
+                            <form action="" method="post">
                                 <h2 class="secondary-heading">Sign-In</h2>
-                                <span class="btn-container">
-                                                                <a href="{{route('auth/facebook')}}" class="btn-form">Log in with Facebook</a>
-                                                            </span>
-                                <div class="styling">
-                                    <div class="line-style"></div>
-                                    <div class="middle-style">OR</div>
-                                    <div class="line-style"></div>
-                                </div>
                                 <div class="camera_box">
+                                    <div class="video-btn">
+                                        <i class="fa fa-camera" aria-hidden="true"></i>
+                                    </div>
                                     <video autoplay="true" id="videoElement">
                                     </video>
                                 </div>
-                                <div>
-                                            <span class="btn-container">
-                                                <button type="submit" class="btn-form">Log in</button>
-                                            </span>
-                                </div>
-                                <input type="hidden" name="_token" value="{{Session::token()}}"/>
+                                <span class="btn-container">
+                                    <button type="submit" class="btn-form">Log in</button>
+                                </span>
+                                <span class="btn-container">
+                                    <a href="" class="btn-form">Log in with Facebook</a>
+                                </span>
                             </form>
                         </div>
                     </div>

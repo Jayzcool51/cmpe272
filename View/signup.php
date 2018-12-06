@@ -43,17 +43,27 @@
                                             <a href="" class="btn-form">Sign up with Facebook</a>
                                         </span>
                                     </div>
-                                    <input type="hidden" name="_token" value="{{Session::token()}}"/>
-                                    <p class="small-copy">By signing up, you agree to our <a href="#">Terms</a> &amp; <a href="#">Privacy Policy</a></p>
+                                    <p class="small-copy">Already have an account? <a href="#">Sign In</a></p>
                                 </form>
                             </div>
+                        <div class="otp-container">
+                            <div class="otp-box">
+                                <span id="icon">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </span>
+                                <input type="text" id="otp-box" placeholder="Enter you OTP">
+                                <button id="otp-button">Verify</button>
+                            </div>
+                        </div>
                         </div>
                     </div>
 
             </article>
         </div>
     </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>
+
         var video = document.querySelector("#videoElement");
 
         if (navigator.mediaDevices.getUserMedia) {
@@ -65,5 +75,11 @@
                     console.log("Something went wrong!");
                 });
         }
+
+
+        $("#icon").click(function () {
+            $(".otp-container").fadeOut(600);
+        });
+
     </script>
 </html>

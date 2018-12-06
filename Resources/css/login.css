@@ -30,6 +30,8 @@ body {
     width: 100%;
     padding:0;
     margin: 0;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
 }
 .hero-section{
     height: 100vh;
@@ -45,7 +47,7 @@ body {
 }
 
 .signin_button{
-    border:1px solid black;
+    border:1px solid #c0392b;
     width:30%;
 
     border-radius:5px;
@@ -53,8 +55,8 @@ body {
 }
 
 .form-wrapper {
-    max-width: 350px;
-    margin:50px auto;
+    max-width: 50%;
+    margin:0px auto;
     padding-top: 3%;
 }
 .form-box {
@@ -62,7 +64,7 @@ body {
     border-radius: 1px;
     background-color: #fff;
     padding: 10px 0;
-    margin-bottom: 10px;
+    margin: 12px 0;
 }
 
 .gap {
@@ -73,25 +75,15 @@ body {
     margin-bottom: 20px;
 }
 
-.primary-heading {
-    /*font-family:;*/
-    text-align: center;
-    font-size: 250%;
-    color: #000;
-    margin-top: 10px;
-    margin-bottom:0px;
-}
 
 .secondary-heading {
-    font-size: 120%;
-    margin: 10px 10%;
-    text-align: center;
-    font-weight: 300;
-    margin: 5px 0;
+    font-size: 150%;
+    font-weight: 500;
+    margin: 5px 8%;
     color:black;
+    display: inline-block;
+    margin-bottom: 45px;
 }
-
-
 
 input[type="text"],
 input[type="password"]{
@@ -116,11 +108,12 @@ input:focus {
 .btn-form {
     width: 100%;
     color: #fff;
-    background-color: #000;
+    background-color: #c0392b;
     padding: 0 12px;
-    border: 1px solid #000;
+    border: 1px solid #c0392b;
     cursor: pointer;
-    line-height: 30px;
+    height: 45px;
+    line-height: 45px;
     border-radius: 3px;
     font-weight: 700;
     outline: none;
@@ -129,6 +122,13 @@ input:focus {
     display:block;
     text-decoration: none !important;
     text-align: center;
+}
+
+.btn-container:last-of-type .btn-form{
+    color: #c0392b;
+    background-color: white;
+    border: 1px solid #c0392b;
+    margin-top: 18px;
 }
 
 .btn-form:hover {
@@ -148,11 +148,11 @@ input:focus {
     transition: 0.4s linear;
     border-bottom: 1px solid rgba(0,0,0,0);
     padding-bottom: 3px;
+    font-weight: 600;
+    border-bottom: 1px solid;
+    margin-left: 5px;
 }
 
-.small-copy a:hover {
-    border-bottom: 1px solid;
-}
 
 .line-style,
 .middle-style {
@@ -176,13 +176,46 @@ input:focus {
 }
 .camera_box{
     width:80%;
-    height:200px;
+    height:266px;
     margin:7% auto;
     margin-top:0;
+    position: relative;
+    border: 1px solid #cacaca;
 }
 #videoElement {
-    width: 100%;
-    height: 200px;
+    height: 266px;
     background-color: #666;
+    width: 100%;
+}
 
+.video-btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 65px;
+    width: 100%;
+    z-index: 1213;
+    color: white;
+    text-align: center;
+    line-height: 55px;
+}
+
+.video-btn i{
+    color: white;
+    font-size: 22px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 16px;
+    z-index: 3242;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.video-btn i:hover{
+    font-size: 24px;
+    padding: 18px;
+    margin-top: -3px;
+    background-color: rgba(0, 0, 0, 0.55);
+    transition: 0.1s;
 }
