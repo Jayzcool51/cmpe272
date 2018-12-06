@@ -53,27 +53,31 @@
             </div>
         </div>
     </div>
-    <footer>
-        <div class="signup">
-            SIGN UP FOR NEWSLETTERS
+    <div class="footer_class">
+    <footer class="clearfix">
+        <div id="signup_section">
+            <div class="signup">
+                SIGN UP FOR NEWSLETTERS
+            </div>
         </div>
         <div class="right_footer">
             <div class="icons_footer">
-                <a href="#"><i class="fab fa-facebook-square fa-lg"></i></a>
-                <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
-                <a href="#"><i class="fab fa-pinterest-square fa-lg"></i></a>
-                <a href="#"><i class="fab fa-twitter-square fa-lg"></i></a>
-                <a href="#"><i class="fab fa-youtube-square fa-lg"></i></a>
+<!--                <a href="#"><i class="fab fa-facebook-square fa-lg"></i></a>-->
+<!--                <a href="#"><i class="fab fa-instagram fa-lg"></i></a>-->
+<!--                <a href="#"><i class="fab fa-pinterest-square fa-lg"></i></a>-->
+<!--                <a href="#"><i class="fab fa-twitter-square fa-lg"></i></a>-->
+<!--                <a href="#"><i class="fab fa-youtube-square fa-lg"></i></a>-->
             </div>
             <div class="footer_links">
-                <a class="footer_link" href="#">Contact</a>
-                <a class="footer_link" href="#">About Us </a>
-                <a class="footer_link" href="#">Return Policy</a>
-                <a class="footer_link" href="#">Cancellations and Returns</a>
-                <a class="footer_link" href="#">FAQ</a>
+<!--                <a class="footer_link" href="#">Contact</a>-->
+<!--                <a class="footer_link" href="#">About Us </a>-->
+<!--                <a class="footer_link" href="#">Return Policy</a>-->
+<!--                <a class="footer_link" href="#">Cancellations and Returns</a>-->
+<!--                <a class="footer_link" href="#">FAQ</a>-->
             </div>
         </div>
     </footer>
+    </div>
 </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
