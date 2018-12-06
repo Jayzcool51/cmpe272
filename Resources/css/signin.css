@@ -32,8 +32,6 @@ body {
     margin: 0;
     /*background: linear-gradient(rgba(231,76,60,0.2),rgba(231,76,60,0.2)),url("../images/signup_side5.jpg");*/
     background-color: rgb(238, 238, 238);
-    background-size: cover;
-    background-position: center;
 }
 .hero-section{
     height: 100vh;

@@ -43,7 +43,6 @@
                                             <a href="" class="btn-form">Sign up with Facebook</a>
                                         </span>
                                     </div>
-                                    <input type="hidden" name="_token" value="{{Session::token()}}"/>
                                     <p class="small-copy">Already have an account? <a href="#">Sign In</a></p>
                                 </form>
                             </div>
