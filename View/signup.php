@@ -9,7 +9,7 @@
     <body>
         <div class="container clearfix">
             <div class="slideshow">
-                <div class="company_name">Company Name</div>
+<!--                <div class="company_name">Company Name</div>-->
             </div>
             <article class="wrapper">
                 <div class="signin_nav clearfix">
