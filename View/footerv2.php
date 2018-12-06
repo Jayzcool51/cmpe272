@@ -6,7 +6,7 @@
     </head>
     <body>
         <footer>
-            <div class="wrapper">
+            <div class="wrapper clearfix">
                 <div class="icon-row">
                     <div class="icon_box">
                         <a href="#"><i class="fab fa-facebook-square fa-lg"></i></a>

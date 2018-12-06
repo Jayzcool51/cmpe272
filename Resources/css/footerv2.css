@@ -2,14 +2,13 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html,
 body {
     font-size: 22px;
     font-family: sans-serif;
-    color:grey;
+
 }
 
 .clearfix:after {
@@ -30,12 +29,14 @@ i{
     margin-right:17px;
 }
 footer{
+    color:grey;
     padding:15px;
     padding-top:50px;
-    border:1px solid #14141;
+    padding-bottom: 20px;
+    border:1px solid #141414;
     background-color:black;
     width:100%;
-
+    height: auto;
 }
 .wrapper{
     width:65%;
@@ -56,12 +57,11 @@ footer{
     margin-right:65px;
 }
 .box_last{
-    width:20%;
+    width:15%;
     float:left;
     height:100%;
 }
 .row{
-
     margin:10px 0;
     font:14px Helvetica,sans-serif;
 }

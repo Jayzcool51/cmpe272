@@ -727,32 +727,32 @@
     </div>
 </div>
 <footer>
-    <div class="wrapper">
-        <div class="icon-row">
-            <div class="icon_box">
+    <div class="wrapper clearfix">
+        <div class="icon-row clearfix">
+            <div class="icon_box clearfix">
                 <a href="#"><i class="fab fa-facebook-square fa-lg"></i></a>
                 <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
                 <a href="#"><i class="fab fa-twitter-square fa-lg"></i></a>
                 <a href="#"><i class="fab fa-youtube-square fa-lg"></i></a>
             </div>
         </div>
-        <div class="box">
+        <div class="box clearfix">
             <div class="row"><a href=# class="anchor_row">About us</a></div>
             <div class="row"><a href=# class="anchor_row">Media Center</a></div>
             <div class="row"><a href=# class="anchor_row">Privacy</a></div>
             <div class="row"><a href=# class="anchor_row">Contact Us</a></div>
         </div>
-        <div class="box">
+        <div class="box clearfix">
             <div class="row"><a href=# class="anchor_row">Audio Description</a></div>
             <div class="row"><a href=# class="anchor_row">Investor Relations</a></div>
             <div class="row"><a href=# class="anchor_row">Legal Notices</a></div>
         </div>
-        <div class="box">
+        <div class="box clearfix">
             <div class="row"><a href=# class="anchor_row">Help Center</a></div>
             <div class="row"><a href=# class="anchor_row">Jobs</a></div>
             <div class="row"><a href=# class="anchor_row">Cookie Preferences</a></div>
         </div>
-        <div class="box_last">
+        <div class="box_last clearfix">
             <div class="row"><a href=# class="anchor_row">Gift Cards</a></div>
             <div class="row"><a href=# class="anchor_row">Terms of Use</a></div>
             <div class="row"><a href=# class="anchor_row">Corporate Information</a></div>
