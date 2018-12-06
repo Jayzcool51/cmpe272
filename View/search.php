@@ -35,51 +35,66 @@
                                 <div class="product_img">
                                     <img src="../Resources/images/Products/shirt.jpg"/>
                                 </div>
-                                <div class="product_desc_box">
+                                <div class="product_desc_box clearfix">
                                     <div class="prod_name">
                                         Carlton London Women Rose Gold
                                     </div>
+                                    <div class="rating">rating</div>
                                     <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" >
                                     </div>
 
                                 </div>
-                                <div class="product_price">$15</div>
+                                <div class="product_desc_right clearfix">
+                                    <div class="our_price">Our Price
+                                        <div class="product_price">$15</div>
+                                    </div>
+                                    <div class="cart">Add to Cart</div>
+                                    <div class="cart">Add to Wishlist</div>
+                                </div>
 
                             </div>
                             <div class="product clearfix" >
                                 <div class="product_img">
                                     <img src="../Resources/images/Products/shirt.jpg"/>
                                 </div>
-                                <div class="product_desc_box">
+                                <div class="product_desc_box clearfix">
                                     <div class="prod_name">
                                         Carlton London Women Rose Gold
                                     </div>
-                                    <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" ></div>
-                                    <div class="remove-section">
-                                        <div class="remove-btn">
-                                            Remove
-                                        </div>
+                                    <div class="rating">rating</div>
+                                    <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" >
                                     </div>
+
                                 </div>
-                                <div class="product_price">$15</div>
+                                <div class="product_desc_right clearfix">
+                                    <div class="our_price">Our Price
+                                        <div class="product_price">$15</div>
+                                    </div>
+                                    <div class="cart">Add to Cart</div>
+                                    <div class="cart">Add to Wishlist</div>
+                                </div>
 
                             </div>
                             <div class="product clearfix" >
                                 <div class="product_img">
                                     <img src="../Resources/images/Products/shirt.jpg"/>
                                 </div>
-                                <div class="product_desc_box">
+                                <div class="product_desc_box clearfix">
                                     <div class="prod_name">
                                         Carlton London Women Rose Gold
                                     </div>
-                                    <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" ></div>
-                                    <div class="remove-section">
-                                        <div class="remove-btn">
-                                            Remove
-                                        </div>
+                                    <div class="rating">rating</div>
+                                    <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" >
                                     </div>
+
                                 </div>
-                                <div class="product_price">$15</div>
+                                <div class="product_desc_right clearfix">
+                                    <div class="our_price">Our Price
+                                        <div class="product_price">$15</div>
+                                    </div>
+                                    <div class="cart">Add to Cart</div>
+                                    <div class="cart">Add to Wishlist</div>
+                                </div>
 
                             </div>
                         </div>
