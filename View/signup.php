@@ -11,14 +11,13 @@
             <div class="slideshow">
 <!--                <div class="company_name">Company Name</div>-->
             </div>
+            <div class="signin_nav clearfix">
+                <ul>
+                    <li id="signin_text">Already have an account?</li>
+                    <li class="signin_button">Sign In</li>
+                </ul>
+            </div>
             <article class="wrapper">
-                <div class="signin_nav clearfix">
-                    <ul>
-                        <li id="signin_text">Already have an account?</li>
-                        <li class="signin_button">Sign In</li>
-                    </ul>
-                </div>
-
                     <div class="form-wrapper">
                         <div class="form-box">
                             <h1 class="primary-heading">Sign Up</h1>
@@ -34,14 +33,14 @@
                                         </div>
                                     </div>
                                     <div class="image_box">
+                                        <div class="video-btn">
+                                            <i class="fa fa-camera" aria-hidden="true"></i>
+                                        </div>
                                         <video autoplay="true" id="videoElement">
                                     </div>
-
                                         <span class="btn-container">
-                                            <a href="{{route('auth/facebook')}}" class="btn-form">Sign up</a>
-                                        </span>
-                                        <span class="btn-container">
-                                            <a href="{{route('auth/facebook')}}" class="btn-form">Sign up with Facebook</a>
+                                            <a href="" class="btn-form">Sign up</a>
+                                            <a href="" class="btn-form">Sign up with Facebook</a>
                                         </span>
                                     </div>
                                     <input type="hidden" name="_token" value="{{Session::token()}}"/>
