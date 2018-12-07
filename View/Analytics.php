@@ -20,7 +20,7 @@
             <div id="contain">
                 <div class="top-section">
                     <h4>Your Monthly Expenses</h4>
-                    <canvas id="line-chart" height="10px"></canvas>
+                    <canvas id="line-chart" height="240px"></canvas>
                 </div>
                 <div class="bottom-section clearfix">
                     <div class="left-section">
