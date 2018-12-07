@@ -25,7 +25,9 @@ body {
 * a {
     text-decoration: none;
 }
-
+.rating_star{
+    color:gold;
+}
 .container{
     width: 100%;
     padding:0;
@@ -85,9 +87,29 @@ body {
     margin:120px auto;
     margin-bottom: 50px;
     padding-top: 10px;
-
 }
-
+.left_sort_box{
+    float:left;
+    width:20%;
+    margin:70px 0;
+}
+.left_box{
+    padding:10px;
+    margin:10px auto;
+    width:100%;
+}
+.left_box_heading{
+    width:100%;
+    font-size:22px;
+    color:black;
+}
+.left_box_row{
+    width:100%;
+    margin:10px 0;
+    color:grey;
+    font-size:16px;
+    cursor: pointer;
+}
 .hero-section-search{
     margin: 0 auto;
     height: 45px;
@@ -132,17 +154,19 @@ body {
 }
 .all_products{
     /*float:left;*/
-    width:90%;
-    margin:70px auto;
+    width:80%;
+    float:left;
+    margin:70px 0;
+
     /*padding: 30px 0px;*/
 }
 
 .product{
     border-bottom:1px solid grey;
-    padding: 20px;
+    padding: 10px;
     padding-right:0px;
     margin:0 auto;
-    width:85%;
+    width:95%;
 }
 
 .product_desc_right{
@@ -156,7 +180,7 @@ body {
 .product_img{
     float:left;
     height:150px;
-    width:18%;
+    width:16%;
     margin-right: 5px;
 }
 
@@ -170,22 +194,34 @@ body {
     width:58%;
     padding:0.5%;
     padding-left: 2%;
+    padding-right:0;
+
 }
 
 .prod_name{
-    font-size:15px;
+    font-size:18px;
+    width:60%;
     color: #515151;
     font-weight: 600;
     float:left;
 }
-.rating{
-    margin-left:5%;
-    width:10%;
+.product_description{
     float:left;
-    border:1px solid red;
+    font-size:12px;
+    width:70%;
+    margin:5px 0;
+    color:grey;
+}
+.rating{
+    width:40%;
+    float:left;
+    font-size:15px;
+
 }
 .product_qty{
-    margin:10% 0;
+    margin-top:15%;
+
+    width:70%;
     color:black;
     display:block;
     font-size:15px;
@@ -205,6 +241,12 @@ body {
     margin-right:5px;
     font-size: 15px;
 }
+.product_website{
+    font-size:10px;
+    color:grey;
+    margin-top:6.5%;
+}
+
 .our_price{
     width:90%;
     font-size: 15px;
