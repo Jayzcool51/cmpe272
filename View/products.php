@@ -115,7 +115,45 @@
                 </div>
             </div>
         </div>
-        <div class="product-desc-section"></div>
+        <div class="product-desc-section clearfix">
+            <div class="left_desc clearfix">
+                <div class="product_name">Tanggy Panner Sandwich</div>
+                <div class="product_category">
+                    Ping Pong Cafe
+                </div>
+                <div class="product_price">
+                    <span class="new_price">$50</span><span class="old_price"><strike>$60</strike></span><span class="discount">(10% OFF)</span>
+                </div>
+                <div class="product_details">
+                    <div class="product_details_head">
+                        Product Details
+                    </div>
+                    <span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span><span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span>
+                </div>
+                <div class="product_buttons">
+                    <div class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Cart</div>
+                    <div class="wishlist"><i class="fa fa-bookmark" aria-hidden="true"></i> Add to Wishlist</div>
+                </div>
+<!--                <div class="add_review_box clearfix">-->
+<!--                    <div class="heading_review_box">Add a review </div>-->
+<!--                    <div class="review_add">-->
+<!--                        <textarea rows="5" cols="60" class="review_area" name="review" >Enter your review here...</textarea>-->
+<!--                        <div class="add_review_button">Add</div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+            </div>
+            <div class="right_desc">
+                <div class="review_heading">Reviews</div>
+                <div class="all_reviews">
+                    <div class="review">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
+                    <div class="review">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
+                    <div class="review">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
+                    <div class="review">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
+                    <div class="review">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="products-section clearfix">
         <div class="product-left">
