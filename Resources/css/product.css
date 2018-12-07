@@ -385,6 +385,24 @@ body {
     overflow:auto;
     color: black;
 }
+.add_review_box{
+    width:100%;
+    border:0;
+}
+.add_review_button{
+    width:20%;
+    float:left;
+    border:1px solid black;
+    border-radius:5px;
+    margin:20px 0px;
+
+}
+
+
+.add_review_textarea{
+    width:78%;
+    float:left;
+}
 .review_heading{
     color:#e74c3c;
     margin:15px auto;
@@ -398,6 +416,28 @@ body {
     font-size: 15px;
     line-height: 20px;
 
+}
+.review_user_name{
+    font-size:17px;
+    float:left;
+    font-weight: 900;
+}
+.review_rating{
+    float:left;
+    margin-left:20px;
+    height:23px;
+    padding:4px 0;
+    color:gold;
+}
+.review_timestamp{
+    width:100%;
+    float:left;
+    font-size:12px;
+
+}
+.review_text{
+    width:100%;
+    float:left;
 }
 .block{
     width: 100%;

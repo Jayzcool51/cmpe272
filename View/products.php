@@ -144,9 +144,19 @@
 
             </div>
             <div class="right_desc">
+                <div class="add_review_box clearfix">
+                    <div class=""><i class="fas fa-star fa-sm rating_star add_rating1" ></i><i class="fas fa-star fa-sm rating_star add_rating2" ></i><i class="fas fa-star fa-sm rating_star add_rating3" ></i><i class="fas fa-star fa-sm rating_star add_rating4" ></i><i class="fas fa-star fa-sm rating_star add_rating5" ></i></div>
+                    <div class="add_review_textarea"><textarea rows="5" cols="65" >Enter Review here....</textarea></div>
+                    <div class="add_review_button">Add Review</div>
+                </div>
                 <div class="review_heading">Reviews</div>
                 <div class="all_reviews">
-                    <div class="review">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
+                    <div class="review clearfix">
+                        <div class="review_user_name">Mayank Dhingra</div>
+                        <div class="review_rating"><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i></div>
+                        <div class="review_timestamp">Feb 5, 1997</div>
+                        <div class="review_text">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
+                    </div>
                     <div class="review">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
                     <div class="review">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
                     <div class="review">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
@@ -800,4 +810,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="../Resources/js/products.js"></script>
+<script>
+
+</script>
 </html>
