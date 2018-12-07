@@ -26,7 +26,7 @@
                 <div class="products_main clearfix">
                     <div class="hero-section-search">
                         <input class="search-box" placeholder="Search Product" type="text">
-                        <span class="search-button">
+                        <span class="search-button" onclick="start()">
                             <i class="fa fa-microphone" id="microphone" aria-hidden="true"></i>
                         </span>
                     </div>
@@ -51,8 +51,59 @@
 
                     </div>
                         <div class="all_products clearfix">
+                            <?php
+                            $servername = "13.56.13.38";
+                            $username = "admin";
+                            $password = "admin";
+                            $dbname = "gulliver";
+        
+                            // Create connection
+                            $conn = mysqli_connect($servername, $username, $password, $dbname);
+                            // Check connection
+                            if ($mysqli->connect_error) {
+                                die("Connection failed: " . $mysqli->connect_error);
+                            }
 
-                            <div class="product clearfix" >
+                            $search_text = "%".$_SERVER['QUERY_STRING']."%";
+                            $result = mysqli_query($conn,"SELECT product_name, `description`, website, price, image_url  FROM `Product` WHERE keywords LIKE '$search_text'");
+                            if ($result->num_rows > 0) {
+                                while($row = $result->fetch_assoc()){
+                                    $img = $row["image_url"];
+                                    $name = $row["product_name"];
+                                    $desc = $row["description"];
+                                    $website = $row["website"];
+                            echo "
+                                <div class=\"product clearfix\" >
+                                    <div class=\"product_img\">
+                                        <img src=\"$img\">
+                                    </div>
+                                    <div class=\"product_desc_box clearfix\">
+                                        <div class=\"prod_name\">
+                                            $name
+                                        </div>
+                                        <div class=\"rating\"><i class=\"fas fa-star fa-sm rating_star\" ></i><i class=\"fas fa-star fa-sm rating_star\" ></i><i class=\"fas fa-star fa-sm rating_star\" ></i><i class=\"fas fa-star fa-sm rating_star\" ></i><i class=\"fas fa-star fa-sm rating_star\" ></i></div>
+                                        <div class=\"product_description\">$desc</div>
+                                        <div class=\"product_qty\">Qty <input type=\"number\" name=\"qty\" value=\"1\" width=\"12\" ><div></div>
+                                        </div>
+                                        <div class=\"product_Website\">
+                                            $website
+                                        </div>
+                                    </div>
+                                    <div class=\"product_desc_right clearfix\">
+                                        <div class=\"our_price\">Our Price
+                                            <div class=\"product_price\">$15</div>
+                                        </div>
+                                        <div class=\"cart\"><i class=\"fa fa-shopping-bag\" aria-hidden=\"true\"></i>Add to Cart</div>
+                                        <div class=\"cart\"><i class=\"fa fa-bookmark\" aria-hidden=\"true\"></i>Add to Wishlist</div>
+                                    </div>
+                                    
+                                </div>";
+                                }
+                            } else {
+                                echo "0 results";
+                            }
+                            ?>
+                            <!-- <div class="product clearfix" >
                                 <div class="product_img">
                                     <img src="../Resources/images/Products/shirt.jpg"/>
                                 </div>
@@ -76,8 +127,8 @@
                                     <div class="cart"><i class="fa fa-bookmark" aria-hidden="true"></i>Add to Wishlist</div>
                                 </div>
 
-                            </div>
-                            <div class="product clearfix" >
+                            </div> -->
+                            <!-- <div class="product clearfix" >
                                 <div class="product_img">
                                     <img src="../Resources/images/Products/shirt.jpg"/>
                                 </div>
@@ -101,32 +152,7 @@
                                     <div class="cart"><i class="fa fa-bookmark" aria-hidden="true"></i>Add to Wishlist</div>
                                 </div>
 
-                            </div>
-                            <div class="product clearfix" >
-                                <div class="product_img">
-                                    <img src="../Resources/images/Products/shirt.jpg"/>
-                                </div>
-                                <div class="product_desc_box clearfix">
-                                    <div class="prod_name">
-                                        Carlton London Women Rose Gold
-                                    </div>
-                                    <div class="rating"><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i></div>
-                                    <div class="product_description">This is the description of the product.This is the description of the product.</div>
-                                    <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" ><div></div>
-                                    </div>
-                                    <div class="product_Website">
-                                        Website: www.mayankdhingra.com
-                                    </div>
-                                </div>
-                                <div class="product_desc_right clearfix">
-                                    <div class="our_price">Our Price
-                                        <div class="product_price">$15</div>
-                                    </div>
-                                    <div class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Add to Cart</div>
-                                    <div class="cart"><i class="fa fa-bookmark" aria-hidden="true"></i>Add to Wishlist</div>
-                                </div>
-
-                            </div>
+                            </div> -->
                         </div>
 
                 </div>
@@ -168,4 +194,46 @@
             </footer>
     </body>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+    var grammar = '#JSGF V1.0; grammar products; public <products> =  t-shirts | tees | shirts | talking | talking tees;'
+    var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
+    var speechRecognitionList = new webkitSpeechGrammarList();
+    speechRecognitionList.addFromString(grammar, 1);
+    recognition.grammars = speechRecognitionList;
+    recognition.lang = 'en-US';
+    recognition.interimResults = false;
+    recognition.continuous = true;
+    recognition.maxAlternatives = 1;
+
+    var search_box = document.querySelector(".search-box");
+
+    search_box.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            var searchtext = search_box.value;
+            window.location.href = "search.php?" + searchtext;
+        }
+    });
+
+    function start() {
+        recognition.start();
+    }
+
+    recognition.onresult = function(event) {
+        var wave = document.querySelector(".hero-section-audio");    
+        wave.style.visibility = "collapse"; 
+        var cmd = event.results[0][0].transcript;
+        var tooltiptext = document.querySelector("#stt");
+        tooltiptext.innerHTML = cmd;
+        setTimeout(function (){
+            window.location.href = "search.php?" + cmd;
+        }, 2000);
+    }
+
+    recognition.onnomatch = function(){
+        var cmd = "Please try again!"
+        var tooltiptext = document.querySelector("#stt");
+        tooltiptext.innerHTML = cmd;
+    }
+</script>
 </html>

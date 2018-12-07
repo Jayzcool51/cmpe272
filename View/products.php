@@ -33,86 +33,39 @@
             <div class="most-searched-container">
                 <div class="block"></div>
                 <div class="most-searched-box clearfix" data-pos=0 >
-                    <div class="most-search-product-box" data-hover=false>
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
+                    <?php
+                        $servername = "13.56.13.38";
+                        $username = "admin";
+                        $password = "admin";
+                        $dbname = "gulliver";
+    
+                        // Create connection
+                        $conn = mysqli_connect($servername, $username, $password, $dbname);
+                        // Check connection
+                        if ($mysqli->connect_error) {
+                            die("Connection failed: " . $mysqli->connect_error);
+                        }
+                        $result = mysqli_query($conn,"SELECT *  FROM `Product` LIMIT 8");
+                        if ($result->num_rows > 0) {
+                            while($row = $result->fetch_assoc()){
+                                $img = $row["image_url"];
+                                echo "
+                                <div class=\"most-search-product-box clearfix\" data-id=\"$id\">
+                                    <div class=\"product-layer\">
+                                    </div>
+                                    <div class=\"most-seacrh-product-image\">
+                                        <div class=\"product-info\">
 
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
+                                        </div>
+                                        <img src=\"$img\">
+                                    </div>
+                                </div>
+                                ";
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+                    ?>
                 </div>
             </div>
         </div>
@@ -230,86 +183,39 @@
             <div class="most-searched-container">
                 <div class="block"></div>
                 <div class="most-searched-box clearfix" data-pos=0 >
-                    <div class="most-search-product-box" data-hover=false>
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
+                    <?php
+                        $servername = "13.56.13.38";
+                        $username = "admin";
+                        $password = "admin";
+                        $dbname = "gulliver";
+    
+                        // Create connection
+                        $conn = mysqli_connect($servername, $username, $password, $dbname);
+                        // Check connection
+                        if ($mysqli->connect_error) {
+                            die("Connection failed: " . $mysqli->connect_error);
+                        }
+                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%dhruwill%' LIMIT 8");
+                        if ($result->num_rows > 0) {
+                            while($row = $result->fetch_assoc()){
+                                $img = $row["image_url"];
+                                echo "
+                                <div class=\"most-search-product-box clearfix\">
+                                    <div class=\"product-layer\">
+                                    </div>
+                                    <div class=\"most-seacrh-product-image\">
+                                        <div class=\"product-info\">
 
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
+                                        </div>
+                                        <img src=\"$img\">
+                                    </div>
+                                </div>
+                                ";
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+                    ?>
                 </div>
             </div>
         </div>
@@ -327,86 +233,39 @@
             <div class="most-searched-container">
                 <div class="block"></div>
                 <div class="most-searched-box clearfix" data-pos=0 >
-                    <div class="most-search-product-box" data-hover=false>
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
+                    <?php
+                        $servername = "13.56.13.38";
+                        $username = "admin";
+                        $password = "admin";
+                        $dbname = "gulliver";
+    
+                        // Create connection
+                        $conn = mysqli_connect($servername, $username, $password, $dbname);
+                        // Check connection
+                        if ($mysqli->connect_error) {
+                            die("Connection failed: " . $mysqli->connect_error);
+                        }
+                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%mohit%' LIMIT 8");
+                        if ($result->num_rows > 0) {
+                            while($row = $result->fetch_assoc()){
+                                $img = $row["image_url"];
+                                echo "
+                                <div class=\"most-search-product-box clearfix\">
+                                    <div class=\"product-layer\">
+                                    </div>
+                                    <div class=\"most-seacrh-product-image\">
+                                        <div class=\"product-info\">
 
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
+                                        </div>
+                                        <img src=\"$img\">
+                                    </div>
+                                </div>
+                                ";
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+                    ?>
                 </div>
             </div>
         </div>
@@ -424,86 +283,39 @@
             <div class="most-searched-container">
                 <div class="block"></div>
                 <div class="most-searched-box clearfix" data-pos=0 >
-                    <div class="most-search-product-box" data-hover=false>
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
+                    <?php
+                        $servername = "13.56.13.38";
+                        $username = "admin";
+                        $password = "admin";
+                        $dbname = "gulliver";
+    
+                        // Create connection
+                        $conn = mysqli_connect($servername, $username, $password, $dbname);
+                        // Check connection
+                        if ($mysqli->connect_error) {
+                            die("Connection failed: " . $mysqli->connect_error);
+                        }
+                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%prabha%' LIMIT 8");
+                        if ($result->num_rows > 0) {
+                            while($row = $result->fetch_assoc()){
+                                $img = $row["image_url"];
+                                echo "
+                                <div class=\"most-search-product-box clearfix\">
+                                    <div class=\"product-layer\">
+                                    </div>
+                                    <div class=\"most-seacrh-product-image\">
+                                        <div class=\"product-info\">
 
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
+                                        </div>
+                                        <img src=\"$img\">
+                                    </div>
+                                </div>
+                                ";
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+                    ?>
                 </div>
             </div>
         </div>
@@ -534,86 +346,39 @@
             <div class="most-searched-container">
                 <div class="block"></div>
                 <div class="most-searched-box clearfix" data-pos=0 >
-                    <div class="most-search-product-box" data-hover=false>
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
+                    <?php
+                        $servername = "13.56.13.38";
+                        $username = "admin";
+                        $password = "admin";
+                        $dbname = "gulliver";
+    
+                        // Create connection
+                        $conn = mysqli_connect($servername, $username, $password, $dbname);
+                        // Check connection
+                        if ($mysqli->connect_error) {
+                            die("Connection failed: " . $mysqli->connect_error);
+                        }
+                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%mayank%' LIMIT 8");
+                        if ($result->num_rows > 0) {
+                            while($row = $result->fetch_assoc()){
+                                $img = $row["image_url"];
+                                echo "
+                                <div class=\"most-search-product-box clearfix\">
+                                    <div class=\"product-layer\">
+                                    </div>
+                                    <div class=\"most-seacrh-product-image\">
+                                        <div class=\"product-info\">
 
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
+                                        </div>
+                                        <img src=\"$img\">
+                                    </div>
+                                </div>
+                                ";
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+                    ?>
                 </div>
             </div>
         </div>
@@ -631,86 +396,39 @@
             <div class="most-searched-container">
                 <div class="block"></div>
                 <div class="most-searched-box clearfix" data-pos=0 >
-                    <div class="most-search-product-box" data-hover=false>
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
+                    <?php
+                        $servername = "13.56.13.38";
+                        $username = "admin";
+                        $password = "admin";
+                        $dbname = "gulliver";
+    
+                        // Create connection
+                        $conn = mysqli_connect($servername, $username, $password, $dbname);
+                        // Check connection
+                        if ($mysqli->connect_error) {
+                            die("Connection failed: " . $mysqli->connect_error);
+                        }
+                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%jay%' LIMIT 8");
+                        if ($result->num_rows > 0) {
+                            while($row = $result->fetch_assoc()){
+                                $img = $row["image_url"];
+                                echo "
+                                <div class=\"most-search-product-box clearfix\">
+                                    <div class=\"product-layer\">
+                                    </div>
+                                    <div class=\"most-seacrh-product-image\">
+                                        <div class=\"product-info\">
 
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
+                                        </div>
+                                        <img src=\"$img\">
+                                    </div>
+                                </div>
+                                ";
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+                    ?>
                 </div>
             </div>
         </div>
@@ -728,86 +446,39 @@
             <div class="most-searched-container">
                 <div class="block"></div>
                 <div class="most-searched-box clearfix" data-pos=0 >
-                    <div class="most-search-product-box" data-hover=false>
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
+                    <?php
+                        $servername = "13.56.13.38";
+                        $username = "admin";
+                        $password = "admin";
+                        $dbname = "gulliver";
+    
+                        // Create connection
+                        $conn = mysqli_connect($servername, $username, $password, $dbname);
+                        // Check connection
+                        if ($mysqli->connect_error) {
+                            die("Connection failed: " . $mysqli->connect_error);
+                        }
+                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%mohinish%' LIMIT 8");
+                        if ($result->num_rows > 0) {
+                            while($row = $result->fetch_assoc()){
+                                $img = $row["image_url"];
+                                echo "
+                                <div class=\"most-search-product-box clearfix\">
+                                    <div class=\"product-layer\">
+                                    </div>
+                                    <div class=\"most-seacrh-product-image\">
+                                        <div class=\"product-info\">
 
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
-                    <div class="most-search-product-box clearfix">
-                        <div class="product-layer">
-                        </div>
-                        <div class="most-seacrh-product-image">
-                            <div class="product-info">
-
-                            </div>
-                            <img src="../Resources/images/cafe_bottom.jpg">
-                        </div>
-                    </div>
+                                        </div>
+                                        <img src=\"$img\">
+                                    </div>
+                                </div>
+                                ";
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+                    ?>
                 </div>
             </div>
         </div>

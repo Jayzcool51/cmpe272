@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c26ce42e-6d77-4ebe-9756-532b556e53d0" name="Default" comment="">
-<<<<<<< HEAD
-<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/Resources/css/about.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Resources/images/wall2.jpeg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/View/aboutus.php" afterDir="false" />
@@ -14,8 +12,6 @@
 =======
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
->>>>>>> Mohitbranch
-=======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/css/home.css" afterPath="$PROJECT_DIR$/Resources/css/home.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/css/product.css" afterPath="$PROJECT_DIR$/Resources/css/product.css" />

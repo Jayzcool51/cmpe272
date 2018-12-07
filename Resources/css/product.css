@@ -234,6 +234,7 @@ body {
     border-radius: 5px;
     padding: 25px;
     margin-bottom: 30px;
+    display: none;
 }
 
 .left_desc{
