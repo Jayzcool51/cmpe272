@@ -2,6 +2,7 @@
 <head>
     <title>Marketplace</title>
     <link rel="stylesheet" href="../Resources/css/product.css">
+    <link rel="stylesheet" href="../Resources/css/review.css">
     <link rel="stylesheet" href="../Resources/css/footerv2.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans|Raleway|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -144,23 +145,62 @@
 
             </div>
             <div class="right_desc">
+<!--                <div class="product_details_head">-->
+<!--                    Give Review-->
+<!--                </div>-->
                 <div class="add_review_box clearfix">
-                    <div class=""><i class="fas fa-star fa-sm rating_star add_rating1" ></i><i class="fas fa-star fa-sm rating_star add_rating2" ></i><i class="fas fa-star fa-sm rating_star add_rating3" ></i><i class="fas fa-star fa-sm rating_star add_rating4" ></i><i class="fas fa-star fa-sm rating_star add_rating5" ></i></div>
-                    <div class="add_review_textarea"><textarea rows="5" cols="65" >Enter Review here....</textarea></div>
-                    <div class="add_review_button">Add Review</div>
-                </div>
-                <div class="review_heading">Reviews</div>
-                <div class="all_reviews">
-                    <div class="review clearfix">
-                        <div class="review_user_name">Mayank Dhingra</div>
-                        <div class="review_rating"><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i></div>
-                        <div class="review_timestamp">Feb 5, 1997</div>
-                        <div class="review_text">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
+                    <span class="review_custom_head">Your Review</span>
+                    <div class="star_area">
+                        <div class="userrate-primary clearfix">
+                            <ul class="rate-star">
+                                <li>
+                                    <input type="radio" value="1" class="radio" id="val1" name='val'/>
+                                    <label for="val1"><i class="fa fa-star star" aria-hidden="true"></i></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="2" class="radio" id="val2" name='val'/>
+                                    <label for="val2"><i class="fa fa-star star" aria-hidden="true"></i></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="3" class="radio" id="val3" name='val'/>
+                                    <label for="val3"><i class="fa fa-star star" aria-hidden="true"></i></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="4" class="radio" id="val4" name='val'/>
+                                    <label for="val4"><i class="fa fa-star star" aria-hidden="true"></i></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="5" class="radio" id="val5" name='val'/>
+                                    <label for="val5"><i class="fa fa-star star" aria-hidden="true"></i></label>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="review">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
-                    <div class="review">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
-                    <div class="review">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
-                    <div class="review">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
+                    <div class="review_custom_text clearfix">
+                        <textarea class="add_review_textarea" placeholder="Enter your review"></textarea>
+                        <div class="add_review_button">
+                            <button class="add_review_btn">
+                                Add Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-reviews">
+                    <div class="review_custom_head">Top Reviews</div>
+                    <div class="all_reviews">
+                        <div class="review clearfix">
+                            <div class="review_user_name">Mayank Dhingra</div>
+                            <div class="review_rating"><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i></div>
+                            <div class="review_timestamp">Feb 5, 1997</div>
+                            <div class="review_text">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
+                        </div>
+                        <div class="review clearfix">
+                            <div class="review_user_name">Mayank Dhingra</div>
+                            <div class="review_rating"><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i></div>
+                            <div class="review_timestamp">Feb 5, 1997</div>
+                            <div class="review_text">Whats my name? whats my name? whats my name? my name is sheela.Sheela sheela ki jawani i am too sexy for you main tere hath na aani</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -810,6 +850,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="../Resources/js/products.js"></script>
+<script src="../Resources/js/review.js"></script>
 <script>
 
 </script>
