@@ -1,37 +1,53 @@
 footer{
-	border-top:2px solid grey;
+
 	padding:15px;
+	margin:0px 15px;
+
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border:1px solid white;
+}
+.clearfix:after {
+	clear: both;
+	display: table;
+	content: "";
 }
 a{
 	text-decoration: none;
-	color:black;
+	color:white;
 }
 
 .right_footer
 {
-    padding:10px;
-	FLOAT:RIGHT;
 
+	FLOAT:left;
+	margin-right:20px;
+	padding:1px 0;
+	width:66%;
+	border:1px solid white;
 }
 .icons_footer
 {
 	display:inline;
-	padding-right:90px;
+	width:50%;
+	border:1px solid white;
 }
 .footer_links
 {
-	padding-left:50px;
+	border:1px solid red;
+	width:50%;
 	display:inline;
 
 }
 i
 {
-	padding: 10px;
+	padding: 13px;
 }
 .footer_link
 {
 	padding:10px;
-	color:black;
+	color:white;
 }
 .footer_link:hover{
 	color: grey;
@@ -40,16 +56,23 @@ i
 	display:inline-block;
 	border-radius: 12px;
 	background:black;
-	color:white;
+	color:black;
+	background-color: white;
 	padding:10px;
-	margin-left:50px;
+	margin-left:10px;
 	margin-top:10px;
 	transition: 0.3s;
 }
+#signup_section{
+	width:32.5%;
+	float:left;
+	border:1px solid white;
+	padding-top:3px;
+}
 .signup:hover
 {
-	background:white;
-	color:black;
+	background:black;
+	color:white;
 	border:1px solid black;
 }
 

@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 22px;
+    font-family: sans-serif;
+    color:black;
+}
+
+.clearfix:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+* li {
+    list-style: none;
+}
+
+* a {
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    padding:0;
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+}
+.hero-section{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.wrapper {
+    max-width: 70%;
+    width: 100%;
+    font-size: 17px;
+    margin:0px auto;
+}
+
+.signin_button{
+    border:1px solid #c0392b;
+    width:30%;
+
+    border-radius:5px;
+
+}
+
+.form-wrapper {
+    max-width: 50%;
+    margin:0px auto;
+    padding-top: 3%;
+}
+.form-box {
+    border: 1px solid #efefef;
+    border-radius: 1px;
+    background-color: #fff;
+    padding: 10px 0;
+    margin: 12px 0;
+}
+
+.gap {
+    padding: 10px 0;
+}
+
+._gap {
+    margin-bottom: 20px;
+}
+
+
+.secondary-heading {
+    font-size: 150%;
+    font-weight: 500;
+    margin: 5px 8%;
+    color:black;
+    display: inline-block;
+    margin-bottom: 45px;
+}
+
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    padding: 7px 12px;
+    font-size: 80%;
+    outline: none;
+    transition: 0.4s linear;
+    border: 1px solid #999;
+}
+
+input:focus {
+    border: 1px solid #000;
+    box-shadow: inset 0 0 2px #000;
+}
+
+.btn-container {
+    margin: 20px 40px;
+    display: block;
+}
+
+.btn-form {
+    width: 100%;
+    color: #fff;
+    background-color: #c0392b;
+    padding: 0 12px;
+    border: 1px solid #c0392b;
+    cursor: pointer;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 3px;
+    font-weight: 700;
+    outline: none;
+    transition: 0.4s ease;
+    font-size: 14px;
+    display:block;
+    text-decoration: none !important;
+    text-align: center;
+}
+
+.btn-container:last-of-type .btn-form{
+    color: #c0392b;
+    background-color: white;
+    border: 1px solid #c0392b;
+    margin-top: 18px;
+}
+
+.btn-form:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.small-copy {
+    margin: 20px 50px;
+    text-align: center;
+    font-size: 90%;
+}
+
+.small-copy a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.4s linear;
+    border-bottom: 1px solid rgba(0,0,0,0);
+    padding-bottom: 3px;
+    font-weight: 600;
+    border-bottom: 1px solid;
+    margin-left: 5px;
+}
+
+
+.line-style,
+.middle-style {
+    display: inline-block;
+}
+
+.line-style {
+    height: 1.5px;
+    background-color: #999;
+    width: 40.1%;
+    vertical-align: middle;
+}
+
+.middle-style {
+    color:black;
+    margin: 0px 3%;
+}
+
+.styling {
+    margin: 10px 40px 20px;
+}
+.camera_box{
+    width:80%;
+    height:266px;
+    margin:7% auto;
+    margin-top:0;
+    position: relative;
+    border: 1px solid #cacaca;
+}
+#videoElement {
+    height: 266px;
+    background-color: #666;
+    width: 100%;
+}
+
+.video-btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 65px;
+    width: 100%;
+    z-index: 1213;
+    color: white;
+    text-align: center;
+    line-height: 55px;
+}
+
+.video-btn i{
+    color: white;
+    font-size: 22px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 16px;
+    z-index: 3242;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.video-btn i:hover{
+    font-size: 24px;
+    padding: 18px;
+    margin-top: -3px;
+    background-color: rgba(0, 0, 0, 0.55);
+    transition: 0.1s;
+}
