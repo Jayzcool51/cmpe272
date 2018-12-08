@@ -32,10 +32,10 @@
                         <h4>Money Spent Product Wise</h4>
                         <canvas id="pie-chart" height="200px"></canvas>
                     </div>
-                    <div class="bottom-section">
-                        <h4>Recent Visits in Marketplace</h4>
-                        <canvas id="bar-chart1" height="100px"></canvas>
-                    </div>
+                </div>
+                <div class="bottom-most-section">
+                    <h4>Recent Visits in Marketplace</h4>
+                    <canvas id="bar-chart1" height="100px"></canvas>
                 </div>
             </div>
         </div>
