@@ -122,6 +122,9 @@
         if(cmd=="show me drinks" || cmd=="I want to buy drinks"){
             cmd="drinks";
         }
+        if(cmd=="I want to buy tshirt"||cmd=="show me tshirts"){
+            cmd="tshirt"
+        }
         setTimeout(function (){
             window.location.href = "search.php?" + cmd;
         }, 2000);

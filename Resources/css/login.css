@@ -75,13 +75,12 @@ body {
     margin-bottom: 20px;
 }
 
-
 .secondary-heading {
     font-size: 150%;
-    font-weight: 500;
     margin: 5px 8%;
     color:black;
     display: inline-block;
+    font-weight: 700;
     margin-bottom: 45px;
 }
 
@@ -122,13 +121,15 @@ input:focus {
     display:block;
     text-decoration: none !important;
     text-align: center;
+    margin-top: -20px;
+
 }
 
 .btn-container:last-of-type .btn-form{
     color: #c0392b;
     background-color: white;
     border: 1px solid #c0392b;
-    margin-top: 18px;
+    margin-top: 12px;
 }
 
 .btn-form:hover {
@@ -218,4 +219,108 @@ input:focus {
     margin-top: -3px;
     background-color: rgba(0, 0, 0, 0.55);
     transition: 0.1s;
+}
+
+.primary-heading {
+    font-family: 'Raleway', sans-serif;
+    padding: 0 1%;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 190%;
+    color: #2d2d2d;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom:30px;
+    display: inline-block;
+}
+
+.secondary-heading {
+    font-size: 140%;
+    margin-top: -30px;
+    text-align: center;
+    font-weight: 300;
+    color:black;
+}
+
+.btn-container {
+    margin: 0 40px;
+    display: block;
+}
+
+#takepic{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 55%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border: 0px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#takepic1{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 55%;
+    position: absolute;
+    border: 0px;
+    text-align: center;
+    line-height: 90px;
+    padding-top: 17px;
+    font-size: 25px;
+    color: white;
+    z-index: 99000;
+}
+
+
+#takepic:hover{
+    color: white;
+}
+
+#player{
+    z-index: -1;
+    width: 100%;
+    margin-left: 25%;
+    padding-left: 25px;
+    margin-top: -30px;
+}
+
+#canvas{
+    border: 1px solid #f1f1f1;
+    position: absolute;
+    top: 48.3%;
+    left: 50.8%;
+    height: 265px!important;
+    width: 355px!important;
+    z-index: 100;
+    transform: translate(-60%,-60%);
+}
+
+.pop-layer{
+    position: absolute;
+    float: left;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#pop-up{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    z-index: 99999;
+    height: 60px;
+    color: white;
 }

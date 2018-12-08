@@ -1,0 +1,50 @@
+Model Data
+----------
+Data can be retrieved from the model object using the get() method of the
+model (e.g., `$result->get($key)`) or "accessing the result like an
+associative array (e.g. `$result['key']`). You can also execute JMESPath
+expressions on the result data using the search() method.
+
+{
+    "SearchedFaceBoundingBox": {
+        "Width": 0.27537953853607,
+        "Height": 0.54411423206329,
+        "Left": 0.48200234770775,
+        "Top": 0.28174635767937
+    },
+    "SearchedFaceConfidence": 99.999954223633,
+    "FaceMatches": [
+        {
+            "Similarity": 99.723411560059,
+            "Face": {
+                "FaceId": "730242b7-51f1-4213-9a60-ff66d18646df",
+                "BoundingBox": {
+                    "Width": 0.20513799786568,
+                    "Height": 0.37444201111794,
+                    "Left": 0.44536599516869,
+                    "Top": 0.29660999774933
+                },
+                "ImageId": "8f6813ae-4137-3d99-9edb-656f4b862250",
+                "ExternalImageId": "myphotoid",
+                "Confidence": 99.999702453613
+            }
+        }
+    ],
+    "FaceModelVersion": "4.0",
+    "@metadata": {
+        "statusCode": 200,
+        "effectiveUri": "https:\/\/rekognition.us-east-2.amazonaws.com",
+        "headers": {
+            "content-type": "application\/x-amz-json-1.1",
+            "date": "Sat, 08 Dec 2018 19:50:56 GMT",
+            "x-amzn-requestid": "93e79ee3-fb22-11e8-94c8-7fcd0c30a877",
+            "content-length": "542",
+            "connection": "keep-alive"
+        },
+        "transferStats": {
+            "http": [
+                []
+            ]
+        }
+    }
+}
