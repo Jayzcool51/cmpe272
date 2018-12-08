@@ -5,10 +5,13 @@
 	$redirectURL = "http://localhost/fblogin/fb-callback.php";
 	$permissions = ['email'];
 	$loginURL = $helper->getLoginUrl($redirectURL, $permissions);
-	
-	
-	
-	if (isset($_POST['signup'])){
+
+    $servername = "13.56.13.38";
+    $username = "admin";
+    $password = "admin";
+
+
+if (isset($_POST['signup'])){
 		$url = $_POST['url'];
 	
 	//	echo "<h1>".$url."</h1>";
@@ -26,18 +29,48 @@
 	//   $result = $client->createCollection([
 		//	'CollectionId' => 'UserPhotos',
 		//]);
-		
+		$name = $_POST['name'];
 		$result = $client->indexFaces([
 			'CollectionId' => 'UserPhotos',
 			'DetectionAttributes' => [
 			],
-			'ExternalImageId' => 'myphotoid',
+			'ExternalImageId' => $name,
 			'Image' => [
 				'Bytes' => file_get_contents($url),
 			],
 		]);
-	}
-	
+
+        $phone = $_POST['phone'];
+
+        $conn = mysqli_connect($servername, $username, $password);
+
+    // Check connection
+        if (!$conn) {
+            die("Connection failed: " . mysqli_connect_error());
+        }
+
+        $sql = "INSERT INTO gulliver.User (`name`, phone) VALUES ('$name',$phone)";
+
+        if (mysqli_query($conn, $sql)) {
+            echo "New record created successfully";
+            $auth=true;
+        } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        }
+
+        mysqli_close($conn);
+        if($auth){
+            header('Location:signinv3.php');
+        }
+
+
+        else{
+            header('Location:signupv3.php');
+        }
+
+
+}
+
 ?>
 
 <html>
@@ -53,18 +86,12 @@
             <div class="slideshow">
 <!--                <div class="company_name">Company Name</div>-->
             </div>
-            <div class="signin_nav clearfix">
-                <ul>
-                    <li id="signin_text">Already have an account?</li>
-                    <li class="signin_button">Sign In</li>
-                </ul>
-            </div>
             <article class="wrapper">
                     <div class="form-wrapper">
                         <div class="form-box">
                             <h1 class="primary-heading">Sign Up</h1>
                             <div class="_gap">
-                                <form action="signup.php" method="post" onsubmit="return validation()" name="form">
+                                <form action="signupv3.php" method="post" onsubmit="return validation()" name="form">
 <!--                                    <h2 class="secondary-heading">Fast Food Restraunt</h2>  action="signup.php" method="post" -->
                                     <div class="form_left">
                                         <div class="form-basic">
@@ -78,16 +105,13 @@
 										         </div>
                                     <p class="small-copy">Already have an account? <a href="#">Sign In</a></p>
 												<div class="image_box" >
-                                        <div class="video-btn" > 
-                                            <i class="fa fa-camera" aria-hidden="true"></i>
-                                        </div>
-                                        <video autoplay="true" id="player" style="width:500px; height:370px; margin-left:12px;">
+                                        <video autoplay="true" id="player" style="width:360px; height:370px; margin-left:-10px; margin-top: -50px">
                                     </div>
                                         <span class="btn-container">
 													<input type="text" id="url" name="url" hidden>
-													
-												    <input type="button" name="takepic" id="takepic" class="btn-form"  style="background-color:#ff9925;" value="Take picture"><br>
-													
+                                            <div id="takepic1"><i class="fa fa-camera" aria-hidden="true"></i></div>
+									<input type="button" name="takepic" id="takepic" class="btn-form"  style="background-color:#ff9925;" value=""><br>
+
 												<canvas id="canvas" style="width:500px; height:370px; margin-left:-25px;"></canvas>
 												
 												<button type="submit"  name="signup" id="signup" class="btn-form" style="background-color:#ff9925;"> Signup </button>
@@ -108,7 +132,12 @@
                         </div>
                         </div>
                     </div>
-					
+        <div class="signin_nav clearfix">
+            <ul>
+                <li id="signin_text">Already have an account?</li>
+                <li class="signin_button">Sign In</li>
+            </ul>
+        </div>
             </article>
         </div>
 		<p id="demo" name="demo"></p>
@@ -134,6 +163,7 @@
 		  const canvas = document.getElementById('canvas');
 		  const context = canvas.getContext('2d');
 		  const captureButton = document.getElementById('takepic');
+		  const captureButton1 = document.getElementById('takepic1');
 
 		  const constraints = {
 			video: true,
@@ -150,7 +180,19 @@
 			document.getElementById('url').value = dataURL;
 
 			});
-			
+
+            captureButton1.addEventListener('click', () => {
+                // Draw the video frame to the canvas.
+//			document.getElementById('demo').innerHTML = 'Try it!';
+
+                context.drawImage(player, 0, 0, canvas.width, canvas.height);
+
+            var dataURL = canvas.toDataURL('image/png');
+            //window.location.href = "http://localhost/cmpe272-master/view/signup.php?url" + dataURL ;
+            document.getElementById('url').value = dataURL;
+
+            });
+
 			navigator.mediaDevices.getUserMedia(constraints)
 				.then((stream) => {
 				  player.srcObject = stream;

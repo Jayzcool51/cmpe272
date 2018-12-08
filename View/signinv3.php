@@ -171,8 +171,9 @@ error_reporting(0);
 
 		});
 			
-			navigator.mediaDevices.getUserMedia(constraints)
-				.then((stream) => {
+			//noinspection JSAnnotator
+		navigator.mediaDevices.getUserMedia(constraints)
+				.then	((stream) => {
 				  player.srcObject = stream;
 			});
 				
