@@ -65,7 +65,7 @@
                                     <div class=\"prod_name\">
                                         $prod_name
                                     </div>
-                                    <div class=\"product_qty\">Qty <input type=\"number\" name=\"qty\" value=\"1\" width=\"12\" >
+                                    <div class=\"product_qty\">
                                     </div>
                                     <div class=\"remove-section\">
                                         <div class=\"remove-btn\">

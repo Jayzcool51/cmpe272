@@ -226,9 +226,8 @@ input:focus {
     padding: 0 1%;
     padding-bottom: 5px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     font-size: 190%;
-    margin-left: 8%;
     color: #2d2d2d;
     font-weight: 600;
     margin-top: 5px;
@@ -242,9 +241,6 @@ input:focus {
     text-align: center;
     font-weight: 300;
     color:black;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 40px;
-    text-decoration: underline;
 }
 
 .btn-container {
