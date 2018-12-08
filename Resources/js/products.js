@@ -59,7 +59,7 @@ $(".most-search-product-box").hover(function () {
 
 
 $(".most-search-product-box").click(function () {
-    var id = $(this).data("id");
+    id = $(this).data("id");
     $.ajax({
         method: 'GET',
         url: "get_product_details.php",
@@ -128,5 +128,40 @@ $(".most-search-product-box").click(function () {
     }
 });
 
+
+var val=null;
+var review=null;
+$(".radio+label").hover(function(event) {
+        event.preventDefault();
+        var val2=event.target.parentNode.previousElementSibling.value;
+        $(".radio+label").css("color","#dadedf");
+        for(var i=1;i<=val2;i++){
+            $("#val"+i+"+label").css("color","gold");
+        }
+    },
+    function(){
+        $(".radio+label").css("color","#dadedf");
+    });
+
+
+$(":radio").change(function() {
+    val = this.value;
+    $(".radio+label").unbind('mouseenter mouseleave');
+    $(":radio").unbind('change');
+});
+
+
+$(".add_review_btn").click(function() {
+    review = $(".add_review_textarea").val();
+    console.log(val,review,id);
+    $.ajax({
+        method: 'GET',
+        url: "add_review.php",
+        data: {product_id: parseInt(id), rating:parseInt(val), review:review}
+    }).done(function (msg) {
+        console.log(msg);
+        alert("asdas");
+    });
+});
 
 
