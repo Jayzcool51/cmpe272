@@ -193,19 +193,16 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$.ajax({
-		url: "../View/website_analytics.php",
+		url: "#",
 		method: "GET",
 		success: function(data) {
 			console.log(data);
 			var website = [];
-			var price = [];
-			for(var i in data) {
-				website.push(data[i].website);
-				price.push(data[i]["SUM(p.price)"]);
-			}
-
+			var mocount = localStorage.getItem("mohit");
+			var macount = localStorage.getItem("mayank");
+			var price = [macount,mocount,0,0,0,0];
 			var chartdata = {
-				labels: website,
+				labels: ["Ping Pong Cafe","Shree Shyam Services", "Talking Tees", "Mohinish Website", "Prabha Website", "Jainam Website"],
 				datasets : [
 					{
 						label: 'Visit',
@@ -241,7 +238,7 @@ $(document).ready(function(){
             gridLines: {
               color: "rgba(0, 0, 0, 0)"
             },
-            tickMarkLength: 10
+            tickMarkLength: 1
           }]
         }
       };

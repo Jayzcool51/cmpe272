@@ -83,7 +83,6 @@ $(".most-search-product-box").click(function () {
         });
         $(".all_reviews").html("");
         for(b=0;b<val[1].length;b++){
-            console.log("Sd");
             var rid = val[1][b]["name"];
             var rtime = val[1][b]["timestamp"];
             var rrate = parseInt(val[1][b]["rating"]);
@@ -167,28 +166,29 @@ $(":radio").change(function() {
 
 
 $(".add_review_btn").click(function() {
-    review = $(".add_review_textarea").val();
-    console.log(val,review,id);
+    username = "";
     $.ajax({
         method: 'GET',
         url: "add_review.php",
         data: {product_id: parseInt(id), rating:parseInt(val), review:review}
     }).done(function (msg) {
-        console.log(msg);
+        review = $(".add_review_textarea").val();
+        console.log("Review"+review);
+        username = msg;
+        star = "";
+        for(a=0;a<val;a++){
+            star+="<i class='fas fa-star fa-sm rating_star'></i>"
+        }
+        nnow  = new Date();
+        ntime = (nnow.getYear()+1900)+"-"+nnow.getMonth()+"-0"+nnow.getDate()+" "+nnow.getHours()+":"+nnow.getMinutes()+":"+nnow.getSeconds();
+        $(".add_review_box").slideUp(300);
+        $(".all_reviews").css({
+            "margin-top": "-5px"
+        });
+        setTimeout(function () {
+            $(".all_reviews").append("<div class='review clearfix'> <div class='review_user_name'>"+username+"</div> <div class='review_rating'>"+star+"</div><div class='review_timestamp'>"+ntime+"</div> <div class='review_text'>"+review+"</div></div>")
+        },400);
     });
-    star = "";
-    for(a=0;a<val;a++){
-        star+="<i class='fas fa-star fa-sm rating_star'></i>"
-    }
-    nnow  = new Date();
-    ntime = (nnow.getYear()+1900)+"-"+nnow.getMonth()+"-0"+nnow.getDate()+" "+nnow.getHours()+":"+nnow.getMinutes()+":"+nnow.getSeconds();
-    $(".add_review_box").slideUp(300);
-    $(".all_reviews").css({
-        "margin-top": "-5px"
-    });
-    setTimeout(function () {
-        $(".all_reviews").append("<div class='review clearfix'> <div class='review_user_name'>"+id+"</div> <div class='review_rating'>"+star+"</div><div class='review_timestamp'>"+ntime+"</div> <div class='review_text'>"+review+"</div></div>")
-    },400);
 });
 
 

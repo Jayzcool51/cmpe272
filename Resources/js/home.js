@@ -67,6 +67,7 @@ $("#hero-back2").hover(function () {
 $("#hero-back1").click(function () {
     if(localStorage.getItem("mayank")){
         var val = parseInt(localStorage.getItem("mayank"));
+        val+=1
     }
     else{
         val=1;
@@ -74,9 +75,10 @@ $("#hero-back1").click(function () {
     localStorage.setItem("mayank",val);
 });
 
-$("#hero-back1").click(function () {
+$("#hero-back2").click(function () {
     if(localStorage.getItem("mohit")){
         var val = parseInt(localStorage.getItem("mohit"));
+        val+=1
     }
     else{
         val=1;
