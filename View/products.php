@@ -43,7 +43,7 @@
                         $username = "admin";
                         $password = "admin";
                         $dbname = "gulliver";
-    
+
                         // Create connection
                         $conn = mysqli_connect($servername, $username, $password, $dbname);
                         // Check connection
@@ -166,20 +166,22 @@
     </div>
     <div class="products-section clearfix">
         <div class="product-left" id="back1">
-            Discover Your Style
+            <a href="http://www.dhruwill.com"><div class="name">Discover Your Style</div></a>
         </div>
         <div class="product-right">
             <div class="product-right-content" id="back2">
-                Connect With Possibilities
+              <a href="http://iamprabha.com"><div class="name">Connect With Possibilities</div></a>
+
             </div>
             <div class="product-right-content" id="back3">
-                Sheer Driving Pleasure
+              <a href="http://www.mohitgahlot.com"><div class="name">Sheer Driving Pleasure</div></a>
+
             </div>
         </div>
     </div>
     <div class="most-searched-section" id="searchsection2">
         <div class="most-searched-head">
-            Most Viewed Items
+            Most Viewed Items of Talking Tees
         </div>
         <div class="most-searched-box-container" data-click=false>
             <div class="left-icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
@@ -194,7 +196,7 @@
                         $username = "admin";
                         $password = "admin";
                         $dbname = "gulliver";
-    
+
                         // Create connection
                         $conn = mysqli_connect($servername, $username, $password, $dbname);
                         // Check connection
@@ -212,7 +214,7 @@
                                     </div>
                                     <div class=\"most-seacrh-product-image\">
                                         <div class=\"product-info\">
-                                              ".$row["product_name"]."  
+                                              ".$row["product_name"]."
                                         </div>
                                         <img src=\"$img\">
                                     </div>
@@ -318,7 +320,7 @@
     </div>
     <div class="most-searched-section" id="searchsection3">
         <div class="most-searched-head">
-            Most Viewed Items
+            Most Viewed Items of Shree Shyam Services
         </div>
         <div class="most-searched-box-container" data-click=false>
             <div class="left-icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
@@ -333,7 +335,7 @@
                         $username = "admin";
                         $password = "admin";
                         $dbname = "gulliver";
-    
+
                         // Create connection
                         $conn = mysqli_connect($servername, $username, $password, $dbname);
                         // Check connection
@@ -457,7 +459,7 @@
     </div>
     <div class="most-searched-section" id="searchsection4">
         <div class="most-searched-head">
-            Most Viewed Items
+            Most Viewed Items of Compass Computer Software and Hardware
         </div>
         <div class="most-searched-box-container" data-click=false>
             <div class="left-icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
@@ -472,7 +474,7 @@
                         $username = "admin";
                         $password = "admin";
                         $dbname = "gulliver";
-    
+
                         // Create connection
                         $conn = mysqli_connect($servername, $username, $password, $dbname);
                         // Check connection
@@ -596,20 +598,24 @@
     </div>
     <div class="products-section clearfix">
         <div class="product-left" id="back4">
-            For The Love Of Food
+
+            <a href="http://www.mayankdhingra.com"><div class="name">For The Love Of Food</div></a>
+
         </div>
         <div class="product-right">
             <div class="product-right-content" id="back5">
-                Capture Your Creativity
+
+                <a href="http://mohinishdaswani.space"><div class="name">Capture Your Creativity</div></a>
             </div>
             <div class="product-right-content" id="back6">
-                Redefine Technology
+
+                <a href="http://jayzcool.com"><div class="name">  Redefine Technology</div></a>
             </div>
         </div>
     </div>
     <div class="most-searched-section" id="searchsection5">
         <div class="most-searched-head">
-            Most Viewed Items
+            Most Viewed Items of Ping Pong Cafe
         </div>
         <div class="most-searched-box-container" data-click=false>
             <div class="left-icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
@@ -624,7 +630,7 @@
                         $username = "admin";
                         $password = "admin";
                         $dbname = "gulliver";
-    
+
                         // Create connection
                         $conn = mysqli_connect($servername, $username, $password, $dbname);
                         // Check connection
@@ -748,8 +754,8 @@
     </div>
     <div class="most-searched-section" id="searchsection6">
         <div class="most-searched-head">
-            Most Viewed Items
-        </div>
+            Most Viewed Items of Cool Cloudy
+        </div>ß
         <div class="most-searched-box-container" data-click=false>
             <div class="left-icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
             <div class="right-icon">
@@ -763,7 +769,7 @@
                         $username = "admin";
                         $password = "admin";
                         $dbname = "gulliver";
-    
+
                         // Create connection
                         $conn = mysqli_connect($servername, $username, $password, $dbname);
                         // Check connection
@@ -887,7 +893,7 @@
     </div>
     <div class="most-searched-section" id="searchsection7">
         <div class="most-searched-head">
-            Most Viewed Items
+            Most Viewed Items of Core Electronics
         </div>
         <div class="most-searched-box-container remove-margin" data-click=false>
             <div class="left-icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
@@ -902,7 +908,7 @@
                         $username = "admin";
                         $password = "admin";
                         $dbname = "gulliver";
-    
+
                         // Create connection
                         $conn = mysqli_connect($servername, $username, $password, $dbname);
                         // Check connection
