@@ -1,0 +1,168 @@
+
+.review-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.review-box {
+    width: 50%;
+    float: left;
+    padding: 1%;
+    margin-bottom: 100px;
+    max-height: 250px;
+}
+
+.review-name {
+    float: left;
+    width: 65%;
+    margin: 0;
+    padding: 0;
+}
+
+.review-heading {
+    padding: 0.5%;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.review-star {
+    float: right;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.review-star li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 1px;
+}
+
+
+
+.review-description {
+    padding: 0.5%;
+}
+
+.review-description p {
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    line-height: 30px;
+    overflow: scroll;
+    max-height: 200px;
+}
+
+.userrate-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    /*border: 1px solid #fff;*/
+    padding: 1%;
+    background: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0,0.6));
+}
+
+.userrate-primary,
+.userrate-secondary {
+    padding:0;
+}
+
+.rate-star li {
+    display: inline-block;
+    padding: 0;
+    font-size: 300%;
+    color: #fff;
+    list-style: none;
+}
+
+.rate-btn {
+    height: 180px;
+    position: relative;
+}
+
+.rate-textarea,
+.rate-btn {
+    float: left;
+    width: 50%;
+}
+
+.rate-textarea textarea {
+    width: 80%;
+    margin: 0 auto;
+    height: 180px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.90);
+    font-size: 150%;
+    color: #000 !important;
+    font-weight: 300;
+    transition: 0.5s linear;
+    border: 1px solid transparent;
+    resize: vertical;
+    max-height: 400px;
+}
+
+.rate-textarea textarea:focus {
+    outline: none;
+    border: 1px solid #fff;
+}
+
+.rate-btn button {
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.90);
+    width: 60%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    font-size: 130%;
+}
+
+.userrate-heading {
+    margin-bottom: 2%;
+}
+
+.userrate-heading h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 300%;
+    font-variant: small-caps;
+    padding: 10px 0;
+}
+
+.icon-rate {
+    color: rgba(255, 255, 255, 0.90);
+}
+
+.radio{
+    display: none;
+}
+
+.radio+label{
+    color: #dadedf;
+}
+
+.rated{
+    color: tomato;
+}
+
+.unrated{
+    color: white;
+}
+
+.star_area{
+    font-size: 7px;
+    display: inline-block;
+}
+
+.star{
+    margin: -2px;
+    padding-left: 5px;
+}
