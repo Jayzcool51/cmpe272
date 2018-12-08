@@ -18,7 +18,12 @@
         $sql = "INSERT INTO `Rating` (`product_id`, `user_id`, `rating`, `review`) 
         VALUES ('$product_id', '$user_id', '$rating', '$review')";
         $result = mysqli_query($conn, $sql);
-        echo $result;
+        if ($result == "1") {
+            echo "jainam";
+        }
+        else {
+            echo "failed";   
+        }
         mysqli_close($conn);
     }
 ?>
