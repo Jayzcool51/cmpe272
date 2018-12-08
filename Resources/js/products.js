@@ -58,6 +58,25 @@ $(".most-search-product-box").hover(function () {
 
 
 $(".most-search-product-box").click(function () {
+    var id = $(this).data("id");
+    $.ajax({
+        method: 'GET',
+        url: "get_product_details.php",
+        data: {id: id}
+    }).done(function (msg) {
+        val = JSON.parse(msg);
+        console.log(val);
+        $(".product_name").text(val[0]["product_name"]);
+        $(".product_category").text(val[0]["description"]);
+        $(".new_price").text(val[0]["description"]);
+        var keywords = val[0]["keywords"];
+        keywords.split(",").forEach(function(val,i) {
+            if(i<6){
+                $(".product_details").append("<span class='product_detail'>"+val+"</span>")
+            }
+        });
+    });
+
     var check = $(this).parent().parent().parent().data("click");
     if(!check){
         // $(".block").fadeIn();

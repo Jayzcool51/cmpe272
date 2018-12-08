@@ -50,6 +50,7 @@
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()){
                                 $img = $row["image_url"];
+                                $id = $row["product_id"];
                                 echo "
                                 <div class=\"most-search-product-box clearfix\" data-id=\"$id\">
                                     <div class=\"product-layer\">
@@ -83,7 +84,7 @@
                     <div class="product_details_head">
                         Product Details
                     </div>
-                    <span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span><span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span>
+                    <span class="product_detail">Sandwich</span>
                 </div>
                 <div class="product_buttons">
                     <div class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Cart</div>
@@ -200,8 +201,9 @@
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()){
                                 $img = $row["image_url"];
+                                $id = $row["product_id"];
                                 echo "
-                                <div class=\"most-search-product-box clearfix\">
+                                <div class=\"most-search-product-box clearfix\" data-id=\"$id\">
                                     <div class=\"product-layer\">
                                     </div>
                                     <div class=\"most-seacrh-product-image\">
@@ -337,8 +339,9 @@
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()){
                                 $img = $row["image_url"];
+                                $id = $row["product_id"];
                                 echo "
-                                <div class=\"most-search-product-box clearfix\">
+                                <div class=\"most-search-product-box clearfix\" data-id=\"$id\">
                                     <div class=\"product-layer\">
                                     </div>
                                     <div class=\"most-seacrh-product-image\">
@@ -474,8 +477,9 @@
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()){
                                 $img = $row["image_url"];
+                                $id = $row["product_id"];
                                 echo "
-                                <div class=\"most-search-product-box clearfix\">
+                                <div class=\"most-search-product-box clearfix\" data-id=\"$id\">
                                     <div class=\"product-layer\">
                                     </div>
                                     <div class=\"most-seacrh-product-image\">
@@ -624,8 +628,9 @@
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()){
                                 $img = $row["image_url"];
+                                $id = $row["product_id"];
                                 echo "
-                                <div class=\"most-search-product-box clearfix\">
+                                <div class=\"most-search-product-box clearfix\" data-id=\"$id\">
                                     <div class=\"product-layer\">
                                     </div>
                                     <div class=\"most-seacrh-product-image\">
@@ -761,8 +766,9 @@
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()){
                                 $img = $row["image_url"];
+                                $id = $row["product_id"];
                                 echo "
-                                <div class=\"most-search-product-box clearfix\">
+                                <div class=\"most-search-product-box clearfix\" data-id=\"$id\">
                                     <div class=\"product-layer\">
                                     </div>
                                     <div class=\"most-seacrh-product-image\">
@@ -898,8 +904,9 @@
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()){
                                 $img = $row["image_url"];
+                                $id = $row["product_id"];
                                 echo "
-                                <div class=\"most-search-product-box clearfix\">
+                                <div class=\"most-search-product-box clearfix\" data-id=\"$id\">
                                     <div class=\"product-layer\">
                                     </div>
                                     <div class=\"most-seacrh-product-image\">
