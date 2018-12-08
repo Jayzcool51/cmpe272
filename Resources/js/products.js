@@ -81,6 +81,16 @@ $(".most-search-product-box").click(function () {
                 $(".product_details").append("<span class='product_detail'>"+val+"</span>")
             }
         });
+        $(".all_reviews").html("");
+        var rid = val[1][0]["user_id"];
+        var rtime = val[1][0]["timestamp"];
+        var rrate = parseInt(val[1][0]["rating"]);
+        var rreview = val[1][0]["review"];
+        var rstar = "";
+        for(a=0;a<rrate;a++){
+            rstar+="<i class='fas fa-star fa-sm rating_star'></i>"
+        }
+        $(".all_reviews").append("<div class='review clearfix'> <div class='review_user_name'>"+rid+"</div> <div class='review_rating'>"+rstar+"</div><div class='review_timestamp'>"+rtime+"</div> <div class='review_text'>"+rreview+"</div></div>")
     });
 
     var check = $(this).parent().parent().parent().data("click");
@@ -126,6 +136,8 @@ $(".most-search-product-box").click(function () {
         // },200);
         $(".product-desc-section").slideUp(200);
     }
+
+
 });
 
 
@@ -160,8 +172,20 @@ $(".add_review_btn").click(function() {
         data: {product_id: parseInt(id), rating:parseInt(val), review:review}
     }).done(function (msg) {
         console.log(msg);
-        alert("asdas");
     });
+    star = "";
+    for(a=0;a<val;a++){
+        star+="<i class='fas fa-star fa-sm rating_star'></i>"
+    }
+    nnow  = new Date();
+    ntime = (nnow.getYear()+1900)+"-"+nnow.getMonth()+"-0"+nnow.getDate()+" "+nnow.getHours()+":"+nnow.getMinutes()+":"+nnow.getSeconds();
+    $(".add_review_box").slideUp(300);
+    $(".all_reviews").css({
+        "margin-top": "-5px"
+    });
+    setTimeout(function () {
+        $(".all_reviews").append("<div class='review clearfix'> <div class='review_user_name'>"+id+"</div> <div class='review_rating'>"+star+"</div><div class='review_timestamp'>"+ntime+"</div> <div class='review_text'>"+review+"</div></div>")
+    },400);
 });
 
 
