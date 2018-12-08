@@ -5,10 +5,6 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans|Raleway|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="../Resources/css/animate.css">
-<<<<<<< HEAD
-    <meta name="viewport" content="width=devise-width,initial-scale=1">
-=======
->>>>>>> b475f7020a4c3605820fb3f645b0327d5bbf78d7
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -122,13 +118,16 @@
         var cmd = event.results[0][0].transcript;
         var tooltiptext = document.querySelector("#stt");
         tooltiptext.innerHTML = cmd;
+        if(cmd=="show me drinks" || cmd=="I want to buy drinks"){
+            cmd="drinks";
+        }
         setTimeout(function (){
             window.location.href = "search.php?" + cmd;
         }, 2000);
-    }
+    };
 
     recognition.onnomatch = function(){
-        var cmd = "Please try again!"
+        var cmd = "Please try again!";
         var tooltiptext = document.querySelector("#stt");
         tooltiptext.innerHTML = cmd;
     }

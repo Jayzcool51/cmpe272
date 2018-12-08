@@ -63,3 +63,25 @@ $("#hero-back2").hover(function () {
         $(".web-sec-tertiary-head").text("www.mohitgahlot.com");
     });
 });
+
+$("#hero-back1").click(function () {
+    if(localStorage.getItem("mayank")){
+        var val = parseInt(localStorage.getItem("mayank"));
+        val+=1
+    }
+    else{
+        val=1;
+    }
+    localStorage.setItem("mayank",val);
+});
+
+$("#hero-back2").click(function () {
+    if(localStorage.getItem("mohit")){
+        var val = parseInt(localStorage.getItem("mohit"));
+        val+=1
+    }
+    else{
+        val=1;
+    }
+    localStorage.setItem("mohit",val);
+});

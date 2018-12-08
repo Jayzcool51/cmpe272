@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
     extract($_GET);
 
     $servername = "13.56.13.38";
