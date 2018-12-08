@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(0);
     extract($_GET);
     $q= $_SERVER['QUERY_STRING'];
     $search_id = explode("=", $q)[1];

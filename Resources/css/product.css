@@ -545,3 +545,8 @@ body {
 .top-reviews .review_custom_head{
     margin-bottom: 10px;
 }
+
+
+.remove-margin{
+    margin-bottom: 0;
+}
