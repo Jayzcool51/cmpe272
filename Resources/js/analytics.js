@@ -202,7 +202,7 @@ $(document).ready(function(){
 			var macount = localStorage.getItem("mayank");
 			var price = [macount,mocount,0,0,0,0];
 			var chartdata = {
-				labels: ["Ping Pong Cafe","Shree Shyam Services", "Talking Tees", "Mohinish Website", "Prabha Website", "Jainam Website"],
+				labels: ["Ping Pong Cafe","Shree Shyam Services", "Talking Tees", "Core Electronics", "Compass Computer Software & Hardware", "Cool Cloudy"],
 				datasets : [
 					{
 						label: 'Visit',
