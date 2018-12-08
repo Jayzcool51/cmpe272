@@ -1,6 +1,6 @@
 <?php
 // Required if your environment does not handle autoloading
-require_once('../../twilio-php-master/Twilio/autoload.php');
+require_once('../twilio-php-master/Twilio/autoload.php');
 //random number generator
 
 // Use the REST API Client to make requests to the Twilio REST API
