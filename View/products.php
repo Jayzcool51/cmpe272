@@ -87,7 +87,7 @@
                     <span class="product_detail">Sandwich</span>
                 </div>
                 <div class="product_buttons">
-                    <div class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Cart</div>
+                    <div id="cart" class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Cart</div>
                     <div class="wishlist"><i class="fa fa-bookmark" aria-hidden="true"></i> Add to Wishlist</div>
                 </div>
 <!--                <div class="add_review_box clearfix">-->

@@ -1,3 +1,4 @@
+
 $(".right-icon").click(function () {
     var element = $(this).parent().children().eq(2).children().eq(1);
     val = element.data("pos");
@@ -68,9 +69,14 @@ $(".most-search-product-box").click(function () {
         console.log(val);
         $(".product_name").text(val[0]["product_name"]);
         $(".product_category").text(val[0]["description"]);
-        $(".new_price").text(val[0]["description"]);
+        nprice = parseInt(val[0]["price"]);
+        oprice = nprice - (nprice*0.10);
+        $(".new_price").text("$"+oprice);
+        $(".old_price").text("$"+nprice);
         var keywords = val[0]["keywords"];
+        $(".product_details").html("<div class='product_details_head'>Product Details </div>");
         keywords.split(",").forEach(function(val,i) {
+            console.log(i);
             if(i<6){
                 $(".product_details").append("<span class='product_detail'>"+val+"</span>")
             }
@@ -121,3 +127,6 @@ $(".most-search-product-box").click(function () {
         $(".product-desc-section").slideUp(200);
     }
 });
+
+
+
