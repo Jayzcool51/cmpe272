@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <html>
 <head>
     <title>La Carros</title>
@@ -36,7 +39,7 @@
                 if ($mysqli->connect_error) {
                     die("Connection failed: " . $mysqli->connect_error);
                 }
-                $usersid = 1;
+                $usersid = $_SESSION["user_id"];
                 $res = mysqli_query($conn,"SELECT SUM(p.price) as total_price, COUNT(*) as total_items FROM `Cart` c INNER JOIN `Product` p ON p.product_id = c.product_id WHERE c.user_id = '$usersid'");
                 $rows = $res->fetch_assoc();
                 $total_items = $rows["total_items"];
