@@ -15,7 +15,7 @@
         die("Connection failed: " . $mysqli->connect_error);
     }
     $prod_details = mysqli_query($conn,"SELECT * FROM `Product` WHERE product_id = '$search_id'");
-    $ratings = mysqli_query($conn,"SELECT * from `Rating` r INNER JOIN `Product` p ON r.product_id = p.product_id WHERE r.product_id = '$search_id'");
+    $ratings = mysqli_query($conn,"SELECT * from `Rating` r INNER JOIN `Product` p ON r.product_id = p.product_id INNER JOIN `User` u ON u.user_id = r.user_id WHERE r.product_id = '$search_id'");
     $data = array();
     if ($prod_details->num_rows > 0) {
         $sql = "UPDATE `Product` SET visit_count = visit_count + 1 WHERE product_id = '$search_id'";
