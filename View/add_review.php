@@ -1,12 +1,14 @@
 <?php
 
-error_reporting(0);
+    error_reporting(0);
     extract($_GET);
 
     $servername = "13.56.13.38";
     $username = "admin";
     $password = "admin";
     $dbname = "gulliver";
+
+    $user_id = $_SESSION["user_id"];
     
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);

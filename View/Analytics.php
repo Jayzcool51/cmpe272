@@ -1,6 +1,10 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
+        <title>La Carros</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../Resources/css/analytics.css">
         <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans|Raleway|Roboto" rel="stylesheet">

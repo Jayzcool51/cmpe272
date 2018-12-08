@@ -17,8 +17,11 @@ if(!$mysqli){
 
 //query to get data from the table
 $query = sprintf("SELECT p.website, SUM(p.price) FROM `Order` o
+LEFT JOIN `User` u
+ON u.user_id = o.user_id
 INNER JOIN Product p
 ON p.product_id = o.product_id
+WHERE o.user_id = $_SESSION["user_id"]
 GROUP BY p.website");
 
 //execute query

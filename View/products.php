@@ -1,6 +1,9 @@
+<?php
+    session_start();
+?>
 <html>
 <head>
-    <title>Marketplace</title>
+    <title>La Carros</title>
     <link rel="stylesheet" href="../Resources/css/product.css">
     <link rel="stylesheet" href="../Resources/css/review.css">
     <link rel="stylesheet" href="../Resources/css/footerv2.css">
@@ -47,7 +50,7 @@
                         if ($mysqli->connect_error) {
                             die("Connection failed: " . $mysqli->connect_error);
                         }
-                        $result = mysqli_query($conn,"SELECT *  FROM `Product` LIMIT 8");
+                        $result = mysqli_query($conn,"SELECT *  FROM `Product` ORDER BY visit_count DESC LIMIT 8");
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()){
                                 $img = $row["image_url"];
@@ -198,7 +201,7 @@
                         if ($mysqli->connect_error) {
                             die("Connection failed: " . $mysqli->connect_error);
                         }
-                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%dhruwill%' LIMIT 8");
+                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%dhruwill%' ORDER BY visit_count DESC LIMIT 8");
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()){
                                 $img = $row["image_url"];
@@ -337,7 +340,7 @@
                         if ($mysqli->connect_error) {
                             die("Connection failed: " . $mysqli->connect_error);
                         }
-                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%mohit%' LIMIT 8");
+                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%mohit%' ORDER BY visit_count DESC LIMIT 8");
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()){
                                 $img = $row["image_url"];
@@ -476,7 +479,7 @@
                         if ($mysqli->connect_error) {
                             die("Connection failed: " . $mysqli->connect_error);
                         }
-                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%prabha%' LIMIT 8");
+                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%prabha%' ORDER BY visit_count DESC LIMIT 8");
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()){
                                 $img = $row["image_url"];
@@ -628,7 +631,7 @@
                         if ($mysqli->connect_error) {
                             die("Connection failed: " . $mysqli->connect_error);
                         }
-                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%mayank%' LIMIT 8");
+                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%mayank%' ORDER BY visit_count DESC LIMIT 8");
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()){
                                 $img = $row["image_url"];
@@ -767,7 +770,7 @@
                         if ($mysqli->connect_error) {
                             die("Connection failed: " . $mysqli->connect_error);
                         }
-                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%jay%' LIMIT 8");
+                        $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE website LIKE '%jay%' ORDER BY visit_count DESC LIMIT 8");
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()){
                                 $img = $row["image_url"];
