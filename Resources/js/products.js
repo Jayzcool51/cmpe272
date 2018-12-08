@@ -97,7 +97,7 @@ $(".most-search-product-box").click(function () {
         nprice = parseInt(val[0]["price"]);
         oprice = nprice - (nprice*0.10);
         $(".new_price").text("$"+oprice);
-        $(".old_price").text("$"+nprice);
+        $(".old_price").html("<strike>$"+nprice+"</strike>");
         var keywords = val[0]["keywords"];
         $(".product_details").html("<div class='product_details_head'>Product Details </div>");
         keywords.split(",").forEach(function(val,i) {
@@ -220,12 +220,21 @@ $(".add_review_btn").click(function() {
 
 $("#cart").click(function() {
 
+    flag = 0;
     $.ajax({
         method: 'GET',
         url: "add_to_cart.php",
         data: {product_id: parseInt(id)}
     }).done(function (msg) {
-
+        setTimeout(function () {
+            $("#cart").css({
+                display:"none"
+            });
+            $("#gobag").fadeIn(10).addClass("animated bounce");
+        },200);
     });
 });
 
+$("#gobag").click(function() {
+    window.location="cart.php"
+});

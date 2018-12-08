@@ -238,6 +238,10 @@ body {
     display: none;
 }
 
+#gobag{
+    display: none;
+}
+
 .left_desc{
     width:47%;
     float:left;

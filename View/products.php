@@ -88,6 +88,7 @@
                     <span class="product_detail">Sandwich</span>
                 </div>
                 <div class="product_buttons">
+                    <div id="gobag" class="cart"><i class="fa fa fa-arrow-right" aria-hidden="true"></i> Go to Bag</div>
                     <div id="cart" class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Cart</div>
                     <div class="wishlist"><i class="fa fa-bookmark" aria-hidden="true"></i> Add to Wishlist</div>
                 </div>
@@ -238,6 +239,7 @@
                     <span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span><span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span>
                 </div>
                 <div class="product_buttons">
+                    <div id="gobag" class="cart"><i class="fa fa fa-arrow-right" aria-hidden="true"></i> Go to Bag</div>
                     <div class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Cart</div>
                     <div class="wishlist"><i class="fa fa-bookmark" aria-hidden="true"></i> Add to Wishlist</div>
                 </div>
@@ -376,6 +378,7 @@
                     <span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span><span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span>
                 </div>
                 <div class="product_buttons">
+                    <div id="gobag" class="cart"><i class="fa fa fa-arrow-right" aria-hidden="true"></i> Go to Bag</div>
                     <div class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Cart</div>
                     <div class="wishlist"><i class="fa fa-bookmark" aria-hidden="true"></i> Add to Wishlist</div>
                 </div>
@@ -514,6 +517,7 @@
                     <span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span><span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span>
                 </div>
                 <div class="product_buttons">
+                    <div id="gobag" class="cart"><i class="fa fa fa-arrow-right" aria-hidden="true"></i> Go to Bag</div>
                     <div class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Cart</div>
                     <div class="wishlist"><i class="fa fa-bookmark" aria-hidden="true"></i> Add to Wishlist</div>
                 </div>
@@ -665,6 +669,7 @@
                     <span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span><span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span>
                 </div>
                 <div class="product_buttons">
+                    <div id="gobag" class="cart"><i class="fa fa fa-arrow-right" aria-hidden="true"></i> Go to Bag</div>
                     <div class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Cart</div>
                     <div class="wishlist"><i class="fa fa-bookmark" aria-hidden="true"></i> Add to Wishlist</div>
                 </div>
@@ -803,6 +808,7 @@
                     <span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span><span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span>
                 </div>
                 <div class="product_buttons">
+                    <div id="gobag" class="cart"><i class="fa fa fa-arrow-right" aria-hidden="true"></i> Go to Bag</div>
                     <div class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Cart</div>
                     <div class="wishlist"><i class="fa fa-bookmark" aria-hidden="true"></i> Add to Wishlist</div>
                 </div>
@@ -941,6 +947,7 @@
                     <span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span><span class="product_detail">Sandwich</span><span class="product_detail">Ping Pong Cafe</span>
                 </div>
                 <div class="product_buttons">
+                    <div id="gobag" class="cart"><i class="fa fa fa-arrow-right" aria-hidden="true"></i> Go to Bag</div>
                     <div class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Cart</div>
                     <div class="wishlist"><i class="fa fa-bookmark" aria-hidden="true"></i> Add to Wishlist</div>
                 </div>
