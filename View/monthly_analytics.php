@@ -19,8 +19,13 @@ if(!$mysqli){
 }
 
 //query to get data from the table
-$query = sprintf("SELECT EXTRACT(MONTH from timestamp), SUM(p.price) FROM `Order` o
-INNER JOIN Product p ON p.product_id = o.product_id GROUP BY EXTRACT(MONTH from timestamp)");
+$query = sprintf("monthly_analyticsSELECT EXTRACT(MONTH from timestamp), SUM(p.price) FROM `Order` o
+LEFT JOIN `User` u
+ON u.user_id = o.user_id
+INNER JOIN Product p
+ON p.product_id = o.product_id
+WHERE o.user_id = $_SESSION["user_id"]
+GROUP BY EXTRACT(MONTH from timestamp)");
 
 //execute query
 $result = $mysqli->query($query);
