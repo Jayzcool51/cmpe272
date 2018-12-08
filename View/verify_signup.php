@@ -22,8 +22,8 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO gulliver.User (`user_name`,`name`, email, `address`, phone)
-VALUES ('NULL','$name','NULL','NULL',$phone)";
+$sql = "INSERT INTO gulliver.User (`name`, phone)
+VALUES ('$name',$phone)";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
