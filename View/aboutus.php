@@ -10,11 +10,12 @@
 <body>
 <div class="container">
     <div class="navbar">
-        <div class="nav">Home</div>
-        <div class="nav">Products</div>
-        <div class="nav"></div>
-        <div class="nav">About Us</div>
-        <div class="nav">Contact</div>
+        <a href="home.php"><div class="nav">Home</div></a>
+        <a href="products.php"><div class="nav">Products</div></a>
+        <a href="aboutus.php"><div class="nav">About Us</div></a>
+        <a href="cart.php"><div class="nav">Cart</div></a>
+        <a href="Analytics.php"><div class="nav">Analytics</div></a>
+        <a href="#"><div class="nav">Sign Out</div></a>
     </div>
     <div class="hero-section">
         <div class="Profiles">
@@ -55,31 +56,6 @@
                 <div class="web_name">dasas</div>
             </div> -->
         </div>
-    </div>
-    <div class="footer_class">
-    <footer class="clearfix">
-        <div id="signup_section">
-            <div class="signup">
-                SIGN UP FOR NEWSLETTERS
-            </div>
-        </div>
-        <div class="right_footer">
-            <div class="icons_footer">
-<!--                <a href="#"><i class="fab fa-facebook-square fa-lg"></i></a>-->
-<!--                <a href="#"><i class="fab fa-instagram fa-lg"></i></a>-->
-<!--                <a href="#"><i class="fab fa-pinterest-square fa-lg"></i></a>-->
-<!--                <a href="#"><i class="fab fa-twitter-square fa-lg"></i></a>-->
-<!--                <a href="#"><i class="fab fa-youtube-square fa-lg"></i></a>-->
-            </div>
-            <div class="footer_links">
-<!--                <a class="footer_link" href="#">Contact</a>-->
-<!--                <a class="footer_link" href="#">About Us </a>-->
-<!--                <a class="footer_link" href="#">Return Policy</a>-->
-<!--                <a class="footer_link" href="#">Cancellations and Returns</a>-->
-<!--                <a class="footer_link" href="#">FAQ</a>-->
-            </div>
-        </div>
-    </footer>
     </div>
 </div>
 </body>

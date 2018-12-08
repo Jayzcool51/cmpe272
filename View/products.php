@@ -15,11 +15,12 @@
         Company Name
     </div>
     <div class="navbar">
-        <div class="nav">Home</div>
-        <div class="nav">Products</div>
-        <div class="nav"></div>
-        <div class="nav">About Us</div>
-        <div class="nav">Contact</div>
+        <a href="home.php"><div class="nav">Home</div></a>
+        <a href="products.php"><div class="nav">Products</div></a>
+        <a href="aboutus.php"><div class="nav">About Us</div></a>
+        <a href="cart.php"><div class="nav">Cart</div></a>
+        <a href="Analytics.php"><div class="nav">Analytics</div></a>
+        <a href="#"><div class="nav">Sign Out</div></a>
     </div>
     <div class="most-searched-section" id="searchsection1">
         <div class="most-searched-head">

@@ -43,7 +43,7 @@ body {
 
 .navbar{
     position: absolute;
-    top: 55px;
+    top: 95px;
     right: 30px;
     z-index: 100;
     font-family: 'Roboto', sans-serif;
@@ -71,7 +71,7 @@ body {
 
 .Profiles{
     margin-left:45%;
-    margin-top:50px;
+    margin-top:90px;
     transform:translate(-50%,0);
     width:1200px;
 }
@@ -170,22 +170,11 @@ body {
     left:40%;
     top:60%;
     display:none;
- /*   transition:0.5s;
-*/
 }
 
 .profile:hover .Name{
     top:20%;
 }
-/*
-.profile:hover .web_name{
-    top:50%;
-    transition:0.5s;
-    display:inline-block;
-}
-.web_name:hover{
-
-}*/
 .footer_class{
     float:left;
 }
