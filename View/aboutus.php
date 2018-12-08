@@ -24,35 +24,38 @@
         <div class="Profiles">
             <div class="profile"  id="about">
                 <div class="Name">About us</div>
-                <div class="web_name">Food</div>
+                <!-- <div class="web_name">Food</div> -->
             </div>
 
             <div class="profile" id="mayank">
+              <img src="../Resources/images/aboutus/image_Mayank.jpeg" style="width:100%">
                 <div class="Name">Mayank Dhingra</div>
-                <div class="web_name">Food</div>
+                <!-- <div class="web_name">Food</div> -->
             </div>
             <div class="profile" id="mohit">
                 <img src="../Resources/images/aboutus/image_Mohit.jpeg" style="width:100%">
                 <div class="Name">Mohit Gahlot</div>
-                <div class="web_name">Food</div>
+                <!-- <div class="web_name">Food</div> -->
             </div>
             <div class="profile" id="jainam">
                 <img src="../Resources/images/aboutus/image_Jainam.jpeg" style="width:300px;height:300px;">
                 <div class="Name">Jainam Sheth</div>
-                <div class="web_name">food</div>
+                <!-- <div class="web_name">food</div> -->
             </div>
             <div class="profile" id="prabha">
-              <img src="../Resources/images/aboutus/image_Prabha.jpg" style="width:200pxx;height:300px;">>
+              <img src="../Resources/images/aboutus/image_Prabha.jpg" style="width:230px;height:300px;">
                 <div class="Name"> Prabha Veerubhotla</div>
               </div>
             <div class="profile" id="dhruvil">
-              <img src="../Resources/images/aboutus/image_Dhruvil.jpeg" style="width:100%">
+              <img src="../Resources/images/aboutus/image_Dhruvil.jpeg" style="width:250px;height:300px;">
                 <div class="Name">Dhruvil Patel</div>
                 <!-- <div class="web_name">dassasad</div> -->
             </div>
+
             <div class="profile" id="mohinish">
+              <img src="../Resources/images/aboutus/image_Mohinish.jpg" style="width:250px;height:300px;">
                 <div class="Name">Mohinish Daswani</div>
-                <div class="web_name">dasas</div>
+                <!-- <div class="web_name">dasas</div> -->
             </div>
             <!-- <div class="profile" id="cmpe">
                 <div class="Name">CMPE 272</div>
