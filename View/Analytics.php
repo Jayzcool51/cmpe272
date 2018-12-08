@@ -31,9 +31,14 @@
                         <h4>Money Spent Product Wise</h4>
                         <canvas id="pie-chart" height="200px"></canvas>
                     </div>
+                    <div class="bottom-section">
+                        <h4>Recent Visits in Marketplace</h4>
+                        <canvas id="bar-chart1" height="100px"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
         <script src="../Resources/js/analytics.js"></script>
     </body>
