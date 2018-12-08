@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Marketplace</title>
+        <title>La Carros</title>
 
         <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans|Raleway|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -201,21 +201,13 @@
     }
 
     recognition.onresult = function(event) {
-        var wave = document.querySelector(".hero-section-audio");    
-        wave.style.visibility = "collapse"; 
         var cmd = event.results[0][0].transcript;
-        alert(cmd);
-        var tooltiptext = document.querySelector("#stt");
-        tooltiptext.innerHTML = cmd;
-        setTimeout(function (){
-            window.location.href = "search.php?" + cmd;
-        }, 2000);
+        window.location.href = "search.php?" + cmd;
     }
 
     recognition.onnomatch = function(){
         var cmd = "Please try again!"
-        var tooltiptext = document.querySelector("#stt");
-        tooltiptext.innerHTML = cmd;
+        alert(cmd);
     }
 
     function sort(cri) {

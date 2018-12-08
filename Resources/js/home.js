@@ -64,6 +64,44 @@ $("#hero-back2").hover(function () {
     });
 });
 
+
+$("#hero-back3").hover(function () {
+    // $(".web-video1").fadeOut(500);
+    // $(".web-video2").fadeIn(310,function () {
+        $(".web-sec-primary-head").text("Core Electronics");
+        $(".web-sec-secondary-head").text("Explore our Core Electronics");
+        $(".web-sec-tertiary-head").text("mohinishdaswani.space");
+  //  });
+});
+
+$("#hero-back4").hover(function () {
+    // $(".web-video1").fadeOut(500);
+    // $(".web-video2").fadeIn(310,function () {
+        $(".web-sec-primary-head").text("Cool cloudy");
+        $(".web-sec-secondary-head").text("CoolCloudy simplifies work and share files anywhere in the world");
+        $(".web-sec-tertiary-head").text("jayzcool.com");
+    //});
+});
+
+$("#hero-back5").hover(function () {
+    // $(".web-video1").fadeOut(500);
+    // $(".web-video2").fadeIn(310,function () {
+        $(".web-sec-primary-head").text("Talking Tees");
+        $(".web-sec-secondary-head").text("Our T shirts talk");
+        $(".web-sec-tertiary-head").text("www.dhruwill.com");
+    //});
+});
+
+$("#hero-back6").hover(function () {
+    // $(".web-video1").fadeOut(500);
+    // $(".web-video2").fadeIn(310,function () {
+        $(".web-sec-primary-head").text("Compass Computer Software and Hardware");
+        $(".web-sec-secondary-head").text("We love providing people with most innovative technology solutions");
+        $(".web-sec-tertiary-head").text("iamprabha.com");
+    //});
+});
+
+
 $("#hero-back1").click(function () {
     if(localStorage.getItem("mayank")){
         var val = parseInt(localStorage.getItem("mayank"));
@@ -84,4 +122,49 @@ $("#hero-back2").click(function () {
         val=1;
     }
     localStorage.setItem("mohit",val);
+});
+
+$("#hero-back3").click(function () {
+    if(localStorage.getItem("mohinish")){
+        var val = parseInt(localStorage.getItem("mohinish"));
+        val+=1
+    }
+    else{
+        val=1;
+    }
+    localStorage.setItem("mohinish",val);
+});
+
+
+$("#hero-back4").click(function () {
+    if(localStorage.getItem("jainam")){
+        var val = parseInt(localStorage.getItem("jainam"));
+        val+=1
+    }
+    else{
+        val=1;
+    }
+    localStorage.setItem("jainam",val);
+});
+
+$("#hero-back5").click(function () {
+    if(localStorage.getItem("dhruvil")){
+        var val = parseInt(localStorage.getItem("dhruvil"));
+        val+=1
+    }
+    else{
+        val=1;
+    }
+    localStorage.setItem("dhruvil",val);
+});
+
+$("#hero-back6").click(function () {
+    if(localStorage.getItem("prabha")){
+        var val = parseInt(localStorage.getItem("prabha"));
+        val+=1
+    }
+    else{
+        val=1;
+    }
+    localStorage.setItem("prabha",val);
 });

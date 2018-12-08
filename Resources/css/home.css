@@ -85,23 +85,23 @@ body {
     background-position: center;
     background-size: cover;
 }
-#hero-back3{
+#hero-back4{
     background: url("../images/Products/Server.png");
     background-position: center;
     background-size: cover;
 }
-#hero-back4{
+#hero-back3{
     background: url("../images/Products/mohinisg.png");
     background-position: center;
     background-size: cover;
 }
 #hero-back5{
-    background: url("../images/Cafe.png");
+    background: url("../images/website_dhruvil.png");
     background-position: center;
     background-size: cover;
 }
 #hero-back6{
-    background: url("../images/Cafe.png");
+    background: url("../images/website_prabha.png");
     background-position: center;
     background-size: cover;
 }
@@ -393,4 +393,3 @@ div#wave {
     letter-spacing: 1px;
     text-decoration: underline;
 }
-
