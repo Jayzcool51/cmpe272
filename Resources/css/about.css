@@ -39,7 +39,9 @@ body {
     /*background-position: center;*/
     /*background-size: cover;*/
 }
-
+img{
+  background-size:cover;
+}
 
 .navbar{
     position: absolute;
