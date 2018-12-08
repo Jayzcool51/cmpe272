@@ -200,7 +200,11 @@ $(document).ready(function(){
 			var website = [];
 			var mocount = localStorage.getItem("mohit");
 			var macount = localStorage.getItem("mayank");
-			var price = [macount,mocount,0,0,0,0];
+			var dhcount = localStorage.getItem("dhruvil");
+			var prcount = localStorage.getItem("prabha");
+			var jacount = localStorage.getItem("jainam");
+			var mhcount = localStorage.getItem("mohinish");
+			var price = [macount,mocount,dhcount, mhcount, prcount, jacount];
 			var chartdata = {
 				labels: ["Ping Pong Cafe","Shree Shyam Services", "Talking Tees", "Core Electronics", "Compass Computer Software & Hardware", "Cool Cloudy"],
 				datasets : [
