@@ -141,7 +141,6 @@
 <!--                        <div class="add_review_button">Add</div>-->
 <!--                    </div>-->
 <!--                </div>-->
-
             </div>
             <div class="right_desc">
                 <div class="add_review_box clearfix">
