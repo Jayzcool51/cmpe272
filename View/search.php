@@ -104,7 +104,15 @@
                                         <div class=\"prod_name\">
                                             $name
                                         </div>
-                                        <div class=\"rating\"><i class=\"fas fa-star fa-sm rating_star\" ></i><i class=\"fas fa-star fa-sm rating_star\" ></i><i class=\"fas fa-star fa-sm rating_star\" ></i><i class=\"fas fa-star fa-sm rating_star\" ></i><i class=\"fas fa-star fa-sm rating_star\" ></i></div>
+                                        <div class=\"rating\">";
+                                            for($a=0;$a<$avg_rating;$a++) {
+                                                echo "<i class=\"fas fa-star fa-sm rating_star\" ></i>";
+                                            }
+                                            for($b=$a;$b<5;$b++){
+                                                echo "<i class=\"fas fa-star fa-sm rating_star_blank\" ></i>";
+                                            }
+                                            echo "
+                                        </div>
                                         <div class=\"product_description\">$desc</div>
                                         <div class=\"product_qty\">
                                         </div>
