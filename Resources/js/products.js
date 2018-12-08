@@ -219,8 +219,6 @@ $(".add_review_btn").click(function() {
 });
 
 $("#cart").click(function() {
-
-    flag = 0;
     $.ajax({
         method: 'GET',
         url: "add_to_cart.php",
