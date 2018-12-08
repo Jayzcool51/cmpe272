@@ -52,6 +52,7 @@
                     </div>
                         <div class="all_products clearfix">
                             <?php
+                            error_reporting(0);
                             $servername = "13.56.13.38";
                             $username = "admin";
                             $password = "admin";

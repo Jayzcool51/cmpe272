@@ -82,15 +82,18 @@ $(".most-search-product-box").click(function () {
             }
         });
         $(".all_reviews").html("");
-        var rid = val[1][0]["user_id"];
-        var rtime = val[1][0]["timestamp"];
-        var rrate = parseInt(val[1][0]["rating"]);
-        var rreview = val[1][0]["review"];
-        var rstar = "";
-        for(a=0;a<rrate;a++){
-            rstar+="<i class='fas fa-star fa-sm rating_star'></i>"
+        for(b=0;b<val[1].length;b++){
+            console.log("Sd");
+            var rid = val[1][b]["name"];
+            var rtime = val[1][b]["timestamp"];
+            var rrate = parseInt(val[1][b]["rating"]);
+            var rreview = val[1][b]["review"];
+            var rstar = "";
+            for(a=0;a<rrate;a++){
+                rstar+="<i class='fas fa-star fa-sm rating_star'></i>"
+            }
+            $(".all_reviews").append("<div class='review clearfix'> <div class='review_user_name'>"+rid+"</div> <div class='review_rating'>"+rstar+"</div><div class='review_timestamp'>"+rtime+"</div> <div class='review_text'>"+rreview+"</div></div>")
         }
-        $(".all_reviews").append("<div class='review clearfix'> <div class='review_user_name'>"+rid+"</div> <div class='review_rating'>"+rstar+"</div><div class='review_timestamp'>"+rtime+"</div> <div class='review_text'>"+rreview+"</div></div>")
     });
 
     var check = $(this).parent().parent().parent().data("click");

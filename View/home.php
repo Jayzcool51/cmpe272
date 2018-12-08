@@ -118,13 +118,16 @@
         var cmd = event.results[0][0].transcript;
         var tooltiptext = document.querySelector("#stt");
         tooltiptext.innerHTML = cmd;
+        if(cmd=="show me drinks" || cmd=="I want to buy drinks"){
+            cmd="drinks";
+        }
         setTimeout(function (){
             window.location.href = "search.php?" + cmd;
         }, 2000);
-    }
+    };
 
     recognition.onnomatch = function(){
-        var cmd = "Please try again!"
+        var cmd = "Please try again!";
         var tooltiptext = document.querySelector("#stt");
         tooltiptext.innerHTML = cmd;
     }
