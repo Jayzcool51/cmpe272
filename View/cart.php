@@ -23,92 +23,89 @@
     <div class="hero-section">
         <div class="products clearfix">
             <div class="all_products clearfix">
-                <div class="product-head clearfix">
-                    <span class="left-product-head">My Shopping Bag (2 Items)</span>
-                    <span class="right-product-head">$200</span>
+                <?php
+                error_reporting(0);
+                $servername = "13.56.13.38";
+                $username = "admin";
+                $password = "admin";
+                $dbname = "gulliver";
+                // Create connection
+                $conn = mysqli_connect($servername, $username, $password, $dbname);
+                // Check connection
+                if ($mysqli->connect_error) {
+                    die("Connection failed: " . $mysqli->connect_error);
+                }
+                $usersid = 1;
+                $res = mysqli_query($conn,"SELECT SUM(p.price) as total_price, COUNT(*) as total_items FROM `Cart` c INNER JOIN `Product` p ON p.product_id = c.product_id WHERE c.user_id = '$usersid'");
+                $rows = $res->fetch_assoc();
+                $total_items = $rows["total_items"];
+                $total_price = $rows["total_price"];
+                echo "
+                <div class=\"product-head clearfix\">
+                    <span class=\"left-product-head\">My Shopping Cart (".$total_items." items)</span>
+                    <span class=\"right-product-head\">$".$total_price."</span>
                 </div>
-                <div class="product clearfix" >
-                    <div class="product_img">
-                        <img src="../Resources/images/Products/shirt.jpg"/>
-                    </div>
-                    <div class="product_desc_box">
-                        <div class="prod_name">
-                            Carlton London Women Rose Gold
-                        </div>
-                        <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" >
-                        </div>
-                        <div class="remove-section">
-                            <div class="remove-btn">
-                                Remove
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product_price">$15</div>
-
-                </div>
-                <div class="product clearfix" >
-                    <div class="product_img">
-                        <img src="../Resources/images/Products/shirt.jpg"/>
-                    </div>
-                    <div class="product_desc_box">
-                        <div class="prod_name">
-                            Carlton London Women Rose Gold
-                        </div>
-                        <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" ></div>
-                        <div class="remove-section">
-                            <div class="remove-btn">
-                                Remove
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product_price">$15</div>
-
-                </div>
-                <div class="product clearfix" >
-                        <div class="product_img">
-                            <img src="../Resources/images/Products/shirt.jpg"/>
-                        </div>
-                        <div class="product_desc_box">
-                            <div class="prod_name">
-                                Carlton London Women Rose Gold
-                            </div>
-                            <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" ></div>
-                            <div class="remove-section">
-                                <div class="remove-btn">
-                                    Remove
+                ";
+                $result = mysqli_query($conn,"SELECT * FROM `Cart` c INNER JOIN `Product` p ON p.product_id = c.product_id WHERE c.user_id = '$usersid'");
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()){
+                        $img = $row["image_url"];
+                        $prod_name = $row["product_name"];
+                        $price = $row["price"];
+                        echo "
+                            <div class=\"product clearfix\" >
+                                <div class=\"product_img\">
+                                    <img src=\"$img\"/>
                                 </div>
+                                <div class=\"product_desc_box\">
+                                    <div class=\"prod_name\">
+                                        $prod_name
+                                    </div>
+                                    <div class=\"product_qty\">Qty <input type=\"number\" name=\"qty\" value=\"1\" width=\"12\" >
+                                    </div>
+                                    <div class=\"remove-section\">
+                                        <div class=\"remove-btn\">
+                                            Remove
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=\"product_price\">$".$price."</div>
                             </div>
-                        </div>
-                        <div class="product_price">$15</div>
-
-                </div>
+                            ";
+                        }
+                    } else {
+                        echo "0 results";
+                    }
+                echo "
             </div>
-            <div class="total_amount_box clearfix">
-                <div class="total">
-                    <div id="price_det"><b>Price Details</b></div>
+            <div class=\"total_amount_box clearfix\">
+                <div class=\"total\">
+                    <div id=\"price_det\"><b>Price Details</b></div>
                     <div>
-                        <div class="price_info_value">$200</div>
-                        <div class="price_info">Bag Total</div>
+                        <div class=\"price_info_value\">$".$total_price."</div>
+                        <div class=\"price_info\">Bag Total</div>
                     </div>
                     <div>
-                        <div class="price_info_value">-$20</div>
-                        <div class="price_info">Bag Discount</div>
+                        <div class=\"price_info_value\">$0</div>
+                        <div class=\"price_info\">Bag Discount</div>
                     </div>
                     <div>
-                        <div class="price_info_value">$10</div>
-                        <div class="price_info">Estimated Tax</div>
+                        <div class=\"price_info_value\">$0</div>
+                        <div class=\"price_info\">Estimated Tax</div>
                     </div>
                     <div>
-                        <div class="price_info_value">$10</div>
-                        <div class="price_info">Delivery charges</div>
+                        <div class=\"price_info_value\">$0</div>
+                        <div class=\"price_info\">Delivery charges</div>
 
                     </div>
                 </div>
 
-                <div class="total_amt_block">
-                    <div class="total_amt_value">$200</div>
-                    <div class="total_amt">Total Amount</div>
+                <div class=\"total_amt_block\">
+                    <div class=\"total_amt_value\">$".$total_price."</div>
+                    <div class=\"total_amt\">Total Amount</div>
                 </div>
+                ";
+                ?>
                     <div class="checkout_box"><b>PLACE ORDER</b></div>
             </div>
         </div>
