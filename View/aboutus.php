@@ -9,6 +9,9 @@
 </head>
 <body>
 <div class="container">
+    <div class="logo">
+        La Carros
+    </div>
     <div class="navbar">
         <a href="home.php"><div class="nav">Home</div></a>
         <a href="products.php"><div class="nav">Products</div></a>

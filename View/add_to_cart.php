@@ -6,7 +6,7 @@ error_reporting(0);
     $username = "admin";
     $password = "admin";
     $dbname = "gulliver";
-
+    $quantity = 1;
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);
     // Check connection

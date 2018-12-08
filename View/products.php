@@ -12,7 +12,7 @@
 <div class="container">
     <div class="container-image"></div>
     <div class="logo">
-        Company Name
+        La Carros
     </div>
     <div class="navbar">
         <a href="home.php"><div class="nav">Home</div></a>

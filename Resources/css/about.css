@@ -64,6 +64,21 @@ body {
     transition: 0.1s transform;
 }
 
+.logo{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    z-index: 100000;
+    font-family: 'Roboto', sans-serif;
+    margin: 45px 35px;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 600;
+    font-size: 25px;
+    color: #e74c3c;
+}
+
 .hero-section{
     position:relative;
     top: 50px;

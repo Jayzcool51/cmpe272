@@ -59,6 +59,31 @@ $(".most-search-product-box").hover(function () {
 
 
 $(".most-search-product-box").click(function () {
+    $(".add_review_textarea").val("");
+    $(".add_review_box").slideDown(1);
+    $(".radio+label").css("color","#dadedf");
+    $(".radio").bind('change');
+    $(".radio").prop('checked', false);
+
+    $(".radio+label").on("mouseenter",function(event) {
+            event.preventDefault();
+            var val2=event.target.parentNode.previousElementSibling.value;
+            $(".radio+label").css("color","#dadedf");
+            for(var i=1;i<=val2;i++){
+                $("#val"+i+"+label").css("color","gold");
+            }
+        });
+    $(".radio+label").on("mouseleave",function(){
+            $(".radio+label").css("color","#dadedf");
+    });
+
+
+    $(":radio").on("change",function() {
+        val = this.value;
+        $(".radio+label").off('mouseenter mouseleave');
+        $(":radio").off('change');
+    });
+
     id = $(this).data("id");
     $.ajax({
         method: 'GET',
@@ -161,13 +186,14 @@ $(".radio+label").hover(function(event) {
 
 $(":radio").change(function() {
     val = this.value;
-    $(".radio+label").unbind('mouseenter mouseleave');
-    $(":radio").unbind('change');
+    $(".radio+label").off('mouseenter mouseleave');
+    $(":radio").off('change');
 });
 
 
 $(".add_review_btn").click(function() {
     box = $(this).parent().parent().children().eq(0);
+    parentBox = $(this).parent().parent().parent().children().eq(0);
     username = "";
     $.ajax({
         method: 'GET',
@@ -175,7 +201,6 @@ $(".add_review_btn").click(function() {
         data: {product_id: parseInt(id), rating:parseInt(val), review:review}
     }).done(function (msg) {
         review = box.val();
-        console.log("Review"+review);
         username = msg;
         star = "";
         for(a=0;a<val;a++){
@@ -193,4 +218,14 @@ $(".add_review_btn").click(function() {
     });
 });
 
+$("#cart").click(function() {
+
+    $.ajax({
+        method: 'GET',
+        url: "add_to_cart.php",
+        data: {product_id: parseInt(id)}
+    }).done(function (msg) {
+
+    });
+});
 

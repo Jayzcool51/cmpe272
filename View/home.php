@@ -10,7 +10,7 @@
 <body>
 <div class="container">
     <div class="logo">
-        La carros
+        La Carros
     </div>
     <div class="navbar">
         <a href="home.php"><div class="nav">Home</div></a>
