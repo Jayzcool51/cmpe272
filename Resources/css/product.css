@@ -550,3 +550,11 @@ body {
 .remove-margin{
     margin-bottom: 0;
 }
+
+.product-info{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    line-height: 180px;
+}

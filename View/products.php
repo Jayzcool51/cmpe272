@@ -57,7 +57,7 @@
                                     </div>
                                     <div class=\"most-seacrh-product-image\">
                                         <div class=\"product-info\">
-
+                                              ".$row["product_name"]."
                                         </div>
                                         <img src=\"$img\">
                                     </div>
@@ -207,7 +207,7 @@
                                     </div>
                                     <div class=\"most-seacrh-product-image\">
                                         <div class=\"product-info\">
-
+                                              ".$row["product_name"]."  
                                         </div>
                                         <img src=\"$img\">
                                     </div>
@@ -345,7 +345,7 @@
                                     </div>
                                     <div class=\"most-seacrh-product-image\">
                                         <div class=\"product-info\">
-
+                                            ".$row["product_name"]."
                                         </div>
                                         <img src=\"$img\">
                                     </div>
@@ -483,7 +483,7 @@
                                     </div>
                                     <div class=\"most-seacrh-product-image\">
                                         <div class=\"product-info\">
-
+                                             ".$row["product_name"]."
                                         </div>
                                         <img src=\"$img\">
                                     </div>
@@ -634,7 +634,7 @@
                                     </div>
                                     <div class=\"most-seacrh-product-image\">
                                         <div class=\"product-info\">
-
+                                             ".$row["product_name"]."
                                         </div>
                                         <img src=\"$img\">
                                     </div>
@@ -772,7 +772,7 @@
                                     </div>
                                     <div class=\"most-seacrh-product-image\">
                                         <div class=\"product-info\">
-
+                                            ".$row["product_name"]."
                                         </div>
                                         <img src=\"$img\">
                                     </div>
@@ -910,7 +910,7 @@
                                     </div>
                                     <div class=\"most-seacrh-product-image\">
                                         <div class=\"product-info\">
-
+                                            ".$row["product_name"]."
                                         </div>
                                         <img src=\"$img\">
                                     </div>

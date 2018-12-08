@@ -92,6 +92,7 @@ $(".most-search-product-box").click(function () {
                 rstar+="<i class='fas fa-star fa-sm rating_star'></i>"
             }
             $(".all_reviews").append("<div class='review clearfix'> <div class='review_user_name'>"+rid+"</div> <div class='review_rating'>"+rstar+"</div><div class='review_timestamp'>"+rtime+"</div> <div class='review_text'>"+rreview+"</div></div>")
+
         }
     });
 
@@ -166,13 +167,14 @@ $(":radio").change(function() {
 
 
 $(".add_review_btn").click(function() {
+    box = $(this).parent().parent().children().eq(0);
     username = "";
     $.ajax({
         method: 'GET',
         url: "add_review.php",
         data: {product_id: parseInt(id), rating:parseInt(val), review:review}
     }).done(function (msg) {
-        review = $(".add_review_textarea").val();
+        review = box.val();
         console.log("Review"+review);
         username = msg;
         star = "";
