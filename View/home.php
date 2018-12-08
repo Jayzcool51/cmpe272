@@ -86,11 +86,11 @@
         </div>
         <div class="hero-back-container">
             <a href="http://www.mayankdhingra.com"><div class="hero-back" id="hero-back1"></div></a>
-            <div class="hero-back" id="hero-back2"></div>
-            <div class="hero-back" id="hero-back3"></div>
-            <div class="hero-back" id="hero-back4"></div>
-            <div class="hero-back" id="hero-back5"></div>
-            <div class="hero-back" id="hero-back6"></div>
+            <a href="http://www.mohitgahlot.com"><div class="hero-back" id="hero-back2"></div></a>
+            <a href="http://mohinishdaswani.space"><div class="hero-back" id="hero-back3"></div></a>
+            <a href="http://jayzcool.com"><div class="hero-back" id="hero-back4"></div></a>
+            <a href="http://www.dhruwill.com"><div class="hero-back" id="hero-back5"></div></a>
+            <a href="http://iamprabha.com"><div class="hero-back" id="hero-back6"></div></a>
         </div>
     </div>
 </div>
@@ -123,8 +123,8 @@
     }
 
     recognition.onresult = function(event) {
-        var wave = document.querySelector(".hero-section-audio");    
-        wave.style.visibility = "collapse"; 
+        var wave = document.querySelector(".hero-section-audio");
+        wave.style.visibility = "collapse";
         var cmd = event.results[0][0].transcript;
         var tooltiptext = document.querySelector("#stt");
         tooltiptext.innerHTML = cmd;
