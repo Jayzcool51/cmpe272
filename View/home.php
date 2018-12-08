@@ -8,20 +8,20 @@
 <<<<<<< HEAD
     <meta name="viewport" content="width=devise-width,initial-scale=1">
 =======
+>>>>>>> b475f7020a4c3605820fb3f645b0327d5bbf78d7
     <meta name="viewport" content="width=device-width, initial-scale=1">
->>>>>>> Mohitbranch
 </head>
 <body>
 <div class="container">
     <div class="logo">
-        Company Name
+        La carros
     </div>
     <div class="navbar">
-        <div class="nav">Home</div>
-        <div class="nav">Products</div>
-        <div class="nav"></div>
+        <a href="home.php"><div class="nav">Home</div></a>
+        <a href="products.php"><div class="nav">Products</div></a>
         <div class="nav">About Us</div>
         <div class="nav">Contact</div>
+        <div class="nav">Sign In?></div>
     </div>
     <div class="hero-section">
         <video class="video" autoplay loop muted>
@@ -56,7 +56,7 @@
             </div>
             <div class="hero-section-search">
                 <input class="search-box" placeholder="Search Product" type="text">
-                <span class="search-button">
+                <span class="search-button" onclick="start()">
                     <i class="fa fa-microphone" id="microphone" aria-hidden="true"></i>
                 </span>
             </div>
@@ -67,6 +67,9 @@
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
+            </div>
+            <div id="stt" style="text-align:center;">
+
             </div>
             <div class="other-website">
                 <div class="other-website-head">
@@ -88,4 +91,46 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="../Resources/js/home.js"></script>
+<script>
+    var grammar = '#JSGF V1.0; grammar products; public <products> =  t-shirts | tees | shirts | talking | talking tees;'
+    var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
+    var speechRecognitionList = new webkitSpeechGrammarList();
+    speechRecognitionList.addFromString(grammar, 1);
+    recognition.grammars = speechRecognitionList;
+    recognition.lang = 'en-US';
+    recognition.interimResults = false;
+    recognition.continuous = true;
+    recognition.maxAlternatives = 1;
+
+    var search_box = document.querySelector(".search-box");
+
+    search_box.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            var searchtext = search_box.value;
+            window.location.href = "search.php?" + searchtext;
+        }
+    });
+
+    function start() {
+        recognition.start();
+    }
+
+    recognition.onresult = function(event) {
+        var wave = document.querySelector(".hero-section-audio");    
+        wave.style.visibility = "collapse"; 
+        var cmd = event.results[0][0].transcript;
+        var tooltiptext = document.querySelector("#stt");
+        tooltiptext.innerHTML = cmd;
+        setTimeout(function (){
+            window.location.href = "search.php?" + cmd;
+        }, 2000);
+    }
+
+    recognition.onnomatch = function(){
+        var cmd = "Please try again!"
+        var tooltiptext = document.querySelector("#stt");
+        tooltiptext.innerHTML = cmd;
+    }
+</script>
 </html>
