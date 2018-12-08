@@ -260,6 +260,7 @@ body {
     margin:14px auto;
     padding:7px;
     font-size:15px;
+    cursor: pointer;
 }
 .cart:hover{
     background-color:#e74c3c;

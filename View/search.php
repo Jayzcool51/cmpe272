@@ -34,10 +34,10 @@
                     <div class="left_sort_box">
                         <div class="left_box">
                             <div class="left_box_heading">Sort By</div>
-                            <div class="left_box_row">Price: Low to High</div>
-                            <div class="left_box_row">Price: High to Low</div>
-                            <div class="left_box_row">Rating: Low to High</div>
-                            <div class="left_box_row">Rating: High to Low</div>
+                            <div class="left_box_row" onclick="sort('l')">Price: Low to High</div>
+                            <div class="left_box_row" onclick="sort('h')">Price: High to Low</div>
+                            <div class="left_box_row" onclick="sort('rl')">Rating: Low to High</div>
+                            <div class="left_box_row" onclick="sort('rh')">Rating: High to Low</div>
 
                         </div>
                         <div class="left_box">
@@ -65,17 +65,38 @@
                             if ($mysqli->connect_error) {
                                 die("Connection failed: " . $mysqli->connect_error);
                             }
-
-                            $search_text = "%".$_SERVER['QUERY_STRING']."%";
-                            $result = mysqli_query($conn,"SELECT product_name, `description`, website, price, image_url  FROM `Product` WHERE keywords LIKE '$search_text'");
+                            $txt = $_SERVER['QUERY_STRING'];
+                            $search = "";
+                            $filter = "";
+                            if (strpos($txt, 'filter') !== false) {
+                                $search = explode('&', $txt)[0];  
+                                $filter = explode('=', $txt)[1];
+                            }
+                            else {
+                                $search = $txt;
+                            }
+                            $search_text = "%".$search."%";
+                            if ($filter == ""){
+                                $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE keywords LIKE '$search_text'");    
+                            }
+                            else {
+                                if ($filter == "h") {
+                                    $result = mysqli_query($conn,"SELECT * FROM `Product` WHERE keywords LIKE '$search_text' ORDER BY price DESC");
+                                }
+                                else {
+                                    $result = mysqli_query($conn,"SELECT * FROM `Product` WHERE keywords LIKE '$search_text' ORDER BY price");
+                                }
+                            }
                             if ($result->num_rows > 0) {
                                 while($row = $result->fetch_assoc()){
+                                    $prod_id = $row["product_id"];
+                                    $avg_rating = mysqli_query($conn, "SELECT ROUND(AVG(r.rating), 0) FROM `Rating` r INNER JOIN `Product` p ON p.product_id = r.product_id WHERE r.product_id = $prod_id");
                                     $img = $row["image_url"];
                                     $name = $row["product_name"];
                                     $desc = $row["description"];
                                     $website = $row["website"];
                             echo "
-                                <div class=\"product clearfix\" >
+                                <div class=\"product clearfix\" data-id=\"$prod_id\" >
                                     <div class=\"product_img\">
                                         <img src=\"$img\">
                                     </div>
@@ -85,7 +106,7 @@
                                         </div>
                                         <div class=\"rating\"><i class=\"fas fa-star fa-sm rating_star\" ></i><i class=\"fas fa-star fa-sm rating_star\" ></i><i class=\"fas fa-star fa-sm rating_star\" ></i><i class=\"fas fa-star fa-sm rating_star\" ></i><i class=\"fas fa-star fa-sm rating_star\" ></i></div>
                                         <div class=\"product_description\">$desc</div>
-                                        <div class=\"product_qty\">Qty <input type=\"number\" name=\"qty\" value=\"1\" width=\"12\" ><div></div>
+                                        <div class=\"product_qty\">
                                         </div>
                                         <div class=\"product_Website\">
                                             $website
@@ -93,7 +114,7 @@
                                     </div>
                                     <div class=\"product_desc_right clearfix\">
                                         <div class=\"our_price\">Our Price
-                                            <div class=\"product_price\">$15</div>
+                                            <div class=\"product_price\">$".$row["price"]."</div>
                                         </div>
                                         <div class=\"cart\"><i class=\"fa fa-shopping-bag\" aria-hidden=\"true\"></i>Add to Cart</div>
                                         <div class=\"cart\"><i class=\"fa fa-bookmark\" aria-hidden=\"true\"></i>Add to Wishlist</div>
@@ -105,56 +126,6 @@
                                 echo "0 results";
                             }
                             ?>
-                            <!-- <div class="product clearfix" >
-                                <div class="product_img">
-                                    <img src="../Resources/images/Products/shirt.jpg"/>
-                                </div>
-                                <div class="product_desc_box clearfix">
-                                    <div class="prod_name">
-                                        Carlton London Women Rose Gold
-                                    </div>
-                                    <div class="rating"><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i></div>
-                                    <div class="product_description">This is the description of the product.This is the description of the product.</div>
-                                    <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" ><div></div>
-                                    </div>
-                                    <div class="product_Website">
-                                        Website: www.mayankdhingra.com
-                                    </div>
-                                </div>
-                                <div class="product_desc_right clearfix">
-                                    <div class="our_price">Our Price
-                                        <div class="product_price">$15</div>
-                                    </div>
-                                    <div class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Add to Cart</div>
-                                    <div class="cart"><i class="fa fa-bookmark" aria-hidden="true"></i>Add to Wishlist</div>
-                                </div>
-
-                            </div> -->
-                            <!-- <div class="product clearfix" >
-                                <div class="product_img">
-                                    <img src="../Resources/images/Products/shirt.jpg"/>
-                                </div>
-                                <div class="product_desc_box clearfix">
-                                    <div class="prod_name">
-                                        Carlton London Women Rose Gold
-                                    </div>
-                                    <div class="rating"><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i><i class="fas fa-star fa-sm rating_star" ></i></div>
-                                    <div class="product_description">This is the description of the product.This is the description of the product.</div>
-                                    <div class="product_qty">Qty <input type="number" name="qty" value="1" width="12" ><div></div>
-                                    </div>
-                                    <div class="product_Website">
-                                        Website: www.mayankdhingra.com
-                                    </div>
-                                </div>
-                                <div class="product_desc_right clearfix">
-                                    <div class="our_price">Our Price
-                                        <div class="product_price">$15</div>
-                                    </div>
-                                    <div class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Add to Cart</div>
-                                    <div class="cart"><i class="fa fa-bookmark" aria-hidden="true"></i>Add to Wishlist</div>
-                                </div>
-
-                            </div> -->
                         </div>
 
                 </div>
@@ -225,6 +196,7 @@
         var wave = document.querySelector(".hero-section-audio");    
         wave.style.visibility = "collapse"; 
         var cmd = event.results[0][0].transcript;
+        alert(cmd);
         var tooltiptext = document.querySelector("#stt");
         tooltiptext.innerHTML = cmd;
         setTimeout(function (){
@@ -236,6 +208,18 @@
         var cmd = "Please try again!"
         var tooltiptext = document.querySelector("#stt");
         tooltiptext.innerHTML = cmd;
+    }
+
+    function sort(cri) {
+        var loc = window.location.toString();
+        var newloc = "";
+        if (loc.match('filter')) {
+            newloc = loc.split("&")[0];
+            window.location.href = newloc + "&filterby=" + cri;
+        }
+        else {
+            window.location.href = window.location + "&filterby=" + cri;
+        }
     }
 </script>
 </html>

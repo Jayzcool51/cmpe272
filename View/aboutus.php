@@ -23,7 +23,7 @@
     <div class="hero-section">
         <div class="Profiles">
             <div class="profile"  id="about">
-                <div class="Name">About us</div>
+                <div class="Name" style="color:black">About us</div>
                 <!-- <div class="web_name">Food</div> -->
             </div>
 
