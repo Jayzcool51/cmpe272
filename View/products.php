@@ -161,15 +161,15 @@
         </div>
     </div>
     <div class="products-section clearfix">
-        <div class="product-left">
-            Coffee and Shakes
+        <div class="product-left" id="back1">
+            Discover Your Style
         </div>
         <div class="product-right">
-            <div class="product-right-content">
-                Burger
+            <div class="product-right-content" id="back2">
+                Connect With Possibilities
             </div>
-            <div class="product-right-content">
-                Sandwich
+            <div class="product-right-content" id="back3">
+                Sheer Driving Pleasure
             </div>
         </div>
     </div>
@@ -588,15 +588,15 @@
         </div>
     </div>
     <div class="products-section clearfix">
-        <div class="product-left">
-            Coffee and Shakes
+        <div class="product-left" id="back4">
+            For The Love Of Food
         </div>
         <div class="product-right">
-            <div class="product-right-content">
-                Burger
+            <div class="product-right-content" id="back5">
+                Capture Your Creativity
             </div>
-            <div class="product-right-content">
-                Sandwich
+            <div class="product-right-content" id="back6">
+                Redefine Technology
             </div>
         </div>
     </div>

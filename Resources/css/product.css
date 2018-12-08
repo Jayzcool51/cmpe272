@@ -468,14 +468,30 @@ body {
     float: left;
     /*border: 1px solid rgba(193, 193, 193, 0.52);*/
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/coffee.jpg");
-    background-size: cover;
-    background-position: bottom;
     text-align: center;
     line-height: 400px;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
 }
+
+#back1{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/clothes.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#back2{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/electronics.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#back3{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/carsback.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
 
 .product-right{
     width: 42%;
@@ -487,10 +503,6 @@ body {
 
 .product-right-content{
     height: 50%;
-    /*border: 1px solid rgba(193, 193, 193, 0.52);*/
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/sandwich.jpg");
-    background-size: cover;
-    background-position: center;
     margin-bottom: 40px;
     text-align: center;
     line-height: 190px;
@@ -500,11 +512,26 @@ body {
 
 .product-right-content:first-of-type{
     height: 50%;
-    /*border: 1px solid rgba(193, 193, 193, 0.52);*/
+    margin-bottom: 40px;
+}
+
+
+#back4{
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/burger.jpg");
     background-size: cover;
     background-position: center;
-    margin-bottom: 40px;
+}
+
+#back5{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/camera.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#back6{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/server.jpeg");
+    background-size: cover;
+    background-position: center;
 }
 
 .review_custom_head{
