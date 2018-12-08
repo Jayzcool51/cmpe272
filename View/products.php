@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Marketplace</title>
+    <title>La Carros</title>
     <link rel="stylesheet" href="../Resources/css/product.css">
     <link rel="stylesheet" href="../Resources/css/review.css">
     <link rel="stylesheet" href="../Resources/css/footerv2.css">
@@ -17,10 +17,16 @@
     <div class="navbar">
         <a href="home.php"><div class="nav">Home</div></a>
         <a href="products.php"><div class="nav">Products</div></a>
+<<<<<<< Updated upstream
         <a href="aboutus.php"><div class="nav">About Us</div></a>
         <a href="cart.php"><div class="nav">Cart</div></a>
         <a href="Analytics.php"><div class="nav">Analytics</div></a>
         <a href="#"><div class="nav">Sign Out</div></a>
+=======
+        <div class="nav"></div>
+        <a href="aboutus.php"><div class="nav">About Us</div></a>
+        <a href="contact.php"><div class="nav">Contact</div></a>
+>>>>>>> Stashed changes
     </div>
     <div class="most-searched-section" id="searchsection1">
         <div class="most-searched-head">

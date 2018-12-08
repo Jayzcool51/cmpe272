@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Marketplace</title>
+    <title>La Carros</title>
     <link rel="stylesheet" href="../Resources/css/home.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans|Raleway|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -16,9 +16,14 @@
         <a href="home.php"><div class="nav">Home</div></a>
         <a href="products.php"><div class="nav">Products</div></a>
         <a href="aboutus.php"><div class="nav">About Us</div></a>
+<<<<<<< Updated upstream
         <a href="cart.php"><div class="nav">Cart</div></a>
         <a href="Analytics.php"><div class="nav">Analytics</div></a>
         <a href="#"><div class="nav">Sign Out</div></a>
+=======
+        <a href="contact.php"><div class="nav">Contact</div></a>
+        <div class="nav">Sign In</div>
+>>>>>>> Stashed changes
     </div>
     <div class="hero-section">
         <video class="video" autoplay loop muted>
