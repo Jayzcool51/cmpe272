@@ -14,20 +14,12 @@
         La Carros
     </div>
     <div class="navbar">
-<<<<<<< Updated upstream
         <a href="home.php"><div class="nav">Home</div></a>
         <a href="products.php"><div class="nav">Products</div></a>
         <a href="aboutus.php"><div class="nav">About Us</div></a>
         <a href="cart.php"><div class="nav">Cart</div></a>
         <a href="Analytics.php"><div class="nav">Analytics</div></a>
         <a href="#"><div class="nav">Sign Out</div></a>
-=======
-    <a href="home.php"><div class="nav">Home</div></a>
-    <a href="products.php"><div class="nav">Products</div></a>
-    <div class="nav"></div>
-    <a href="aboutus.php"><div class="nav">About Us</div></a>
-    <a href="contact.php"><div class="nav">Contact</div></a>
->>>>>>> Stashed changes
     </div>
     <div class="hero-section">
         <div class="products clearfix">

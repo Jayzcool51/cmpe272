@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <html>
 <head>
     <title>La Carros</title>
@@ -8,6 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<?php
+    $user_id = 6;
+    $user_name = "Chester";
+    $_SESSION["user_id"] = $user_id;
+    $_SESSION["user_name"] = $user_name;
+?>
 <div class="container">
     <div class="logo">
         La Carros
@@ -16,14 +25,9 @@
         <a href="home.php"><div class="nav">Home</div></a>
         <a href="products.php"><div class="nav">Products</div></a>
         <a href="aboutus.php"><div class="nav">About Us</div></a>
-<<<<<<< Updated upstream
         <a href="cart.php"><div class="nav">Cart</div></a>
         <a href="Analytics.php"><div class="nav">Analytics</div></a>
         <a href="#"><div class="nav">Sign Out</div></a>
-=======
-        <a href="contact.php"><div class="nav">Contact</div></a>
-        <div class="nav">Sign In</div>
->>>>>>> Stashed changes
     </div>
     <div class="hero-section">
         <video class="video" autoplay loop muted>
