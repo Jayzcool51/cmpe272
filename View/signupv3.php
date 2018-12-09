@@ -107,7 +107,7 @@ if (isset($_POST['signup'])){
                                     </div>
                             	
 										         </div>
-                                    <p class="small-copy">Already have an account? <a href="#">Sign In</a></p>
+                                    <p class="small-copy">Already have an account? <a href="signinv3.php">Sign In</a></p>
 												<div class="image_box" >
                                         <video autoplay="true" id="player" style="width:360px; height:370px; margin-left:-10px; margin-top: -50px">
                                     </div>

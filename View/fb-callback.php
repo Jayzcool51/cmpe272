@@ -24,6 +24,6 @@
 	$userData = $response->getGraphNode()->asArray();
 	$_SESSION['userData'] = $userData;
 	$_SESSION['access_token'] = (string) $accessToken;
-	header('Location: index.php');
+	header('Location: signinv3.php');
 	exit();
 ?>
