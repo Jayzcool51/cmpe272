@@ -1,4 +1,12 @@
 <?php
+    session_start();
+?>
+<?php
+    if (!isset($_SESSION["user_id"])) {
+        header("Location: signupv3.php");
+    }
+?>
+<?php
 
     error_reporting(0);
     extract($_GET);

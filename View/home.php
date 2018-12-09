@@ -1,6 +1,11 @@
 <?php
     session_start();
 ?>
+<?php
+    if (!isset($_SESSION["user_id"])) {
+        header("Location: signupv3.php");
+    }
+?>
 <html>
 <head>
     <title>La Carros</title>
@@ -14,8 +19,8 @@
 <body>
 <?php
     error_reporting(0);
-    extract($_GET);
-
+    $q = $_SERVER['QUERY_STRING'];
+    $users_name = explode("=", $q)[1];
     $servername = "13.56.13.38";
     $username = "admin";
     $password = "admin";
@@ -28,14 +33,16 @@
         echo "Failed to connect to MySQL: " . mysql_connect_error();
     }
     else {
-        $prod_details = mysqli_query($conn,"SELECT * FROM `USER` WHERE `name` = '$user'");
+        $prod_details = mysqli_query($conn,"SELECT * FROM `User` WHERE `name` = '$users_name'");
         if ($prod_details->num_rows > 0) {
             $details = $prod_details->fetch_assoc();
             $usr_id = $details["user_id"];
-            $_SESSION["user_id"] = $user_id;
+            $_SESSION["user_id"] = $usr_id;
         }
     }
-    $_SESSION["user_name"] = $user;
+    $_SESSION["user_name"] = $users_name;
+    echo $_SESSION["user_id"];
+    echo $_SESSION["user_name"];
 ?>
 <div class="container">
     <div class="logo">

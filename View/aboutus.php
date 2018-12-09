@@ -1,3 +1,11 @@
+<?php
+    session_start();
+?>
+<?php
+    if (!isset($_SESSION["user_id"])) {
+        header("Location: signupv3.php");
+    }
+?>
 <html>
 <head>
     <title>La Carros</title>

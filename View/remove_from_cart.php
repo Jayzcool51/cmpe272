@@ -1,6 +1,13 @@
 
 <!-- Change isOrderPlaced flag according to your logic  -->
-
+<?php
+    session_start();
+?>
+<?php
+    if (!isset($_SESSION["user_id"])) {
+        header("Location: signupv3.php");
+    }
+?>
 <?php
     error_reporting(0);
     extract($_GET);
@@ -9,7 +16,7 @@
     $username = "admin";
     $password = "admin";
     $dbname = "gulliver";
-    $user_id = 1;
+    $user_id = $_SESSION["user_name"];
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);
     // Check connection
