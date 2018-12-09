@@ -32,19 +32,22 @@ body {
     margin: 0;
 }
 
+
 .logo{
     position: absolute;
     top: 0;
     left: 0;
     z-index: 100000;
     font-family: 'Roboto', sans-serif;
-    margin: 45px 35px;
+    margin: 2px 20px;
     font-variant: small-caps;
     letter-spacing: 1px;
     word-spacing: 2px;
     font-weight: 600;
     font-size: 25px;
-    color: #e74c3c;
+
+    /*color: #e74c3c;*/
+    color: white;
 }
 
 .navbar{

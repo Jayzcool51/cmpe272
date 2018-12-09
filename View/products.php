@@ -21,8 +21,7 @@
 <div class="container">
     <div class="container-image"></div>
     <div class="logo">
-        La Carros
-              <img src="../Resources/images/logo1.png" alt="Website Logo" style="width:120px;height:120px;">
+        <img src="../Resources/images/logo1.png" alt="Website Logo" style="width:120px;height:120px;">
     </div>
     <div class="navbar">
         <a href="home.php"><div class="nav">Home</div></a>

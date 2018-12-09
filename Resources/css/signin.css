@@ -256,7 +256,7 @@ input:focus {
     width:53%;
     margin:10px auto;
     height:255px;
-    border:1px solid #f5f5f5;
+    /*border:1px solid #f5f5f5;*/
     position: relative;
 }
 #videoElement{
@@ -349,7 +349,7 @@ input:focus {
 #canvas{
     border: 1px solid #f1f1f1;
     position: absolute;
-    margin-top: 43px;
+    margin-top: 60px;
     margin-left: 38.5px;
     top: 55.3%;
     left: 55%;
@@ -369,9 +369,9 @@ input:focus {
     border: 0px;
     z-index: 99990;
     cursor: pointer;
-    margin-top: -70px;
+    margin-top: -50px;
     cursor: pointer;
-    margin-left: 21%;
+    margin-left: 22%;
 
 }
 
@@ -388,12 +388,19 @@ input:focus {
     padding-top: 17px;
     font-size: 25px;
     color: white;
-    margin-top: -70px;
-    margin-left: 21%;
+    margin-top: -50px;
+    margin-left: 22%;
     z-index: 99999;
 }
 
 
 #takepic:hover{
     color: white;
+}
+
+.small-copy{
+    z-index: 9999999;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-75%);
 }

@@ -122,7 +122,7 @@ error_reporting(0);
                         </div>
                     </div>
                     <div class="form-box">
-                        <p class="small-copy">Don't have an account? <a href="{{route('user.signup')}}">Sign up</a></p>
+                        <p class="small-copy">Don't have an account? <a href="signupv3.php">Sign up</a></p>
                     </div>
                 </div>
             </article>

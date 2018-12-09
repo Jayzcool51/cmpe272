@@ -19,7 +19,6 @@
 <body>
 <div class="container">
     <div class="logo">
-        La Carros
         <img src="../Resources/images/logo1.png" alt="Website Logo" style="width:100px;height:100px;">
     </div>
     <div class="navbar">

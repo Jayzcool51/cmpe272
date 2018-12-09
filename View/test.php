@@ -16,7 +16,7 @@ $items=$_COOKIE['items'];
             src="https://checkout.stripe.com/checkout.js" class="stripe-button"
             data-key="pk_test_pig1mf1SqmOCu7htLHMAAwmW"
             data-amount="<?php $total_item?> "
-            data-name="laccros Marketplace"
+            data-name="la carros Marketplace"
             data-description="Payment Page"
             data-image="../Resources/images/logo1.png"
             data-locale="auto">
