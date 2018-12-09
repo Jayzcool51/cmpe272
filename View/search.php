@@ -20,7 +20,7 @@
                 <a href="aboutus.php"><div class="nav">About Us</div></a>
                 <a href="cart.php"><div class="nav">Cart</div></a>
                 <a href="Analytics.php"><div class="nav">Analytics</div></a>
-                <a href="#"><div class="nav">Sign Out</div></a>
+                <a href="signout.php"><div class="nav">Sign Out</div></a>
             </div>
             <div class="hero-section">
 
