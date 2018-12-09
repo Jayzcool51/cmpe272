@@ -52,8 +52,12 @@
                 ";
                 $result = mysqli_query($conn,"SELECT * FROM `Cart` c INNER JOIN `Product` p ON p.product_id = c.product_id WHERE c.user_id = '$usersid'");
                 if ($result->num_rows > 0) {
+                    $p_array = "";
                     while($row = $result->fetch_assoc()){
                         $img = $row["image_url"];
+                        $pid = $row["product_id"];
+                        $p_array.="$".$pid;
+
                         $prod_name = $row["product_name"];
                         $price = $row["price"];
                         echo "
@@ -81,7 +85,13 @@
                         echo "0 results";
                     }
                 echo "
-            </div>
+            </div>";
+                ?>
+            <script>
+                var arr =<?php json_encode($p_array);?>
+            </script>
+            <?php
+            echo "
             <div class=\"total_amount_box clearfix\">
                 <div class=\"total\">
                     <div id=\"price_det\"><b>Price Details</b></div>
@@ -151,4 +161,5 @@
 </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="../Resources/js/cart.js"></script>
 </html>
