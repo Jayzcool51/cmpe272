@@ -34,10 +34,9 @@ error_reporting(0);
 //		print_r($result);
 //		echo $result."<br>";
 	$file = 'try.txt';
+	$r = file_get_contents($file);
 	$r  = $result;
-		file_put_contents($file, "");
-
-		file_put_contents($file, $r);
+	file_put_contents($file, $r);
 
 	$result = file_get_contents($file);
 	$similarity = "";
@@ -66,7 +65,7 @@ error_reporting(0);
 		}
 		else{
 			echo '<script language="javascript">';
-			echo 'alert("Not Registered. Go to signup page")';
+			echo 'alert("Not Registered. Go to signup page" . $similarity)';
 			echo '</script>';
 		};
 	}
