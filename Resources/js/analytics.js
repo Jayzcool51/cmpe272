@@ -204,9 +204,11 @@ $(document).ready(function(){
 			var prcount = localStorage.getItem("prabha");
 			var jacount = localStorage.getItem("jainam");
 			var mhcount = localStorage.getItem("mohinish");
-			var price = [macount,mocount,dhcount, mhcount, prcount, jacount];
-			var chartdata = {
-				labels: ["Ping Pong Cafe","Shree Shyam Services", "Talking Tees", "Core Electronics", "Compass Computer Software & Hardware", "Cool Cloudy"],
+
+			var count = [macount, mocount,dhcount, mhcount, prcount, jacount,0];
+			console.log(count);
+			var chartdata2 = {
+				labels: ["Ping Pong Cafe","Shree Shyam Services", "Talking Tees", "Core Electronics", "Compass Computer Software & Hardware", "Cool Cloudy",""],
 				datasets : [
 					{
 						label: 'Visit',
@@ -216,7 +218,8 @@ $(document).ready(function(){
      'rgba(255,82,82, 0.4)',
      'rgba(255, 206, 86, 0.2)',
      'rgba(75, 192, 192, 0.2)',
-     'rgba(247,143,179, 0.2)'
+     'rgba(247,143,179, 0.2)',
+		 'rgba(0,0,0,0)'
    ],
    borderColor: [
      'rgba(54, 162, 235, 1)',
@@ -224,25 +227,27 @@ $(document).ready(function(){
      'rgba(255,82,82,1)',
      'rgba(255, 206, 86, 1)',
      'rgba(75, 192, 192, 1)',
-     'rgba(247,143,179, 1)'
+     'rgba(247,143,179, 1)',
+		 'rgba(0,0,0,0)'
    ],
-						data: price
+						data: count
 					}
 				]
 			};
 
-      var options = {
+      var options2 = {
         scales: {
           xAxes: [{
             gridLines: {
               color: "rgba(0, 0, 0, 0)"
-            }
+            },
+						tickMarkLength: 0.5
           }],
           yAxes: [{
             gridLines: {
               color: "rgba(0, 0, 0, 0)"
             },
-            tickMarkLength: 1
+						tickMarkLength: 0.5
           }]
         }
       };
@@ -250,8 +255,8 @@ $(document).ready(function(){
 
 			var myBarChart = new Chart(ctx, {
 				type: 'horizontalBar',
-				data: chartdata,
-        options: options
+				data: chartdata2,
+        options: options2
 			});
 		},
 		error: function(data) {
