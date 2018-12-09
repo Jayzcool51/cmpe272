@@ -6,12 +6,12 @@ error_reporting(0);
 	$permissions = ['email'];
 	$loginURL = $helper->getLoginUrl($redirectURL, $permissions);
 
-	
+
 	if (isset($_POST['login'])){
 		$url = $_POST['url'];
-	
+
 	//	echo "<h1>".$url."</h1>";
-	
+
 		require 'aws-autoloader.php';
 	   $client = new Aws\Rekognition\RekognitionClient([
 			'version' => 'latest',
@@ -21,16 +21,16 @@ error_reporting(0);
 				'secret' => 'VXvVmz71ahdIx3ndTCQSIp/757hVR2rlQpGEwlH8',
 			]
 	   ]);
-	   
+
 		$result = $client->searchFacesByImage([
 			'CollectionId' => 'UserPhotos',
 			'FaceMatchThreshold' => 70,
 			'Image' => [
-				'Bytes' => file_get_contents($url)			
+				'Bytes' => file_get_contents($url)
 			],
 			'MaxFaces' => 2,
 		]);
-		
+
 //		print_r($result);
 //		echo $result."<br>";
 	$file = 'try.txt';
@@ -70,8 +70,8 @@ error_reporting(0);
 			echo '</script>';
 		};
 	}
-	
-	
+
+
 ?>
 
 <html>
@@ -98,15 +98,15 @@ error_reporting(0);
 
 									<video autoplay="true" id="player" style="width:378px; height:280px; margin-left:-25px;">
                                     </video>
-                             
+
 												</div>
                            							<input type="text" id="url" name="url" hidden>
-														
+
 										<br>
 													<span class="btn-container">
-                    
+
 									                        <button type="submit" class="btn-form" name="login" id="login">Log in</button>
-                                                           
+
 											</span>
 								<span class="btn-container">
                                                     <input type="button" onclick="window.location = '<?php echo $loginURL ?>';" class="btn-form"  value="Login with Facebook">
@@ -152,7 +152,7 @@ error_reporting(0);
 //			document.getElementById('demo').innerHTML = 'Try it!';
 
 			context.drawImage(player, 0, 0, canvas.width, canvas.height);
-			
+
 			var dataURL = canvas.toDataURL('image/png');
 			//window.location.href = "http://localhost/cmpe272-master/view/signup.php?url" + dataURL ;
 			document.getElementById('url').value = dataURL;
@@ -170,13 +170,13 @@ error_reporting(0);
 		document.getElementById('url').value = dataURL;
 
 		});
-			
+
 			//noinspection JSAnnotator
 		navigator.mediaDevices.getUserMedia(constraints)
 				.then	((stream) => {
 				  player.srcObject = stream;
 			});
-				
+
 	</script>
 </body>
 </html>

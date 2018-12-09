@@ -1,6 +1,7 @@
 <html>
     <head>
-        <title>Marketplace</title>
+        <title>La Carros</title>
+        <link rel="shortcut icon" href="../Resources/images/lacarrofavicon_MYH_icon.ico">
         <link rel="stylesheet" href="../Resources/css/main.css">
         <link rel="stylesheet" href="../Resources/css/home.css">
     </head>

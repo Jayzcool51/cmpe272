@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>La Carros</title>
+    <link rel="shortcut icon" href="../Resources/images/lacarrofavicon_MYH_icon.ico">
     <!--<link rel="stylesheet" href="../Resources/css/main.css"> -->
     <link rel="stylesheet" href="../Resources/css/about.css">
     <link rel="stylesheet" href="../Resources/css/animate.css">
@@ -11,6 +12,7 @@
 <div class="container">
     <div class="logo">
         La Carros
+        <img src="../Resources/images/logo1.png" alt="Website Logo" style="width:100px;height:100px;">
     </div>
     <div class="navbar">
         <a href="home.php"><div class="nav">Home</div></a>

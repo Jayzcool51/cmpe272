@@ -4,6 +4,7 @@
 <html>
 <head>
     <title>La Carros</title>
+    <link rel="shortcut icon" href="../Resources/images/lacarrofavicon_MYH_icon.ico">
     <link rel="stylesheet" href="../Resources/css/home.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans|Raleway|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -20,6 +21,7 @@
 <div class="container">
     <div class="logo">
         La Carros
+              <img src="../Resources/images/logo1.png" alt="Website Logo" style="width:120px;height:120px;">
     </div>
     <div class="navbar">
         <a href="home.php"><div class="nav">Home</div></a>

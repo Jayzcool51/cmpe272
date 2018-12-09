@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>La Carros</title>
-
+        <link rel="shortcut icon" href="../Resources/images/lacarrofavicon_MYH_icon.ico">
         <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans|Raleway|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="../Resources/css/search.css">
@@ -13,6 +13,7 @@
             <div class="container-image"></div>
             <div class="logo">
                 La Carros
+                      <img src="../Resources/images/logo1.png" alt="Website Logo" style="width:120px;height:120px;">
             </div>
             <div class="navbar">
                 <a href="home.php"><div class="nav">Home</div></a>
@@ -58,7 +59,7 @@
                             $username = "admin";
                             $password = "admin";
                             $dbname = "gulliver";
-        
+
                             // Create connection
                             $conn = mysqli_connect($servername, $username, $password, $dbname);
                             // Check connection
@@ -69,7 +70,7 @@
                             $search = "";
                             $filter = "";
                             if (strpos($txt, 'filter') !== false) {
-                                $search = explode('&', $txt)[0];  
+                                $search = explode('&', $txt)[0];
                                 $filter = explode('=', $txt)[1];
                             }
                             else {
@@ -77,7 +78,7 @@
                             }
                             $search_text = "%".$search."%";
                             if ($filter == ""){
-                                $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE keywords LIKE '$search_text'");    
+                                $result = mysqli_query($conn,"SELECT *  FROM `Product` WHERE keywords LIKE '$search_text'");
                             }
                             else {
                                 if ($filter == "h") {
@@ -129,7 +130,7 @@
                                         <div class=\"cart\"><i class=\"fa fa-shopping-bag\" aria-hidden=\"true\"></i>Add to Cart</div>
                                         <div class=\"cart\"><i class=\"fa fa-bookmark\" aria-hidden=\"true\"></i>Add to Wishlist</div>
                                     </div>
-                                    
+
                                 </div>";
                                 }
                             } else {
