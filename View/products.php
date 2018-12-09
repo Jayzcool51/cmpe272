@@ -4,6 +4,7 @@
 <html>
 <head>
     <title>La Carros</title>
+    <link rel="shortcut icon" href="../Resources/images/lacarrofavicon_MYH_icon.ico">
     <link rel="stylesheet" href="../Resources/css/product.css">
     <link rel="stylesheet" href="../Resources/css/review.css">
     <link rel="stylesheet" href="../Resources/css/footerv2.css">
@@ -16,6 +17,7 @@
     <div class="container-image"></div>
     <div class="logo">
         La Carros
+              <img src="../Resources/images/logo1.png" alt="Website Logo" style="width:120px;height:120px;">
     </div>
     <div class="navbar">
         <a href="home.php"><div class="nav">Home</div></a>
