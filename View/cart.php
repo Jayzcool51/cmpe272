@@ -163,9 +163,5 @@
 </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<<<<<<< HEAD
-</html>
-=======
 <script src="../Resources/js/cart.js"></script>
 </html>
->>>>>>> 0e8bbe69da5bcded34a60ca88e34e06f73fe640e
