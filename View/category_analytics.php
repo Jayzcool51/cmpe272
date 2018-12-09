@@ -18,13 +18,15 @@ if(!$mysqli){
 	die("Connection failed: " . $mysqli->error);
 }
 
+$session = $_SESSION["user_id"];
+
 //query to get data from the table
 $query = sprintf("SELECT p.category, SUM(p.price) FROM `Order` o
 LEFT JOIN `User` u
 ON u.user_id = o.user_id
 INNER JOIN Product p
 ON p.product_id = o.product_id
-WHERE o.user_id = $_SESSION["user_id"]
+WHERE o.user_id = '$session'
 GROUP BY p.category");
 
 //execute query

@@ -39,7 +39,6 @@
 ?>
 <div class="container">
     <div class="logo">
-        La Carros
               <img src="../Resources/images/logo1.png" alt="Website Logo" style="width:120px;height:120px;">
     </div>
     <div class="navbar">
@@ -48,7 +47,19 @@
         <a href="aboutus.php"><div class="nav">About Us</div></a>
         <a href="cart.php"><div class="nav">Cart</div></a>
         <a href="Analytics.php"><div class="nav">Analytics</div></a>
-        <a href="#"><div class="nav">Sign Out</div></a>
+        <?php
+            if (isset($_SESSION["user_id"])) {
+                echo "
+                    <a href=\"signout.php\"><div class=\"nav\">Sign Out
+                ";        
+            }
+            else {
+                echo "
+                    <a href=\"signupv3.php\"><div class=\"nav\">Sign In
+                ";        
+            }
+        ?>
+        </div></a>
     </div>
     <div class="hero-section">
         <video class="video" autoplay loop muted>

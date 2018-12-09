@@ -105,10 +105,10 @@ $("#hero-back6").hover(function () {
 $("#hero-back1").click(function () {
     if(localStorage.getItem("mayank")){
         var val = parseInt(localStorage.getItem("mayank"));
-        val+=1
+        val+=1;
     }
     else{
-        val=1;
+        var val=1;
     }
     localStorage.setItem("mayank",val);
 });
@@ -116,10 +116,10 @@ $("#hero-back1").click(function () {
 $("#hero-back2").click(function () {
     if(localStorage.getItem("mohit")){
         var val = parseInt(localStorage.getItem("mohit"));
-        val+=1
+        val+=1;
     }
     else{
-        val=1;
+        var val=1;
     }
     localStorage.setItem("mohit",val);
 });
@@ -127,10 +127,10 @@ $("#hero-back2").click(function () {
 $("#hero-back3").click(function () {
     if(localStorage.getItem("mohinish")){
         var val = parseInt(localStorage.getItem("mohinish"));
-        val+=1
+        val+=1;
     }
     else{
-        val=1;
+        var val=1;
     }
     localStorage.setItem("mohinish",val);
 });
@@ -139,10 +139,10 @@ $("#hero-back3").click(function () {
 $("#hero-back4").click(function () {
     if(localStorage.getItem("jainam")){
         var val = parseInt(localStorage.getItem("jainam"));
-        val+=1
+        val+=1;
     }
     else{
-        val=1;
+        var val=1;
     }
     localStorage.setItem("jainam",val);
 });
@@ -150,10 +150,10 @@ $("#hero-back4").click(function () {
 $("#hero-back5").click(function () {
     if(localStorage.getItem("dhruvil")){
         var val = parseInt(localStorage.getItem("dhruvil"));
-        val+=1
+        val+=1;
     }
     else{
-        val=1;
+        var val=1;
     }
     localStorage.setItem("dhruvil",val);
 });
@@ -161,10 +161,10 @@ $("#hero-back5").click(function () {
 $("#hero-back6").click(function () {
     if(localStorage.getItem("prabha")){
         var val = parseInt(localStorage.getItem("prabha"));
-        val+=1
+        val+=1;
     }
     else{
-        val=1;
+      var val=1;
     }
     localStorage.setItem("prabha",val);
 });
