@@ -13,7 +13,7 @@
             <div class="container-image"></div>
             <div class="logo">
                 La Carros
-                      <img src="../Resources/images/logo1.png" alt="Website Logo" style="width:120px;height:120px;">
+                    <img src="../Resources/images/logo1.png" alt="Website Logo" style="width:120px;height:120px;">
             </div>
             <div class="navbar">
                 <a href="home.php"><div class="nav">Home</div></a>
@@ -43,12 +43,12 @@
                         </div>
                         <div class="left_box">
                             <div class="left_box_heading">Company</div>
-                            <div class="left_box_row">Mayank Dhingra</div>
-                            <div class="left_box_row">Mohit Gahlot</div>
-                            <div class="left_box_row">Dhruvil Patel</div>
-                            <div class="left_box_row">Jainam Sheth</div>
-                            <div class="left_box_row">Prabha Veerubhotla</div>
-                            <div class="left_box_row">Mohinish Daswani</div>
+                            <div class="left_box_row" onclick="sorting('mayank')">Mayank Dhingra</div>
+                            <div class="left_box_row" onclick="sorting('mohit')">Mohit Gahlot</div>
+                            <div class="left_box_row" onclick="sorting('dhruwill')">Dhruvil Patel</div>
+                            <div class="left_box_row" onclick="sorting('jainam')">Jainam Sheth</div>
+                            <div class="left_box_row" onclick="sorting('prabha')">Prabha Veerubhotla</div>
+                            <div class="left_box_row" onclick="sorting('mohinish')">Mohinish Daswani</div>
                         </div>
 
                     </div>
