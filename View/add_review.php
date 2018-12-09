@@ -22,7 +22,7 @@
         VALUES ('$product_id', '$user_id', '$rating', '$review')";
         $result = mysqli_query($conn, $sql);
         if ($result == "1") {
-            echo "jainam";
+            echo $_SESSION["user_name"];
         }
         else {
             echo "failed";   
