@@ -41,8 +41,8 @@
         }
     }
     $_SESSION["user_name"] = $users_name;
-    echo $_SESSION["user_id"];
-    echo $_SESSION["user_name"];
+//    echo $_SESSION["user_id"];
+//    echo $_SESSION["user_name"];
 ?>
 <div class="container">
     <div class="logo">

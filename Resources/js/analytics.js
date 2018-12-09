@@ -5,8 +5,8 @@ $(document).ready(function(){
 		method: "GET",
 		success: function(data) {
 			console.log(data);
-			var month = [];
-			var price = [];
+			var month = ["November"];
+			var price = [0];
 			for(var i in data) {
 				month.push(data[i]["EXTRACT(MONTH from timestamp)"]);
 				price.push(parseInt(data[i]["SUM(p.price)"]));
@@ -68,8 +68,8 @@ $(document).ready(function(){
 		method: "GET",
 		success: function(data) {
 			console.log(data);
-			var website = [];
-			var price = [];
+			var website = [""];
+			var price = [0];
 			for(var i in data) {
 				website.push(data[i].website);
 				price.push(data[i]["SUM(p.price)"]);
