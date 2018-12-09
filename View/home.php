@@ -165,11 +165,50 @@
         var cmd = event.results[0][0].transcript;
         var tooltiptext = document.querySelector("#stt");
         tooltiptext.innerHTML = cmd;
-        if(cmd=="show me drinks" || cmd=="I want to buy drinks"){
+        if(cmd.indexOf("drink")>0||cmd.indexOf("drinks")>0){
             cmd="drinks";
         }
-        if(cmd=="I want to buy tshirt"||cmd=="show me tshirts"){
+        if(cmd.indexOf("sandwich")>0||cmd.indexOf("sandwiches")>0){
+            cmd="sandwich";
+        }
+        if(cmd.indexOf("pasta")>0||cmd.indexOf("pastas")>0){
+            cmd="pasta";
+        }
+        if(cmd.indexOf("waffle")>0||cmd.indexOf("waffles")>0){
+            cmd="waffle";
+        }
+        if(cmd.indexOf("server")>0||cmd.indexOf("servers")>0||cmd.indexOf("aws")>0||cmd.indexOf("cloud")>0){
+            cmd="server";
+        }
+        if(cmd.indexOf("database")>0||cmd.indexOf("databases")>0){
+            cmd="database";
+        }
+        if(cmd.indexOf("mixer")>0||cmd.indexOf("grinder")>0){
+            cmd="mixer";
+        }
+        if(cmd.indexOf("camera")>0||cmd.indexOf("photo")>0){
+            cmd="camera";
+        }
+        if(cmd.indexOf("ac")>0||cmd.indexOf("air")>0){
+            cmd="ac";
+        }
+        if(cmd.indexOf("fridge")>0||cmd.indexOf("refrigerator")>0||cmd.indexOf("freezer")>0){
+            cmd="fridge";
+        }
+        if(cmd.indexOf("ps4")>0||cmd.indexOf("ps3")>0||cmd.indexOf("play")>0||cmd.indexOf("xbox")>0||cmd.indexOf("games")>0){
+            cmd="ps";
+        }
+        if(cmd.indexOf("phone")>0||cmd.indexOf("iphone")>0||cmd.indexOf("samsung")>0||cmd.indexOf("mobile")>0||cmd.indexOf("cellphone")>0||cmd.indexOf("cell")>0||cmd.indexOf("device")>0){
+            cmd="phone";
+        }
+        if(cmd.indexOf("tshirt")>0||cmd.indexOf("tshirt")>0||cmd.indexOf("shirt")>0||cmd.indexOf("shirts")>0||cmd.indexOf("tees")>0||cmd.indexOf("clothes")>0){
             cmd="tshirt"
+        }
+        if(cmd.indexOf("cars")>0||cmd.indexOf("car")>0||cmd.indexOf("bmw")>0||cmd.indexOf("audi")>0||cmd.indexOf("mercedes")>0||cmd.indexOf("luxury")>0){
+            cmd="cars"
+        }
+        if(cmd.indexOf("electronics")>0||cmd.indexOf("computer")>0||cmd.indexOf("computers")>0||cmd.indexOf("gadgets")>0||cmd.indexOf("laptops")>0||cmd.indexOf("laptop")>0){
+            cmd="laptops"
         }
         setTimeout(function (){
             window.location.href = "search.php?" + cmd;
