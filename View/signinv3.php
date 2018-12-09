@@ -65,7 +65,7 @@ error_reporting(0);
 		}
 		else{
 			echo '<script language="javascript">';
-			echo 'alert("Not Registered. Go to signup page" . $similarity)';
+			echo 'alert("Not Registered. Go to signup page")';
 			echo '</script>';
 		};
 	}
