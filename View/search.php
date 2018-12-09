@@ -20,7 +20,7 @@
                 <a href="aboutus.php"><div class="nav">About Us</div></a>
                 <a href="cart.php"><div class="nav">Cart</div></a>
                 <a href="Analytics.php"><div class="nav">Analytics</div></a>
-                <a href="#"><div class="nav">Sign Out</div></a>
+                <a href="signout.php"><div class="nav">Sign Out</div></a>
             </div>
             <div class="hero-section">
 
@@ -90,11 +90,13 @@
                             if ($result->num_rows > 0) {
                                 while($row = $result->fetch_assoc()){
                                     $prod_id = $row["product_id"];
-                                    $avg_rating = mysqli_query($conn, "SELECT ROUND(AVG(r.rating), 0) FROM `Rating` r INNER JOIN `Product` p ON p.product_id = r.product_id WHERE r.product_id = $prod_id");
+                                    $res1 = mysqli_query($conn, "SELECT ROUND(AVG(r.rating), 0) as rating FROM `Rating` r INNER JOIN `Product` p ON p.product_id = r.product_id WHERE r.product_id = $prod_id");
+                                    $row1 = $res1->fetch_assoc();
                                     $img = $row["image_url"];
                                     $name = $row["product_name"];
                                     $desc = $row["description"];
                                     $website = $row["website"];
+                                    $avg_rating = $row1["rating"];
                             echo "
                                 <div class=\"product clearfix\" data-id=\"$prod_id\" >
                                     <div class=\"product_img\">
@@ -102,7 +104,7 @@
                                     </div>
                                     <div class=\"product_desc_box clearfix\">
                                         <div class=\"prod_name\">
-                                            $name
+                                            $name $prod_id
                                         </div>
                                         <div class=\"rating\">";
                                             for($a=0;$a<$avg_rating;$a++) {
