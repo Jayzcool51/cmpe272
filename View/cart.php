@@ -45,7 +45,6 @@ session_start();
                     die("Connection failed: " . $mysqli->connect_error);
                 }
                 $usersid = $_SESSION["user_id"];
-                $usersid=1;
                 $res = mysqli_query($conn,"SELECT SUM(p.price) as total_price, COUNT(*) as total_items FROM `Cart` c INNER JOIN `Product` p ON p.product_id = c.product_id WHERE c.user_id = '$usersid'");
                 $rows = $res->fetch_assoc();
                 $total_items = $rows["total_items"];

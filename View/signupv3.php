@@ -25,7 +25,7 @@ if (isset($_POST['signup'])){
 				'secret' => 'VXvVmz71ahdIx3ndTCQSIp/757hVR2rlQpGEwlH8',
 			]
 	   ]);
-
+//
 //       $result = $client->deleteCollection([
 //    	'CollectionId' => 'UserPhotos',
 //    ]);

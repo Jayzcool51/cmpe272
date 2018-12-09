@@ -132,7 +132,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-	$.ajax({
+		$.ajax({
 		url: "../View/category_analytics.php",
 		method: "GET",
 		success: function(data) {

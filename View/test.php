@@ -18,7 +18,7 @@ $items=$_COOKIE['items'];
             data-amount="<?php $total_item?> "
             data-name="la carros Marketplace"
             data-description="Payment Page"
-            data-image="../Resources/images/logo1.png"
+            data-image=""
             data-locale="auto">
     </script>
 </form>
