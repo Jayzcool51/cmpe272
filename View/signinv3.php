@@ -34,7 +34,8 @@ error_reporting(0);
 //		print_r($result);
 //		echo $result."<br>";
 	$file = 'try.txt';
-	$r = file_get_contents($file);
+//		unlink($file);
+//		$file = fopen("try.txt", "w");
 	$r  = $result;
 	file_put_contents($file, $r);
 
@@ -43,26 +44,29 @@ error_reporting(0);
 //		echo strlen($result)."<br";
 		$name = "";
 		for ($i = 0; $i < strlen($result); $i++){
+
 			if ( $result[$i] == "i" and $result[$i+1] == "t" and $result[$i+2] == "y"){
+				$similarity = "";
 				$similarity = $result[$i+5] . $result[$i+6];
 				if ($result[$i+7] != ".")
 				$similarity = $similarity . $result[$i+7];
 				//break;
 			}
+
 			if ( $result[$i] == "E" and $result[$i+8] == "I" and $result[$i+13] == "I"){
 				$j = $i + 18;
+				$name="";
 				while ($result[$j]  != ","){
 					$name .=$result[$j];
 					$j++;
 				}
-
 				$name = substr($name,1,strlen($name)-2);
-				break;
+			//	break;
 			}
 		}
 		if (intval($similarity) > 96){
-			//header('Location: home.php?user='.$name);
-			echo 'alert("Welcome!!!")';
+			header('Location: home.php?user='.$name);
+			//echo 'alert("Welcome!!!")';
 			print_r($result);
 
 		}
@@ -70,7 +74,7 @@ error_reporting(0);
 			echo '<script language="javascript">';
 			echo 'alert("Not Registered. Go to signup page")';
 			echo '</script>';
-		};
+		}
 	}
 
 

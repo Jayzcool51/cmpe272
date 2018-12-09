@@ -7,30 +7,15 @@ expressions on the result data using the search() method.
 
 {
     "SearchedFaceBoundingBox": {
-        "Width": 0.25513383746147,
-        "Height": 0.49253541231155,
-        "Left": 0.21707980334759,
-        "Top": 0.35759490728378
+        "Width": 0.28042063117027,
+        "Height": 0.57239997386932,
+        "Left": 0.42192035913467,
+        "Top": 0.29114189743996
     },
-    "SearchedFaceConfidence": 99.999664306641,
+    "SearchedFaceConfidence": 99.999977111816,
     "FaceMatches": [
         {
-            "Similarity": 99.873550415039,
-            "Face": {
-                "FaceId": "51aee776-c5e0-4410-96b8-59fbad9590f6",
-                "BoundingBox": {
-                    "Width": 0.25868499279022,
-                    "Height": 0.50789397954941,
-                    "Left": 0.23933899402618,
-                    "Top": 0.18909400701523
-                },
-                "ImageId": "650f489e-6d6d-3e8c-aae2-53eaa15a1963",
-                "ExternalImageId": "mayank",
-                "Confidence": 99.999900817871
-            }
-        },
-        {
-            "Similarity": 99.828826904297,
+            "Similarity": 99.750427246094,
             "Face": {
                 "FaceId": "7a26d060-554d-4da6-8610-b7431c10968c",
                 "BoundingBox": {
@@ -43,6 +28,21 @@ expressions on the result data using the search() method.
                 "ExternalImageId": "Mayank",
                 "Confidence": 100
             }
+        },
+        {
+            "Similarity": 99.671340942383,
+            "Face": {
+                "FaceId": "51aee776-c5e0-4410-96b8-59fbad9590f6",
+                "BoundingBox": {
+                    "Width": 0.25868499279022,
+                    "Height": 0.50789397954941,
+                    "Left": 0.23933899402618,
+                    "Top": 0.18909400701523
+                },
+                "ImageId": "650f489e-6d6d-3e8c-aae2-53eaa15a1963",
+                "ExternalImageId": "mayank",
+                "Confidence": 99.999900817871
+            }
         }
     ],
     "FaceModelVersion": "4.0",
@@ -51,9 +51,9 @@ expressions on the result data using the search() method.
         "effectiveUri": "https:\/\/rekognition.us-east-2.amazonaws.com",
         "headers": {
             "content-type": "application\/x-amz-json-1.1",
-            "date": "Sun, 09 Dec 2018 01:06:31 GMT",
-            "x-amzn-requestid": "aa65f716-fb4e-11e8-a70b-1fe53aad0886",
-            "content-length": "852",
+            "date": "Sun, 09 Dec 2018 01:21:18 GMT",
+            "x-amzn-requestid": "ba602aba-fb50-11e8-ad04-f32ad4c610b5",
+            "content-length": "848",
             "connection": "keep-alive"
         },
         "transferStats": {
