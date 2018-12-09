@@ -13,10 +13,29 @@
 </head>
 <body>
 <?php
-    $user_id = 6;
-    $user_name = "Chester";
-    $_SESSION["user_id"] = $user_id;
-    $_SESSION["user_name"] = $user_name;
+    error_reporting(0);
+    extract($_GET);
+
+    $servername = "13.56.13.38";
+    $username = "admin";
+    $password = "admin";
+    $dbname = "gulliver";
+    // Create connection
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
+    // Check connection
+    if(mysqli_connect_errno())
+    {
+        echo "Failed to connect to MySQL: " . mysql_connect_error();
+    }
+    else {
+        $prod_details = mysqli_query($conn,"SELECT * FROM `USER` WHERE `name` = '$user'");
+        if ($prod_details->num_rows > 0) {
+            $details = $prod_details->fetch_assoc();
+            $usr_id = $details["user_id"];
+            $_SESSION["user_id"] = $user_id;
+        }
+    }
+    $_SESSION["user_name"] = $user;
 ?>
 <div class="container">
     <div class="logo">

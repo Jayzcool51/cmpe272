@@ -45,7 +45,6 @@ error_reporting(0);
 		for ($i = 0; $i < strlen($result); $i++){
 			if ( $result[$i] == "i" and $result[$i+1] == "t" and $result[$i+2] == "y"){
 				$similarity = $result[$i+5] . $result[$i+6];
-				echo $result[i+5] ."   ". $result[i+6] ."<br>";
 				if ($result[$i+7] != ".")
 				$similarity = $similarity . $result[$i+7];
 				//break;
@@ -61,7 +60,7 @@ error_reporting(0);
 				break;
 			}
 		}
-		if (intval($similarity) > 80){
+		if (intval($similarity) > 96){
 			header('Location: home.php?user='.$name);
 		}
 		else{
