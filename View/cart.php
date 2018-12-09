@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 <?php
     if (!isset($_SESSION["user_id"])) {
@@ -9,7 +9,6 @@
 <html>
 <head>
     <title>La Carros</title>
-    <link rel="shortcut icon" href="../Resources/images/lacarrofavicon_MYH_icon.ico">
     <link rel="stylesheet" href="../Resources/css/cart.css">
     <link rel="stylesheet" href="../Resources/css/footerv2.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans|Raleway|Roboto" rel="stylesheet">
@@ -21,7 +20,6 @@
     <div class="container-image"></div>
     <div class="logo">
         La Carros
-              <img src="../Resources/images/logo1.png" alt="Website Logo" style="width:120px;height:120px;">
     </div>
     <div class="navbar">
         <a href="home.php"><div class="nav">Home</div></a>
@@ -47,6 +45,7 @@
                     die("Connection failed: " . $mysqli->connect_error);
                 }
                 $usersid = $_SESSION["user_id"];
+                $usersid=1;
                 $res = mysqli_query($conn,"SELECT SUM(p.price) as total_price, COUNT(*) as total_items FROM `Cart` c INNER JOIN `Product` p ON p.product_id = c.product_id WHERE c.user_id = '$usersid'");
                 $rows = $res->fetch_assoc();
                 $total_items = $rows["total_items"];
@@ -58,13 +57,11 @@
                 </div>
                 ";
                 $result = mysqli_query($conn,"SELECT * FROM `Cart` c INNER JOIN `Product` p ON p.product_id = c.product_id WHERE c.user_id = '$usersid'");
+                $p="";
                 if ($result->num_rows > 0) {
-                    $p_array = "";
                     while($row = $result->fetch_assoc()){
+                        $p .= "$".$row["product_id"];
                         $img = $row["image_url"];
-                        $pid = $row["product_id"];
-                        $p_array.="$".$pid;
-
                         $prod_name = $row["product_name"];
                         $price = $row["price"];
                         echo "
@@ -76,7 +73,7 @@
                                     <div class=\"prod_name\">
                                         $prod_name
                                     </div>
-                                    <div class=\"product_qty\">
+                                    <div class=\"product_qty\">Qty <input type=\"number\" name=\"qty\" value=\"1\" width=\"12\" >
                                     </div>
                                     <div class=\"remove-section\">
                                         <div class=\"remove-btn\">
@@ -87,18 +84,14 @@
                                 <div class=\"product_price\">$".$price."</div>
                             </div>
                             ";
-                        }
-                    } else {
-                        echo "0 results";
                     }
+                    $p.="$".$total_price;
+                    echo "<div id='getValue' data-id=".$p."></div>";
+                } else {
+                    echo "0 results";
+                }
                 echo "
-            </div>";
-                ?>
-            <script>
-                var arr =<?php json_encode($p_array);?>
-            </script>
-            <?php
-            echo "
+            </div>
             <div class=\"total_amount_box clearfix\">
                 <div class=\"total\">
                     <div id=\"price_det\"><b>Price Details</b></div>
@@ -127,7 +120,8 @@
                 </div>
                 ";
                 ?>
-                    <div class="checkout_box"><b>PLACE ORDER</b></div>
+                <div class="checkout_box"><b>PLACE ORDER</b></div>
+
             </div>
         </div>
 
