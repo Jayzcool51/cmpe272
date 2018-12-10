@@ -64,12 +64,12 @@ if (isset($_POST['signup'])){
 
         mysqli_close($conn);
         if($auth){
-            header('Location:signinv3.php');
+            header('Location:https://lacarros.com/cmpe272/View/signinv3.php');
         }
 
 
         else{
-            header('Location:signupv3.php');
+            header('Location:https://lacarros.com/cmpe272/View/signiup3.php');
         }
 
 
