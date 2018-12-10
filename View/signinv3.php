@@ -64,7 +64,7 @@ error_reporting(0);
 			//	break;
 			}
 		}
-		if (intval($similarity) > 96){
+		if (intval($similarity) > 70){
 			header('Location: home.php?user='.$name);
 			//echo 'alert("Welcome!!!")';
 			print_r($result);

@@ -69,7 +69,7 @@ body {
     color:white;
     width:25%;
     padding:3%;
-    padding-right:3%;
+    padding-right:0;
     float: right;
     height: 0;
     display: none;
@@ -90,7 +90,8 @@ li{
 
 }
 #signin_text{
-    padding:5px;
+    padding:0px;
+    margin-top: -20px;
 }
 .signin_button{
     border:1px solid black;
@@ -197,17 +198,20 @@ input:focus {
     margin-bottom: 10px;
     margin-top: 20px;
     border: 1px solid #c0392b;
+    z-index: 999999!important;
 }
 .btn-form:last-of-type{
     color: white;
     background-color: white;
     border: 1px solid #c0392b;
     margin-top: 18px;
+    z-index: 999999!important;
 }
 
 
 .signup_button{
     background-color:#e74c3c;
+    z-index: 999999!important;
     background-color: #161616;
     color:white;
     padding:3px;
@@ -220,6 +224,7 @@ input:focus {
 }
 .small-copy {
     margin: 10px 50px;
+    margin-top: -30px;
     text-align: center;
     font-size: 90%;
 }
@@ -351,9 +356,9 @@ input:focus {
     position: absolute;
     margin-top: 60px;
     margin-left: 38.5px;
-    top: 55.3%;
+    top: 53.3%;
     left: 55%;
-    height: 274px!important;
+    height: 264px!important;
     width: 362px!important;
     z-index: 10000;
     transform: translate(-60%,-60%);
@@ -365,20 +370,21 @@ input:focus {
     border-radius: 50%;
     transform: translateX(-50%);
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.6) !important;
+    background-color: rgba(0, 0, 0, 0.76) !important;
     border: 0px;
     z-index: 99990;
     cursor: pointer;
     margin-top: -50px;
     cursor: pointer;
+    border: 1px solid white;
     margin-left: 22%;
 
 }
 
 #takepic1{
     cursor: pointer;
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -390,7 +396,7 @@ input:focus {
     color: white;
     margin-top: -50px;
     margin-left: 22%;
-    z-index: 99999;
+    z-index: 9999999;
 }
 
 
