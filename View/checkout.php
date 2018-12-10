@@ -78,7 +78,59 @@ echo "Error deleting record: " . mysqli_error($conn);
 }
 mysqli_close($conn);
 //if($charge['status']==="succeeded") {
-    echo"<h2>Successfully added to your orders</h2>";
-    echo"<a href='home.php'>HOME</a>";
 //}
 ?>
+<html>
+    <head>
+        <style>
+            .layer{
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+            .box{
+                width: 40%;
+                height: 100px;
+                border: 1px solid #a0a0a0;
+                border-radius: 5px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                padding-top: 11px;
+                background-color: #dff0d8;
+                text-align: center;
+            }
+
+            h3{
+                font-size: 22px;
+                color: #3c763d;
+            }
+
+            h6{
+                font-size: 17px;
+                font-weight: 800;
+            }
+
+            .data{
+                display: inline;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="layer">
+            <div class="box">
+                <div class="data">
+                    <h3>Successfully added to you orders</h3>
+                    <h5>Order ID : #C<?php echo rand(0,9) ?>M<?php echo rand(10,80) ?>L<?php echo rand(1000,2000) ?></h5>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    setTimeout(function () {
+        window.location.href ="home.php";
+    },1500);
+</script>
