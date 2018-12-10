@@ -62,7 +62,6 @@ if(mysqli_connect_errno())
 }
 else {
     foreach($b as $x){
-        echo $x;
     $sql = "INSERT INTO `Order` (`product_id`, `user_id`,`payment_id`,`total`,`cardlast`) 
     VALUES ($x, $user_id,'$pay_id',$total,'$cardlast')";
     $result = mysqli_query($conn, $sql);
