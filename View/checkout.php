@@ -2,24 +2,24 @@
 session_start();
 ?>
 <?php
-//print_r($_SESSION);
-//extract($_POST);
-require_once('../stripe-php-master/init.php');
-// Set your secret key: remember to change this to your live secret key in production
-// See your keys here: https://dashboard.stripe.com/account/apikeys
-\Stripe\Stripe::setApiKey("sk_test_SIRzcGki1ZXHHPy2N2Hu0ess");
-// Token is created using Checkout or Elements!
-// Get the payment token ID submitted by the form:
-$token = $_POST['stripeToken'];
-$charge = \Stripe\Charge::create([
-    'amount' => $_COOKIE['total'],
-    'currency' => 'usd',
-    'description' => 'Example charge',
-    'source' => $token,
-]);
-//echo $charge;
-$b = array();
-if($charge){
+////print_r($_SESSION);
+////extract($_POST);
+//require_once('../stripe-php-master/init.php');
+//// Set your secret key: remember to change this to your live secret key in production
+//// See your keys here: https://dashboard.stripe.com/account/apikeys
+//\Stripe\Stripe::setApiKey("sk_test_SIRzcGki1ZXHHPy2N2Hu0ess");
+//// Token is created using Checkout or Elements!
+//// Get the payment token ID submitted by the form:
+//$token = $_POST['stripeToken'];
+//$charge = \Stripe\Charge::create([
+//    'amount' => $_COOKIE['total'],
+//    'currency' => 'usd',
+//    'description' => 'Example charge',
+//    'source' => $token,
+//]);
+////echo $charge;
+//$b = array();
+//if($charge){
   //  echo $charge['id'].'<br>';
 //echo $charge['amount'].'<br>';
 #echo $charge['seller_message'].'<br>';
@@ -39,10 +39,14 @@ if($charge){
     //print_r($b);
 $user_id=$_SESSION["user_id"];
   //  echo $_SESSION["user_id"];
-$total=$charge['amount'];
+//$total=$charge['amount'];
+$total = $_COOKIE['total'];
 //$quantity=$_POST['quantity'];
-$cardlast=$charge['source']['last4'];
-$pay_id=$charge['id'];
+//$cardlast=$charge['source']['last4'];
+$cardlast = "3244";
+
+$pay_id="34343";
+//$pay_id=$charge['id'];
 
 $servername = "13.56.13.38";
 $username = "admin";
@@ -73,9 +77,9 @@ if (mysqli_query($conn, $sql)) {
 echo "Error deleting record: " . mysqli_error($conn);
 }
 }
-mysqli_close($conn);}
-if($charge['status']==="succeeded") {
+mysqli_close($conn);
+//if($charge['status']==="succeeded") {
     echo"<h2>Successfully added to your orders</h2>";
     echo"<a href='home.php'>HOME</a>";
-}
+//}
 ?>
