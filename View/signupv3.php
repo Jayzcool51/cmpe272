@@ -25,14 +25,14 @@ if (isset($_POST['signup'])){
 				'secret' => 'VXvVmz71ahdIx3ndTCQSIp/757hVR2rlQpGEwlH8',
 			]
 	   ]);
-//
-//       $result = $client->deleteCollection([
-//    	'CollectionId' => 'UserPhotos',
-//    ]);
-//
-//	   $result = $client->createCollection([
-//			'CollectionId' => 'UserPhotos',
-//		]);
+
+       $result = $client->deleteCollection([
+    	'CollectionId' => 'UserPhotos',
+    ]);
+
+	   $result = $client->createCollection([
+			'CollectionId' => 'UserPhotos',
+		]);
 		$name = $_POST['name'];
 		$result = $client->indexFaces([
 			'CollectionId' => 'UserPhotos',
