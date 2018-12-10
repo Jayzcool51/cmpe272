@@ -18,6 +18,7 @@ $charge = \Stripe\Charge::create([
     'source' => $token,
 ]);
 //echo $charge;
+$b = array();
 if($charge){
   //  echo $charge['id'].'<br>';
 //echo $charge['amount'].'<br>';
@@ -25,11 +26,15 @@ if($charge){
 //echo $charge['status'].'<br>';
 //echo $charge['source']['last4'].'<br>';
 //extract($_POST);
-$product_id=$_COOKIE['items'];
+    $product_id=$_COOKIE['items'];
+//    print($product_id);
     $j=0;
-    for($i=0; $i<strlen($product_id);$i+=2){
-        $b[$j++] = $product_id[$i];
-    }
+//    for($i=0; $i<=strlen($product_id);$i+=2){
+////        echo $product_id[$i];
+//        array_push($b,$product_id[$i]);
+//    }
+    $b = explode(",",$product_id);
+//    print_r($b);
     //$b = $product_id.explode(",");
     //print_r($b);
 $user_id=$_SESSION["user_id"];
@@ -53,7 +58,7 @@ if(mysqli_connect_errno())
 }
 else {
     foreach($b as $x){
-        //echo 'Here',$x;
+        echo $x;
     $sql = "INSERT INTO `Order` (`product_id`, `user_id`,`payment_id`,`total`,`cardlast`) 
     VALUES ($x, $user_id,'$pay_id',$total,'$cardlast')";
     $result = mysqli_query($conn, $sql);

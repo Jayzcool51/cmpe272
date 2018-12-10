@@ -48,8 +48,8 @@
     </div>
     <div class="navbar">
         <a href="home.php"><div class="nav">Home</div></a>
-        <a href="products.php"><div class="nav">Products</div></a>
         <a href="aboutus.php"><div class="nav">About Us</div></a>
+        <a href="products.php"><div class="nav">Products</div></a>
         <a href="cart.php"><div class="nav">Cart</div></a>
         <a href="Analytics.php"><div class="nav">Analytics</div></a>
         <?php
